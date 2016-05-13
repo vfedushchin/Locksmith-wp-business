@@ -1,0 +1,8 @@
+.subscribe-block__input { color: $regular_text_color; }
+
+.follow-block .social-list .menu-item > a::before {color: $regular_h3_color;}
+.follow-block .social-list .menu-item > a:hover::before {color: #fff; background: $regular_accent_color_1;}
+
+.invert .widget-subscribe .widget-title {
+	color: $regular_h3_color;
+}

@@ -1,0 +1,16 @@
+$color__background-screen: #f1f1f1;
+$color__background-hr: #e4e4e5;
+$color__background-input: #fff;
+$color__background-pre: #eee;
+
+$color__text-screen: #21759b;
+$color__text-input: #666;
+
+$color__border-button: #e2e2e2;
+$color__border-input: #e2e2e2;
+$color__border-abbr: #e2e2e2;
+$color__border-table: $color__background-hr;
+$color__border-pre: darken( $color__background-pre, 10% );
+
+$color__not-valid: #fe5c7a;
+$color__valid: #398f14;

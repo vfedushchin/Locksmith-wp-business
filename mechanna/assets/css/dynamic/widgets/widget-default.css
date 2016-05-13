@@ -1,0 +1,143 @@
+/* #Widgets (defaults) */
+.widget li {
+	/* color: $regular_link_color; */
+}
+.invert .widget li {
+	/* color: $invert_link_color; */
+}
+.invert .widget select {
+	color: $regular_text_color;
+}
+
+/* #Widget Calendar */
+.widget_calendar,
+.widget_calendar caption {
+	font-family: $h3_font_family;
+	font-size: 20px;
+	color: $regular_h3_color;
+}
+.invert .widget_calendar,
+.invert .widget_calendar caption {
+	color: $invert_h3_color;
+}
+@media (min-width: 1199px) {
+	.widget_calendar,
+	.widget_calendar caption {
+		font-size: 38px;
+	}
+
+	.invert .widget_calendar .calendar_wrap{
+		font-size: 30px;
+	}
+	.invert .widget_calendar {
+		margin-top: 34px;
+	}
+}
+.widget_calendar caption {
+	text-align: right;
+	font-size: 18px;
+}
+.invert .widget_calendar th {
+	color: $invert_accent_color_2;
+}
+.widget_calendar tbody a {
+	color: #fff;
+	background: $regular_accent_color_1;
+	border-radius: 50%;
+	display: inline-block;
+	overflow: hidden;
+}
+.widget_calendar tbody a:hover {
+	background: $regular_h3_color;
+}
+.widget_calendar #today {
+	color: $regular_accent_color_1;
+}
+
+/* #Widget Tag Cloud */
+.widget_tag_cloud {
+	padding-bottom: 35px;
+}
+.tagcloud a {
+	color: $regular_h6_color;
+	font-family: $h6_font_family;
+	font-size: $h6_font_size{px} !important;
+}
+.tagcloud a:hover {
+	color: $regular_accent_color_1;
+}
+.invert .tagcloud a {
+	color: $invert_h6_color;
+}
+.invert .tagcloud a:hover {
+	color: $invert_accent_color_1;
+}
+
+/* #Widget Recent Posts */
+.widget_recent_entries a {
+	color: $regular_h6_color;
+	font-family: $h6_font_family;
+	font-size: $h6_font_size{px};
+	line-height: 1.1;
+}
+.invert .widget_recent_entries a {
+	color: $invert_h6_color;
+}
+.widget_recent_entries a:hover {
+	color: $regular_accent_color_1;
+}
+.widget_recent_entries .post-date {
+	color: $regular_accent_color_1;
+}
+.invert .widget_recent_entries .post-date {
+	color: $regular_accent_color_1;
+}
+
+.invert .widget_recent_entries .post-date {
+
+	font-family: $h6_font_family;
+	font-size: $h6_font_size{px};
+}
+
+
+
+/* #Widget Recent Comments */
+.widget_recent_comments .recentcomments > a {
+	color: $regular_h6_color;
+	font-family: $h6_font_family;
+	font-size: $h6_font_size{px};
+	line-height: 1.1;
+	display: block !important;
+	margin-top: 8px !important;
+}
+.widget_recent_comments .recentcomments > a:hover {
+	color: $regular_accent_color_1;
+}
+
+.widget_recent_comments .comment-author-link {
+	color: $regular_accent_color_1;
+}
+
+
+/*--------------------------------------------------------------
+# Widget Archive
+--------------------------------------------------------------*/
+.widget_archive {
+	background: $regular_accent_color_2;
+}
+
+/*--------------------------------------------------------------
+# Widget Categories
+--------------------------------------------------------------*/
+.widget_categories {
+	background: $regular_h3_color;
+}
+.widget_categories .widget-title{
+	color: $invert_h3_color;
+}
+.widget_categories a:hover{
+	color: $invert_h3_color;
+}
+.invert .widget_categories a:hover{
+	color: $regular_accent_color_1;
+}

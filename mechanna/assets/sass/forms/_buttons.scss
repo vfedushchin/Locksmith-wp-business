@@ -1,0 +1,47 @@
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+	@include btn;
+	line-height: 25px;
+}
+
+// General styles
+.btn {
+	text-decoration: none;
+
+	@include btn;
+	@include border-radius;
+	font-size: 13px;
+	line-height: 25px;
+	&:hover {
+		text-decoration: none;
+	}
+	&:focus {
+		outline: none;
+		box-shadow: 0 0 0;
+	}
+	&-fullwidth {
+		width: 100%;
+	}
+}
+.btn-third,
+.btn-secondary,
+.btn-primary {
+	position: relative;
+
+	&:after {
+			content: "\f0da";
+			@include font-awesome-icon();
+			@include font-size(1);
+			font-size: 10px;
+			line-height: 25px;
+			padding-left: 5px;
+		}
+}
+.btn-secondary {
+	padding: 0;
+	background: none;
+	border: none;
+
+}

@@ -1,0 +1,68 @@
+ul, ol {
+	margin: 0 0 1.5em 1.5em;
+	padding-left:0;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: none;
+	margin-left: 0;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}
+
+/* Inline list */
+.inline-list {
+	@include reset-list;
+	li {
+		display: inline-block;
+		vertical-align: top;
+	}
+}
+
+
+/*==================   Index List  ======================*/
+ol {
+	counter-reset: li;
+
+	li {
+		&:before {
+			content: counter(li, decimal-leading-zero)'.';
+			counter-increment: li;
+			padding-right: 0.5em;
+		}
+	}
+}
+
+
+.site-main ul {
+	margin: 0 0 1.5em 1.0em;
+	list-style: none;
+	li {
+		position: relative;
+		&::before {
+			font-size: 6px;
+			position: absolute;
+			top: 1.65em;
+			left: -2em;
+			content: 'fiber_manual_record';
+
+			@include material-icon();
+		}
+	}
+}
