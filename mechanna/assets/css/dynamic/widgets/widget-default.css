@@ -1,3 +1,11 @@
+.widget {
+	font-weight: $h6_font_weight;
+}
+
+.textwidget,
+.follow-block__message {
+	font-weight: $body_font_weight;
+}
 /* #Widgets (defaults) */
 .widget li {
 	/* color: $regular_link_color; */
@@ -79,6 +87,7 @@
 	font-family: $h6_font_family;
 	font-size: $h6_font_size{px};
 	line-height: 1.1;
+	font-weight: $h6_font_weight;
 }
 .invert .widget_recent_entries a {
 	color: $invert_h6_color;
@@ -93,12 +102,6 @@
 	color: $regular_accent_color_1;
 }
 
-.invert .widget_recent_entries .post-date {
-
-	font-family: $h6_font_family;
-	font-size: $h6_font_size{px};
-}
-
 
 
 /* #Widget Recent Comments */
@@ -109,6 +112,9 @@
 	line-height: 1.1;
 	display: block !important;
 	margin-top: 8px !important;
+}
+.invert .widget_recent_comments .recentcomments > a {
+	color: $invert_h6_color;
 }
 .widget_recent_comments .recentcomments > a:hover {
 	color: $regular_accent_color_1;
@@ -140,4 +146,14 @@
 }
 .invert .widget_categories a:hover{
 	color: $regular_accent_color_1;
+}
+
+/*--------------------------------------------------------------
+# Widget Text
+--------------------------------------------------------------*/
+.widget_text {
+	color: $regular_h3_color;
+}
+.invert .widget_text {
+	color: $invert_text_color;
 }

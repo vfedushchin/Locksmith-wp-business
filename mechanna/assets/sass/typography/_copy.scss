@@ -2,6 +2,12 @@ p {
 	margin: 0 0 1em;
 }
 
+.lh2 {
+	@media (min-width: 991px) {
+		line-height: 37px;
+	}
+}
+
 dfn, cite, em, i {
 	font-style: italic;
 }

@@ -66,6 +66,7 @@
 	caption {
 		margin-bottom: 1.1em;
 		padding: 1em 0;
+		padding-right: 7px;
 	}
 	th, tbody td {
 		padding: 0 0;
@@ -243,7 +244,10 @@
 --------------------------------------------------------------*/
 .widget_text {
 	.btn {
-		margin-top: 30px;
+		margin-top: 34px;
+	}
+	p {
+		margin-bottom: 1.7em;
 	}
 	line-height: 28px;
 
@@ -256,8 +260,8 @@
 		text-align: center;
 		background: #f4f4f4;
 		padding: 25px 14px;
-		@include media-breakpoint-up(lg) {
-			padding: 45px 24px 45px;
+		@include media-breakpoint-up(xl) {
+			padding: 45px 44px 40px;
 		}
 	}
 }

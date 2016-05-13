@@ -1,0 +1,48 @@
+.site-header.default {
+
+  .header-container_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .site-branding, .site-info {
+    flex: 1 1 50%;
+  }
+
+  .site-info {
+    * + .time__info {
+      margin-left: 90px;
+
+      @media (max-width: 1227px) {
+        margin-left: 60px;
+      }
+    }
+
+  }
+
+  .site-menu {
+    margin-top: 26px;
+    flex: 1 1 100%;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      left: -10000px;
+      right: -10000px;
+      top: 0;
+      width: 100000px;
+      height: 1px;
+      background: $color__background-hr;
+    }
+  }
+
+  .main-navigation {
+    text-align: left;
+    clear: both;
+    padding: 13px 0 0 0;
+    flex: 1 1 50%;
+  }
+
+}

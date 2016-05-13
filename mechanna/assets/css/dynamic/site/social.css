@@ -8,6 +8,10 @@
 .share-btns__link {
 	color: $regular_accent_color_1;
 }
+.site-header .social-list a:hover,
+.site-header .social-list a:hover::before {
+	color: $regular_h3_color;
+}
 .share-btns__link:hover {
 	color: $regular_h3_color;
 }

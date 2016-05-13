@@ -1,0 +1,168 @@
+#tm_builder_outer_content .tm_pb_booked_calendar {
+  .booked-calendar-shortcode-wrap {
+    .booked-calendar-wrap {
+      .booked-calendar {
+        max-width: 100%;
+        margin: 0 auto;
+        border: none;
+        border-collapse: separate;
+        border-spacing: 5px;
+        background: transparent !important;
+        table-layout:fixed;
+
+        @include media-breakpoint-up(sm) {
+          border-spacing: 10px;
+          max-width: 780px;
+          table-layout:auto;
+        }
+        thead {
+          background: transparent !important;
+          th {
+            border: none;
+            padding: 21px 0 13px;
+
+            .monthName {
+              font-size: 40px;
+              font-weight: 700;
+              text-transform: none;
+              .backToMonth{
+                display: none;
+              }
+            }
+
+            > a {
+              top: 24px;
+              &::before {
+                font-size: 30px;
+                font-family: FontAwesome;
+              }
+
+              &.page-right {
+                right: 0;
+                &::before {
+                  content: '\f105';
+                }
+                &:hover {
+                  right: 0;
+                }
+              }
+
+              &.page-left {
+                left: 0;
+                &::before {
+                  content: '\f104';
+                }
+                &:hover {
+                  left: 0;
+                }
+              }
+
+              i {
+                display: none;
+              }
+            }
+          }
+
+          .days {
+            background: transparent !important;
+
+            th {
+              font-size: 16px;
+              font-weight: 700;
+              text-align: left !important;
+
+              border-radius: 3px 3px 3px 3px;
+              -moz-border-radius: 3px 3px 3px 3px;
+              -webkit-border-radius: 3px 3px 3px 3px;
+
+              text-transform: none;
+              border: none;
+              padding: 5px;
+              @include media-breakpoint-up(sm) {
+                padding: 15px 10px 15px;
+                font-size: 20px;
+              }
+            }
+          }
+        }
+
+        tbody {
+          tr {
+
+            &.entryBlock {
+              background: transparent;
+              td {
+                background: transparent;
+                border: 10px solid;
+                .button {
+                  @extend .btn;
+                  font-size: 16px;
+                  padding: 10px;
+                  @include transition(.3s ease all);
+                }
+              }
+            }
+
+            td {
+
+              &.active .date {
+                .number {
+                  background: transparent;
+                  color: #fff;
+                }
+              }
+
+              border: none;
+              border-radius: 3px 3px 3px 3px;
+              -moz-border-radius: 3px 3px 3px 3px;
+              -webkit-border-radius: 3px 3px 3px 3px;
+
+              > span {
+                position: relative;
+                @include transition(.3s ease all);
+                .number {
+                  position: absolute;
+                  left: 12px;
+                  top: 4px;
+                  font-size: 24px;
+                  font-weight: 700;
+                  width: auto;
+                  @include media-breakpoint-up(sm) {
+                    font-size: 40px;
+                  }
+                }
+              }
+
+              &.blur {
+                pointer-events: none;
+                .number {
+                  opacity: .2;
+                }
+              }
+
+              .date {
+                @include transition(.3s ease all);
+                height: inherit;
+                &:hover {
+                  .number {
+                    color: #fff;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+body .booked-modal input.button-primary[type="submit"] {
+  @extend .btn;
+  font-size: 16px;
+  padding: 6px 10px;
+  @include transition(.3s ease all);
+  &:hover {
+    border: none;
+  }
+}

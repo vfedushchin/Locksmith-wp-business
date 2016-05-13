@@ -320,15 +320,10 @@ if ( ! class_exists( 'Mechanna_Theme_Setup' ) ) {
 			 * Widgets.
 			 */
 			require_once trailingslashit( MECHANNA_THEME_WIDGETS ) . 'about/class-about-widget.php';
-			require_once trailingslashit( MECHANNA_THEME_WIDGETS ) . 'about-author/class-about-author-widget.php';
 			require_once trailingslashit( MECHANNA_THEME_WIDGETS ) . 'banner/class-banner-widget.php';
-			require_once trailingslashit( MECHANNA_THEME_WIDGETS ) . 'carousel/class-carousel-widget.php';
 			require_once trailingslashit( MECHANNA_THEME_WIDGETS ) . 'custom-posts/class-custom-posts-widget.php';
-			require_once trailingslashit( MECHANNA_THEME_WIDGETS ) . 'image-grid/class-image-grid-widget.php';
 			require_once trailingslashit( MECHANNA_THEME_WIDGETS ) . 'instagram/class-instagram-widget.php';
-			require_once trailingslashit( MECHANNA_THEME_WIDGETS ) . 'smart-slider/class-smart-slider-widget.php';
 			require_once trailingslashit( MECHANNA_THEME_WIDGETS ) . 'subscribe-follow/class-subscribe-follow-widget.php';
-			require_once trailingslashit( MECHANNA_THEME_WIDGETS ) . 'taxonomy-tiles/class-taxonomy-tiles-widget.php';
 
 			/**
 			 * Classes.
@@ -491,7 +486,7 @@ if ( ! class_exists( 'Mechanna_Theme_Setup' ) ) {
 			 * @var   array
 			 */
 			$labels = apply_filters( 'mechanna_theme_localize_labels', array(
-				'totop_button' => esc_html__( 'Top', 'mechanna' ),
+				'totop_button' => esc_html__( '', 'mechanna' ),
 				'hidden_menu_items_title' => get_theme_mod( 'hidden_menu_items_title', mechanna_theme()->customizer->get_default( 'hidden_menu_items_title' ) ),
 			) );
 

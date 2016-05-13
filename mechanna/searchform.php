@@ -13,5 +13,5 @@
 			value="<?php echo get_search_query() ?>" name="s"
 			title="<?php echo esc_attr_x( 'Search for:', 'label', 'mechanna' ) ?>" />
 	</label>
-	<button type="submit" class="search-form__submit btn btn-primary"></button>
+	<button type="submit" class="search-form__submit btn btn-primary">Search</button>
 </form>

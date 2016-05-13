@@ -276,8 +276,55 @@ h1, h2, h3, h4, h5, h6 {
   margin: 15px 0;
 }
 
+@media (min-width: 991px) {
+  p + h1 {
+    margin: -3px 0 29px;
+  }
+  p + h2 {
+    margin: 40px 0 19px;
+  }
+  p + h3 {
+    margin: 46px 0 22px;
+  }
+  p + h4 {
+    margin: 46px 0 12px;
+  }
+  p + h5 {
+    margin: 15px 0 12px;
+  }
+  p + h6 {
+    margin: 48px 0 12px;
+  }
+  p + h5 {
+    margin-top: 44px;
+  }
+  .entry-content h1:first-child,
+  .entry-content h2:first-child,
+  .entry-content h3:first-child,
+  .entry-content h4:first-child,
+  .entry-content h5:first-child,
+  .entry-content h6:first-child {
+    margin-top: -40px;
+  }
+}
+
+.site-main h6 + ul,
+.site-main h6 + ol {
+  margin-top: -0.4em;
+}
+
+.site-main ol + h6, .site-main ul + h6 {
+  margin-top: 51px;
+}
+
 p {
   margin: 0 0 1em;
+}
+
+@media (min-width: 991px) {
+  .lh2 {
+    line-height: 37px;
+  }
 }
 
 dfn, cite, em, i {
@@ -1482,9 +1529,9 @@ blockquote {
   padding: 1em 1em 1em 2.5em;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   blockquote {
-    padding: 1em 1.5em 1em 3.5em;
+    padding: 1em 1.5em 1em 5.6em;
   }
 }
 
@@ -1496,8 +1543,9 @@ blockquote p + p {
   margin-top: 1em;
 }
 
-blockquote cite:before {
-  content: "- ";
+blockquote cite {
+  display: block;
+  margin-top: 1.3em;
 }
 
 blockquote:before {
@@ -1522,15 +1570,23 @@ blockquote:before {
   font-feature-settings: 'liga';
   position: absolute;
   font-size: 2em;
-  top: 10px;
+  top: 3px;
   left: 10px;
 }
 
 @media (min-width: 992px) {
   blockquote:before {
-    font-size: 2.5em;
-    left: 20px;
+    font-size: 4.5em;
+    left: 10px;
   }
+}
+
+p + blockquote {
+  margin-top: 1.8em;
+}
+
+blockquote + p {
+  margin-top: 1.8em;
 }
 
 hr {
@@ -1595,7 +1651,8 @@ ol li:before {
 }
 
 .site-main ul {
-  margin: 0 0 1.5em 1.0em;
+  margin: 0 0 1.5em 0.6em;
+  line-height: 32px;
   list-style: none;
 }
 
@@ -1627,6 +1684,10 @@ ol li:before {
   -moz-osx-font-smoothing: grayscale;
   /* Support for IE. */
   font-feature-settings: 'liga';
+}
+
+.site-main ol {
+  line-height: 32px;
 }
 
 /*--------------------------------------------------------------
@@ -1833,7 +1894,7 @@ input[type='submit'] {
   line-height: 1;
   display: inline-block;
   max-width: 100%;
-  padding: 8px 30px;
+  padding: 8px 50px;
   cursor: pointer;
   text-align: center;
   vertical-align: top;
@@ -1853,7 +1914,7 @@ input[type='submit'] {
   line-height: 1;
   display: inline-block;
   max-width: 100%;
-  padding: 8px 30px;
+  padding: 8px 50px;
   cursor: pointer;
   text-align: center;
   vertical-align: top;
@@ -2612,7 +2673,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 --------------------------------------------------------------*/
 .breadcrumbs {
   position: relative;
-  margin: 0.8em 0 0;
+  margin: 1.2em 0 0;
 }
 
 .breadcrumbs__title {
@@ -3246,14 +3307,10 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
 .share-btns__link {
-  line-height: 2.5em;
   display: block;
-  width: 2.5em;
-  height: 2.5em;
   text-align: center;
   text-decoration: none;
-  opacity: .3;
-  border-radius: 50%;
+  margin-right: 10px;
   font-size: 16px;
   font-size: 1rem;
 }
@@ -3954,7 +4011,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 @media (min-width: 992px) {
   .posts-list--grid-2-cols .sticky.posts-list__item .btn,
   .posts-list--grid-3-cols .sticky.posts-list__item .btn {
-    padding: 8px 30px;
+    padding: 8px 50px;
   }
   .two-sidebars .sticky.posts-list__item .btn {
     padding: 0;
@@ -4483,6 +4540,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 .widget_calendar caption {
   margin-bottom: 1.1em;
   padding: 1em 0;
+  padding-right: 7px;
 }
 
 .widget_calendar th, .widget_calendar tbody td {
@@ -4684,7 +4742,11 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
 .widget_text .btn {
-  margin-top: 30px;
+  margin-top: 34px;
+}
+
+.widget_text p {
+  margin-bottom: 1.7em;
 }
 
 .widget_text .widget-title {
@@ -4698,10 +4760,10 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   padding: 25px 14px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .sidebar-primary .widget_text,
   .sidebar-secondary .widget_text {
-    padding: 45px 24px 45px;
+    padding: 45px 44px 40px;
   }
 }
 
@@ -5933,7 +5995,7 @@ object {
 }
 
 .alignleft {
-  margin: 15px 30px 15px 0;
+  margin: 5px 30px 15px 0;
 }
 
 .alignright {
@@ -6075,7 +6137,7 @@ object {
 
 .preview-container_bg {
   position: absolute;
-  top: -205px;
+  top: 84px;
   height: 8000px;
   width: 2050px;
   left: 50%;

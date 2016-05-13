@@ -1,10 +1,23 @@
 /* #Elements */
 blockquote {
-	color: $invert_text_color;
-	background-color: $regular_accent_color_2;
+	font-weight: $h6_font_weight;
+	color: $regular_h6_color;
+	font-family: $h6_font_family;
+	font-size: $h6_font_size{px};
+	line-height: $h6_line_height;
+}
+blockquote:before {
+	color: $regular_accent_color_1;
 }
 blockquote cite {
-	color: $regular_link_color;
+	font-size: 14px;
+	font-family: $body_font_family;
+	color: $regular_accent_color_1;
+	font-style: $body_font_style;
+	font-weight: $body_font_weight;
+	line-height: $body_line_height;
+	letter-spacing: $body_letter_spacing{px};
+	text-align: $body_text_align;
 }
 blockquote a:hover {
 	color: $regular_link_color;

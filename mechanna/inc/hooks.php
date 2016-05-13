@@ -92,6 +92,12 @@ function mechanna_set_thumb_sizes( $size ) {
 	}
 
 	$layout = get_theme_mod( 'blog_layout_type', mechanna_theme()->customizer->get_default( 'blog_layout_type' ) );
+	var_dump($layout);
+
+	if ( 'grid-2-cols' === $layout && ! ( is_sticky() && is_home() && ! is_paged() ) ) {
+		return 'mechanna-thumb-m';
+	}
+
 
 	if ( 'default' === $layout && ! ( is_sticky() && is_home() && ! is_paged() ) ) {
 		return $size;
@@ -100,6 +106,8 @@ function mechanna_set_thumb_sizes( $size ) {
 	if ( 'default' !== $layout && ! ( is_sticky() && is_home() && ! is_paged() ) ) {
 		return 'post-thumbnail';
 	}
+
+
 
 	return 'mechanna-thumb-l';
 }
@@ -381,3 +389,11 @@ function mechanna_excerpt_more( $more ) {
 
 	return ' &hellip;';
 }
+
+
+// remove <p> tags from content, when insert image
+function filter_ptags_on_images($content){
+	return preg_replace('/<p>\s*(<a .*>)?\s*(<img .* \/>)\s*(<\/a>)?\s*<\/p>/iU', '\1\2\3', $content);
+}
+
+add_filter('the_content', 'filter_ptags_on_images');

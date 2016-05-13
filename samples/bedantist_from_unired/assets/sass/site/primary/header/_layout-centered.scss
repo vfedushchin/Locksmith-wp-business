@@ -1,0 +1,75 @@
+.site-header.centered {
+  .header-container {
+    text-align: center;
+    padding: 40px 30px 15px;
+  }
+
+  .site-branding {
+    text-align: center;
+    display: inline-block;
+  }
+
+  .site-info {
+    text-align: center;
+    margin-top: 0;
+    @include clearfix-be_dentist;
+    @include media-breakpoint-up(lg) {
+      margin-top: -60px;
+    }
+
+    .phone__info {
+      float: left;
+      margin-left: 40px;
+      @media (max-width: 600px) {
+        margin-left: 0;
+      }
+    }
+    .time__info {
+      float: right;
+    }
+    .phone__info, .time__info {
+      @media (max-width: 600px) {
+        float: none;
+      }
+    }
+  }
+
+  .site-menu {
+    display: inline-block;
+    position: relative;
+    margin-top: 45px;
+    @media (max-width: 600px) {
+      width: 100%;
+      display: block;
+      margin-top: 26px;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      left: -10000px;
+      right: -10000px;
+      top: 0;
+      width: 100000px;
+      height: 1px;
+      background: $color__background-hr;
+    }
+  }
+
+  .main-navigation {
+    display: inline-block;
+    text-align: center;
+    padding: 15px 0 0 0;
+    @media (max-width: 600px) {
+      padding: 0;
+    }
+    ul.menu {
+      margin-right: 60px;
+      @media (max-width: 600px) {
+        margin-right: -25px;
+      }
+      > li:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
