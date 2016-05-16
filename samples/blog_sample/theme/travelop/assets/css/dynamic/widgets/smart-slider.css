@@ -1,0 +1,20 @@
+.travelop-smartslider .sp-arrows .sp-arrow{
+	color: $invert_link_color;
+    background: $regular_accent_color_1;
+}
+.travelop-smartslider .sp-arrows .sp-next-arrow:hover,
+.travelop-smartslider .sp-arrows .sp-previous-arrow:hover {
+	color: $regular_accent_color_1;
+	background: $invert_link_color;
+}
+.sp-image-container {
+	position: relative;
+}
+.sp-image-container:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+}

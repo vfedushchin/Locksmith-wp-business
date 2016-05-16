@@ -28,7 +28,8 @@
 			float: none;
 
 			@include media-breakpoint-up(lg) {
-				top: 30px;
+				top: 20px;
+				right: 20px;
 			}
 		}
 	}

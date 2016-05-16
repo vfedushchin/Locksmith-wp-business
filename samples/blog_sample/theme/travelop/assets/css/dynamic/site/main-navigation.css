@@ -1,0 +1,34 @@
+.main-navigation ul.menu > li > a,
+.main-navigation ul.menu > li > a:visited,
+.main-navigation ul.menu > li > a:active {
+	color: $regular_accent_color_2;
+}
+.menu-item_description {
+	color: $regular_text_color;
+}
+.main-navigation ul.menu > li > a:hover,
+.main-navigation ul.menu > li.menu-hover > a,
+.main-navigation ul.menu > li.current_page_item > a,
+.main-navigation ul.menu > li.current-menu-item > a,
+.main-navigation ul.menu > li.current_page_ancestor > a:hover {
+	color: $regular_accent_color_1;
+}
+.main-navigation ul ul a {
+	color: $regular_text_color;
+}
+.main-navigation ul.sub-menu > li > a:hover,
+.main-navigation ul.sub-menu > li.menu-hover > a,
+.main-navigation ul.sub-menu > li.current_page_item > a,
+.main-navigation ul.sub-menu > li.current-menu-item > a,
+.main-navigation ul.sub-menu > li.current_page_ancestor > a:hover {
+	color: $regular_accent_color_1;
+}
+.main-navigation ul.sub-menu {
+	background: $regular_accent_color_3;
+}
+.main-navigation ul ul.sub-menu a {
+    color: $regular_accent_color_2;
+}
+nav.footer-menu ul li:after {
+    color: $invert_text_color;
+}

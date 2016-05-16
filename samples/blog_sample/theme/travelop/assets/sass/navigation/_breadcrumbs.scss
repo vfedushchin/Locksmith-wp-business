@@ -1,0 +1,49 @@
+.breadcrumbs{
+	position: relative;
+	margin: 0 0 10px;
+    .home .widget-area + .container & {
+        margin-top: -17px;
+    }
+		&__title{
+			margin-right: 30px;
+			padding-right: 30px;
+            margin-left: -0.9375rem;
+            @media (max-width: 767px) {
+                margin-left: 0;
+            }
+            @include media-breakpoint-up(md){
+                float: left;
+            }
+				.page-title{
+					margin: 0;
+                    font-size: 1rem;
+                    text-transform: uppercase;
+				}
+		}
+		&__items{
+			float: right;
+            margin-right: -0.9375rem;
+            @media (max-width: 767px) {
+                float: left;
+                margin-top: 5px;
+                margin-right: 0;
+            }
+		}
+		&__browse{
+			float: left;
+			margin-right: 10px;
+		}
+		&__wrap{
+			float: left;
+			margin: 0;
+			@media (min-width: 992px) {
+				margin: 1px 0;
+			}
+		}
+		&__item{
+			float: left;
+				&-sep{
+					margin: 0 10px;
+				}
+		}
+}

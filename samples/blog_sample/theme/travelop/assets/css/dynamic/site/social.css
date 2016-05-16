@@ -1,0 +1,9 @@
+.share-btns__link:hover,
+.social-list a:hover,
+.social-list a:active,
+.share-btns__link:hover,
+.share-btns__link:active {
+	color: $regular_accent_color_2;
+}
+.footer-area .social-list li > a:hover::before { background: $regular_accent_color_2; }
+.social-list--footer li > a:hover { color: $regular_accent_color_1; }

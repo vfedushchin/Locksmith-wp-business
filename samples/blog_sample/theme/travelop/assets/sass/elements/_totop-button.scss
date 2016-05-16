@@ -1,0 +1,51 @@
+#toTop {
+	display: none;
+	text-decoration: none;
+	position: fixed;
+	bottom: 20px;
+	left:-100px;
+	overflow: hidden;
+	width: 60px;
+	height: 60px;
+	border: none;
+	text-indent: 0%;
+	background-color: #fff;
+	z-index: 999;
+	border-radius: 50px;
+	text-align: center;
+	&:before{
+	  	font-family: FontAwesome;
+		top: 0;
+		left: 0;
+		position: relative;
+		display: block;
+		font-size: 43px;
+		content: "\f106";
+	  	color: #fff;
+	}
+
+	@include media-breakpoint-up(sm) {
+		left:auto;
+		right: 20px;
+	}
+	@include media-breakpoint-up(md) {
+		bottom: 80px;
+        width: 78px;
+        height: 78px;
+        &:before {
+            font-size: 52px;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+        }
+	}
+  	span {
+	  display: none;
+	}
+}
+
+#toTop:active, #toTop:focus {
+	outline: none;
+}

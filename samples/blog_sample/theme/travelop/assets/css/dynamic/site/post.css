@@ -1,0 +1,99 @@
+.breadcrumbs__title .page-title {
+    color: $regular_accent_color_1;
+}
+.breadcrumbs .breadcrumbs__item-link {
+    color: $regular_accent_color_2;
+}
+.breadcrumbs .breadcrumbs__item-link:hover {
+    color: $regular_accent_color_1;
+}
+.breadcrumbs .breadcrumbs__item-target {
+    color: $regular_accent_color_1;
+}
+.post__cats a,
+.sticky__label {
+	color: $invert_link_color;
+	background: $regular_accent_color_1;
+}
+.post__cats a:hover{
+	color: $regular_accent_color_2;
+    background-color: $regular_accent_color_3;
+}
+.invert .post__cats a:hover{
+}
+.post .material-icons{
+	color: @alpha($regular_accent_color_1, 30);
+}
+.post-date__link {
+    color: $regular_accent_color_2;
+}
+.post-date__link:hover {
+    color: $regular_accent_color_1;
+}
+.post-author,
+.posted-by,
+.post-featured-content {
+	color: $regular_accent_color_2;
+}
+.post-featured-content.format-quote.invert {
+	color: $invert_text_color;
+	background-color: $regular_accent_color_2;
+}
+.post__tags {
+	color: $regular_link_color;
+}
+.single-post .post__tags {
+    color: $regular_accent_color_2;
+}
+.post-author__holder {
+	background-color: $regular_link_color;
+}
+.post-author__title a:hover {
+	color:$invert_link_hover_color;
+}
+.post-author-bio .post-author__title a:hover {
+    color: $regular_accent_color_2;
+}
+.post-format-link {
+	background-color: $invert_accent_color_1;
+    font-family: $h2_font_family;
+}
+.post.format-link.no-thumb .post-format-link{
+	background-color: $regular_accent_color_1;
+}
+.post-format-quote {
+	color: $invert_text_color;
+}
+.post-format-quote:before,
+.post-format-quote cite,
+#cancel-comment-reply-link,
+.comment-respond .comment-reply-title {
+	color: $regular_accent_color_1;
+}
+
+.comments-area .comments-title,
+.comments-area .comment-metadata .fn {
+    color: $regular_accent_color_1;
+}
+.comments-area .comment-metadata .comment-date {
+    color: $regular_accent_color_2;
+}
+.comments-area .comment-metadata .comment-date:hover {
+    color: $regular_accent_color_1;
+}
+
+#cancel-comment-reply-link:hover {
+	color: $regular_accent_color_2;
+}
+.invert .entry-content ul li:before,
+.invert .post__date:after,
+.invert .post-date:after,
+.invert .post__comments:after,
+.invert .post__tags:after,
+.invert .post .post-author:after,
+.invert .widget_categories ul li:before,
+.invert .widget_archive ul li:before,
+.invert .main-navigation ul.menu > li > a:after,
+.invert .comments-area .comment-metadata .fn::after {
+    color: $invert_text_color;
+}

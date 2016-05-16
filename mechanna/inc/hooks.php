@@ -396,3 +396,12 @@ function filter_ptags_on_images($content){
 }
 
 add_filter('the_content', 'filter_ptags_on_images');
+
+
+// add carousel scripts and styles
+add_action( 'wp_enqueue_scripts', 'enqueue_assets', 9 );
+
+function enqueue_assets() {
+	wp_enqueue_style( 'jquery-swiper' );
+	wp_enqueue_script( 'jquery-swiper' );
+}

@@ -188,7 +188,7 @@ if ( ! class_exists( 'Mechanna_Theme_Setup' ) ) {
 							'gallery_args'            => array(
 								'size'           => 'mechanna-thumb-l',
 								'base_class'     => 'post-gallery',
-								'container'      => '<div class="%2$s swiper-container" id="%4$s" %3$s><div class="swiper-wrapper">%1$s</div><div class="swiper-button-prev"><i class="material-icons">navigate_before</i></div><div class="swiper-button-next"><i class="material-icons">navigate_next</i></div></div>',
+								'container'      => '<div class="%2$s swiper-container" id="%4$s" %3$s><div class="swiper-wrapper">%1$s</div><div class="swiper-button-prev"><i class="fa fa-caret-left"></i></div><div class="swiper-button-next"><i class="fa fa-caret-right"></i></div></div>',
 								'slide'          => '<figure class="%2$s swiper-slide">%1$s</figure>',
 								'img_class'      => 'swiper-image',
 								'slider_handle'  => 'jquery-swiper',

@@ -1,0 +1,21 @@
+.container {
+	&.site-header,
+	&.site-content,
+	&.site-footer {
+		> .container {
+			@include reset-container();
+		}
+	}
+}
+
+// Theme specific
+.layout-fullwidth .site-header,
+.layout-fullwidth .site-footer {
+	&.container {
+		max-width: 100%;
+		padding: 0;
+	}
+}
+.layout-boxed .top-panel .container {
+    padding: 0;
+}

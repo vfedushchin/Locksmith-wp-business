@@ -1,0 +1,19 @@
+.pagination a.page-numbers {
+	color: $regular_accent_color_2;
+    background-color: #fff;
+}
+.pagination a.page-numbers:hover,
+.pagination span.page-numbers.current {
+	color: #fff;
+	background: $regular_accent_color_1;
+}
+.pagination .page-numbers.next,
+.pagination .page-numbers.prev {
+	color: $regular_accent_color_2;
+    background-color: #fff;
+}
+.pagination .page-numbers.next:hover,
+.pagination .page-numbers.prev:hover {
+    color: #fff;
+	background: $regular_accent_color_2;
+}

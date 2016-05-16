@@ -1,0 +1,184 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+body {
+	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+}
+
+blockquote, q {
+	quotes: "" "";
+
+	&:before,
+	&:after {
+		content: "";
+	}
+}
+.widget blockquote {
+    text-align: center;
+    &:before {
+        display: none;
+    }
+}
+.widget.widget_text blockquote {
+    margin: -12px -10px;
+    padding: 24px 10px;
+    @include media-breakpoint-up(sm) {
+        margin: -10px -10px;
+        padding: 24px 40px 35px;
+    }
+    @include media-breakpoint-up(md) {
+        margin: -12px -10px;
+        padding: 24px 10px;
+    }
+    @include media-breakpoint-up(lg) {
+        margin: -20px -40px -35px;
+        padding: 30px 40px 40px;
+    }
+}
+.widget.widget_text .textwidget blockquote,
+.widget.widget_text .textwidget blockquote cite {
+    color: #fff;
+}
+.widget.widget_text .textwidget blockquote cite {
+    @include font-size(0.875);
+}
+blockquote, .single-format-quote .post .entry-content blockquote {
+	position: relative;
+	margin:0;
+    text-align: center;
+    font-style: italic;
+    line-height: 1.25;
+    @include font-size(1);
+    text-align: center;
+    padding: 0px 20px 19px;
+    @include media-breakpoint-up(sm){
+        @include font-size(1.750);
+        padding: 0px 40px 19px;
+    }
+    &:before {
+        display: none;
+    }
+    p {
+        margin-left: 0;
+    }
+	.posts-list--grid-2-cols &,
+	.posts-list--masonry-2-cols & {
+		@include font-size(1);
+        padding: 55px 30px 65px;
+	}
+	cite {
+		display: block;
+        margin-top: 17px;
+        @include font-size(0.875);
+        @include media-breakpoint-up(sm){
+            @include font-size(1.125);
+        }
+		&:before {
+			content: "";
+		}
+	}
+    @include media-breakpoint-up(lg) {
+        text-align: left;
+        p {
+            margin-left: 53px;
+        }
+        &:before {
+            display: block;
+            font-style: normal;
+            content: "\275d";
+            margin: -5px 0 0 0;
+            font-size: 80px;
+            line-height: 1;
+            position: absolute;
+            @include media-breakpoint-up(lg) {
+                font-size: 90px;
+                height: 71px;
+            }
+        }
+    }
+}
+blockquote.post-format-quote,
+.single-format-quote blockquote {
+    padding: 50px 30px;
+    @include font-size(1.5);
+    text-align: center;
+    color: #fff;
+    @include media-breakpoint-up(lg) {
+        padding: 100px 60px 119px 60px;
+        @include font-size(2.125);
+    }
+    &:before {
+        content: "\275d";
+        position: relative;
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 65px;
+        height: 55px;
+        @include media-breakpoint-up(lg) {
+            font-size: 80px;
+            height: auto;
+        }
+    }
+    cite {
+        margin-top: 24px;
+    }
+}
+
+.single-format-quote blockquote p {
+    margin-left: 0;
+}
+
+.posts-list--grid-2-cols,
+.posts-list--masonry-2-cols,
+.posts-list--grid-3-cols,
+.posts-list--masonry-3-cols {
+    .entry-content {
+      blockquote {
+        padding: 20px 15px 10px 50px;
+        @include font-size(1);
+        @media  (min-width: 768px) and (max-width: 991px){
+          padding-left: 15px;
+        }
+        p {
+          margin-left: 0;
+        }
+        &:before {
+          font-size: 52px;
+          left: 10px;
+        }
+      }
+    }
+}
+
+
+hr {
+	background-color: $color__background-hr;
+	border: 0;
+	height: 1px;
+    margin: 35px -10px 35px;
+    clear: both;
+	@include media-breakpoint-up(lg) {
+		margin-right: 0;
+		margin-left: 0;
+	}
+}
+
+code {
+	padding:2px 5px;
+}
+
+@import "lists";
+
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+}
+
+@import "tables";

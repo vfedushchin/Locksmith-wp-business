@@ -1,0 +1,19 @@
+.widget-banner {
+	&__link {
+		display: block;
+	}
+	&__img {
+		width: 100%;
+		vertical-align: top;
+	}
+}
+.sidebar-primary .widget,
+.sidebar-secondary .widget,
+.before-content-area .widget,
+.after-content-area .widget,
+.before-loop-area .widget,
+.after-loop-area .widget {
+    &.widget-banner {
+        padding: 0;
+    }
+}

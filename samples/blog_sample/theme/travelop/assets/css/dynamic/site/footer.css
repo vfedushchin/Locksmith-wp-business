@@ -1,0 +1,14 @@
+.site-footer .footer-area-wrap,
+.site-footer .footer-container {
+	background-color: $footer_bg;
+}
+.footer-area-wrap {
+	background-color: $footer_widgets_bg;
+}
+
+.site-footer a:hover, .site-footer a:focus,	.site-footer a:active { color: $regular_text_color; }
+.footer-menu__items li.current-menu-item a,
+.footer-menu__items li.current_page_item a,
+.footer-menu__items li a:hover{
+	color: $regular_accent_color_1;
+}

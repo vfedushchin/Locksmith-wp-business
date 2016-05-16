@@ -5,16 +5,14 @@ h1, h2, h3, h4, h5, h6 {
 
 
 @media (min-width: 991px) {
-	p+ h1 { margin: -3px 0 29px; }
-	p+ h2 { margin: 40px 0 19px; }
-	p+ h3 { margin: 46px 0 22px; }
-	p+ h4 { margin: 46px 0 12px; }
-	p+ h5 { margin: 15px 0 12px; }
-	p+ h6 { margin: 48px 0 12px; }
+	p + h1 { margin: -3px 0 29px; }
+	p + h2 { margin: 22px 0 22px; }
+	p + h3 { margin: 24px 0 14px; }
+	p + h4 { margin: 24px 0 15px; }
+	p + h5 { margin: 26px 0 14px; }
+	p + h6 { margin: 25px 0 15px; }
 
-	p + h5 {
-		margin-top: 44px;
-	}
+	h5 + h1 { margin: -8px 0 22px; }
 
 	.entry-content {
 		h1:first-child,

@@ -4,7 +4,11 @@ p {
 
 .lh2 {
 	@media (min-width: 991px) {
-		line-height: 37px;
+		line-height: 36px;
+
+		h6 + & {
+			margin-top: -7px;
+		}
 	}
 }
 

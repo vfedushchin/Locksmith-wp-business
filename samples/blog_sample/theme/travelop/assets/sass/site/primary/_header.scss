@@ -1,0 +1,136 @@
+.site-header {
+	margin-bottom: 15px;
+}
+.header-container {
+	padding: 24px 0.9375rem 0 0.9375rem;
+}
+
+.isStuck {
+    &.header-container {
+        padding-top: 0;
+    }
+}
+.isStuck {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 9999;
+    @include card;
+}
+header.site-header {
+    &.centered, &.default, &.minimal {
+        .main-navigation {
+            @media (min-width: 600px) {
+                &.isStuck {
+                    padding: 0;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+            &.isStuck ul.menu {
+                margin-top: 20px;
+            }
+        }
+    }
+    &.default {
+        .main-navigation {
+            @media (min-width: 600px) {
+                &.isStuck {
+                    padding-left: 0.9375rem;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 37.5em) {
+	header.site-header {
+		&.centered, &.default {
+			.header-container_wrap {
+				display: -webkit-flex;
+				display: flex;
+				-webkit-flex-direction: row;
+				flex-direction: row;
+				-webkit-flex-wrap: wrap;
+				flex-wrap: wrap;
+				-ms-flex-pack: justify;
+				-webkit-justify-content: space-between;
+				justify-content: space-between;
+				-ms-flex-line-pack: stretch;
+				-webkit-align-content: stretch;
+				align-content: stretch;
+				-ms-flex-align: start;
+				-webkit-align-items: flex-start;
+				align-items: flex-start;
+					@media screen and (min-width: 37.5em) {
+						flex-wrap: no-wrap;
+					}
+                .social-list, .site-description {
+                    text-align: center;
+                }
+			}
+		}
+		.top-panel__message {
+			display:none;
+		}
+		.header-container {
+			padding: 20px 10px 0;
+			.site-branding {
+				-webkit-flex: 0 1 100%;
+						flex: 0 1 100%;
+				-webkit-order: 2;
+						order: 2;
+
+				margin-right:0;
+				padding:0 0 15px;
+				text-align:left;
+			}
+			.social-list {
+				-webkit-flex: 0 1 100%;
+						flex: 0 1 100%;
+				-webkit-order: 1;
+						order: 1;
+
+				text-align:left;
+				padding:0 0 10px;
+			}
+			.main-navigation {
+				-webkit-order: 1;
+						order: 1;
+				padding:0;
+			}
+		}
+	}
+    .menu-toggle {
+        position:absolute;
+        top:5px;
+        left: 35px;
+        background: none;
+        .admin-bar & {
+            top: 51px;
+        }
+    }
+}
+header.site-header {
+    &.centered, &.default, &.minimal {
+        @media (max-width: 599px) {
+            .main-navigation {
+                -webkit-order: 1;
+                order: 1;
+            }
+            .social-list {
+                margin-bottom: 5px;
+                -webkit-order: 3;
+                order: 3;
+            }
+        }
+    }
+}
+
+
+@import "header/layout-default";
+@import "header/layout-centered";
+@import "header/layout-minimal";
+@import "header/top-panel";
+@import "header/logo";

@@ -16,6 +16,9 @@
 		text-align: center;
 		text-decoration: none;
 		margin-right: 10px;
+		@include media-breakpoint-up(lg) {
+			margin-right: 25px;
+		}
 
 		@include font-size(1);
 		&:hover {

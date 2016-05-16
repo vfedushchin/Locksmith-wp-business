@@ -1,0 +1,119 @@
+.search-form {
+	margin: 0;
+	padding: 10px 0;
+    @media (max-width: 599px) {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-align-content: stretch;
+        align-content: stretch;
+        -webkit-align-items: flex-start;
+        align-items: flex-start;
+        label {
+            min-width: calc(100% - 50px);
+            -webkit-order: 0;
+            order: 0;
+            -webkit-flex: 0 1 auto;
+            flex: 1 1 0;
+            -webkit-align-self: auto;
+            align-self: auto;
+        }
+        .search-form__field {
+            width: 100%;
+        }
+        .search-form__submit {
+            -webkit-order: 0;
+            order: 1;
+            -webkit-flex: 0 1 auto;
+            flex: 0 1 auto;
+            -webkit-align-self: auto;
+            align-self: auto;
+        }
+    }
+
+	.top-panel & {
+		padding: 0;
+	}
+	&:after {
+		clear: both;
+		content: "";
+		width: 100%;
+		display: block;
+	}
+	&__field[type="search"] {
+		float: left;
+		vertical-align: top;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -khtml-border-radius: 50%;
+        border-radius: 0;
+		width: calc(100% - 50px);
+		box-sizing: border-box;
+        -webkit-appearance: none;
+        appearance: none;
+		.top-panel & {
+			background: none;
+			border: none;
+			padding: 6px 20px;
+			box-shadow: none;
+			width: 150px;
+			font-weight: 500;
+			font-style: italic;
+            @media (max-width: 599px) {
+                width: 100%;
+            }
+		}
+	}
+	&__submit {
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+		vertical-align: top;
+		float: left;
+		min-width: 50px;
+		padding-left: 0;
+		padding-right: 0;
+        @media (max-width: 599px) {
+            float: right;
+        }
+		i.material-icons {
+			margin: 0 auto;
+			display: block;
+			@include font-size( 1.375 );
+			line-height: 20px;
+			height: 20px;
+            @media (min-width: 768px) {
+                .top-panel & {
+                    margin: 0 auto;
+                }
+            }
+		}
+		.top-panel & {
+			padding: 4px 0;
+			background: none;
+			&:hover {
+				background: none;
+			}
+			&:active,
+			&:focus,
+			&:hover {
+				box-shadow: none;
+			}
+		}
+	}
+}
+.error404, .widget {
+    @media (max-width: 599px) {
+        .search-form__field[type="search"] {
+            width: 100%;
+        }
+        .search-form__submit {
+           flex: none;
+        }
+    }
+}
