@@ -24,9 +24,15 @@ function mechanna_get_template_part_name(){
 
 	$format = get_post_format();
 
-	if ( in_array( $layout, array( 'default', 'grid-masonry' ) ) ) {
+
+	if ( in_array( $layout, array( '', 'default', 'grid-masonry' ) ) ) {
 		if ( $format ) {
-			$layout .= '-' . $format;
+			if ($layout == '') {
+				$layout .= '' . $format;
+			}
+			else {
+				$layout .= '-' . $format;
+			}
 		}
 	}
 

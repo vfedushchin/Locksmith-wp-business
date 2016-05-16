@@ -92,7 +92,7 @@ function mechanna_set_thumb_sizes( $size ) {
 	}
 
 	$layout = get_theme_mod( 'blog_layout_type', mechanna_theme()->customizer->get_default( 'blog_layout_type' ) );
-	var_dump($layout);
+
 
 	if ( 'grid-2-cols' === $layout && ! ( is_sticky() && is_home() && ! is_paged() ) ) {
 		return 'mechanna-thumb-m';
@@ -106,7 +106,6 @@ function mechanna_set_thumb_sizes( $size ) {
 	if ( 'default' !== $layout && ! ( is_sticky() && is_home() && ! is_paged() ) ) {
 		return 'post-thumbnail';
 	}
-
 
 
 	return 'mechanna-thumb-l';
