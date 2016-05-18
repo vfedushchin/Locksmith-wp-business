@@ -19,6 +19,7 @@ function mechanna_share_buttons( $context = 'loop', $args = array(), $config = a
 		$meta = 'single_post_share_buttons';
 	}
 
+
 	if ( ! mechanna_is_meta_visible( $meta, $context ) ) {
 		return;
 	}
@@ -122,4 +123,69 @@ function mechanna_share_buttons( $context = 'loop', $args = array(), $config = a
 		esc_attr( $config['custom_class'] ),
 		$share_buttons
 	);
+}
+
+
+
+
+
+
+/**
+ * Prints HTML with meta information for the current post comments.
+ *
+ * @since  1.0.0
+ * @param  string $context Current post context - 'single' or 'loop'.
+ * @param  array  $args    Arguments array.
+ * @return void
+ */
+function mechanna_meta_comments( $context = 'loop', $args = array() ) {
+
+	if ( post_password_required() || ! comments_open() ) {
+		return;
+	}
+
+	if ( 'loop' == $context ) {
+		$meta = 'blog_post_comments';
+	} else {
+		$meta = 'single_post_comments';
+	}
+
+	if ( ! mechanna_is_meta_visible( $meta, $context ) ) {
+		return;
+	}
+
+	$args = wp_parse_args( $args, array(
+		'container' => 'span',
+		'before'    => '',
+		'after'     => '',
+		'zero'      => '',
+		'one'       => '',
+		'plural'    => '',
+	) );
+
+	/**
+	 * Filter post comments output format.
+	 *
+	 * @var string
+	 */
+	$comments_format = apply_filters(
+		'mechanna_meta_comments_format',
+		'<%1$s class="post__comments">%2$s%4$s%3$s</%1$s>',
+		$context
+	);
+
+	ob_start();
+	comments_popup_link(
+		esc_html( $args['zero'] ), esc_html( $args['one'] ), esc_html( $args['plural'] ), 'post-comments__link'
+	);
+	$comments_link = ob_get_clean();
+
+	printf(
+		$comments_format,
+		esc_attr( $args['container'] ),
+		$args['before'],
+		$args['after'],
+		$comments_link
+	);
+
 }

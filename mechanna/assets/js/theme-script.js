@@ -29,6 +29,7 @@
 			self.post_formats_custom_init( self );
 			self.navbar_init( self );
 			self.subscribe_init( self );
+			self.search_trigger(self);
 			self.main_menu( self, $( '.main-navigation' ) );
 			self.to_top_init( self );
 		},
@@ -231,6 +232,36 @@
 
 			});
 		},
+
+
+		search_trigger: function (self) {
+
+				var toggle = $(".search__toggle"),
+						container = $(".top-panel");
+
+				toggle.on("click", toggle, function () {
+						if (container.hasClass("srch-on")) {
+								container.removeClass("srch-on");
+
+						} else {
+								container.addClass("srch-on");
+								setTimeout(function(){ $(".header__search .search-form__field").focus();}, 300);
+						}
+				});
+
+				$(document).click(function (event) {
+						if ($(event.target).closest(toggle).length || $(event.target).closest(container).length)
+								return;
+
+						if (container.hasClass("srch-on"))
+								container.removeClass("srch-on");
+
+						event.stopPropagation();
+				});
+
+		},
+
+
 
 		subscribe_init: function( self ) {
 			CherryJsCore.variable.$document.on( 'click', '.subscribe-block__submit', function( event ){
@@ -467,40 +498,40 @@
 =============================================*/
 // ------------------------------------------------------------------------
 function setCookie(name, value, options) {
-    options = options || {};
-    var expires = options.expires;
-    if (typeof expires == "number" && expires) {
-        var d = new Date();
-        d.setTime(d.getTime() + expires * 1000);
-        expires = options.expires = d;
-    }
-    if (expires && expires.toUTCString) {
-        options.expires = expires.toUTCString();
-    }
-    value = encodeURIComponent(value);
-    var updatedCookie = name + "=" + value;
-    for (var propName in options) {
-        updatedCookie += "; " + propName;
-        var propValue = options[propName];
-        if (propValue !== true) {
-            updatedCookie += "=" + propValue;
-        }
-    }
-    document.cookie = updatedCookie;
+		options = options || {};
+		var expires = options.expires;
+		if (typeof expires == "number" && expires) {
+				var d = new Date();
+				d.setTime(d.getTime() + expires * 1000);
+				expires = options.expires = d;
+		}
+		if (expires && expires.toUTCString) {
+				options.expires = expires.toUTCString();
+		}
+		value = encodeURIComponent(value);
+		var updatedCookie = name + "=" + value;
+		for (var propName in options) {
+				updatedCookie += "; " + propName;
+				var propValue = options[propName];
+				if (propValue !== true) {
+						updatedCookie += "=" + propValue;
+				}
+		}
+		document.cookie = updatedCookie;
 };
 
 // ------------------------------------------------------------------------
 function getCookie(name) {
-    var matches = document.cookie.match(new RegExp(
-        "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
-    ));
-    return matches ? decodeURIComponent(matches[1]) : undefined;
+		var matches = document.cookie.match(new RegExp(
+				"(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+		));
+		return matches ? decodeURIComponent(matches[1]) : undefined;
 };
 // ------------------------------------------------------------------------
 function deleteCookie(name) {
-    setCookie(name, "", {
-        expires: -1
-    });
+		setCookie(name, "", {
+				expires: -1
+		});
 };
 // ------------------------------------------------------------------------
 var _display_screen_class;
@@ -508,21 +539,21 @@ _display_screen_class = getCookie('_display_screen_class');
 
 
 ;(function ($) {
-    $("body").prepend("<div class='preview-container pr-bg-1'><div class='preview-container_bg'></div></div>");
-    $('.preview-container').addClass(_display_screen_class);
-    addEventListener("keydown", function(event) {
-        if (event.keyCode == 81 && event.ctrlKey) {
-            //press Ctl+q to show/hide screenshort
-            // $('.preview-container').toggleClass('display');
-            if ($('.preview-container').hasClass("display")) {
-                $('.preview-container').removeClass('display');
-                setCookie('_display_screen_class', '');
-            } else {
-                $('.preview-container').addClass('display');
-                setCookie('_display_screen_class', 'display');
-            }
-        }
-    });
+		$("body").prepend("<div class='preview-container pr-bg-1'><div class='preview-container_bg'></div></div>");
+		$('.preview-container').addClass(_display_screen_class);
+		addEventListener("keydown", function(event) {
+				if (event.keyCode == 81 && event.ctrlKey) {
+						//press Ctl+q to show/hide screenshort
+						// $('.preview-container').toggleClass('display');
+						if ($('.preview-container').hasClass("display")) {
+								$('.preview-container').removeClass('display');
+								setCookie('_display_screen_class', '');
+						} else {
+								$('.preview-container').addClass('display');
+								setCookie('_display_screen_class', 'display');
+						}
+				}
+		});
 })(jQuery);
 /* end for screenshort image - developing
 =============================================*/

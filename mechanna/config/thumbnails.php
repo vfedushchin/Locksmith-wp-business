@@ -12,7 +12,9 @@ function mechanna_register_image_sizes() {
 	// Registers a new image sizes.
 	add_image_size( 'mechanna-thumb-s', 150, 150, true );
 	add_image_size( 'mechanna-thumb-m', 370, 400, true );
+	add_image_size( 'mechanna-thumb-m2', 370, 480, true );
 	add_image_size( 'mechanna-thumb-l', 770, 402, true );
+	add_image_size( 'mechanna-thumb-l2', 770, 500, true );
 	add_image_size( 'mechanna-thumb-xl', 1170, 780, true );
 	add_image_size( 'mechanna-thumb-xxl', 1920, 1080, true );
 	add_image_size( 'mechanna-author-avatar', 512, 512, true );

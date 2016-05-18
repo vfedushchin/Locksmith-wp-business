@@ -30,18 +30,29 @@
 	color: $invert_text_color;
 	background-color: $regular_accent_color_2;
 }
+.has-thumb .post-thumbnail__format-link,
 .post-format-link,
 .post-format-link:hover {
 	color: $invert_link_color;
 	background-color: @alpha( $regular_accent_color_1, 80 );
 }
+.has-thumb .post-thumbnail__format-link .post-format-link{
+	background: none;
+}
+
 
 /* #Author Bio */
 .post-author__holder {
-	background-color: $regular_link_color;
+	background-color: $regular_accent_color_3;
+	font-size: 18px;
+	line-height: 28px;
 }
 .post-author__title a:hover {
 	color: $invert_link_hover_color;
+}
+
+.comments-area {
+	background-color: $regular_accent_color_3;
 }
 
 /* #Comment Reply Link */
@@ -50,4 +61,13 @@
 }
 #cancel-comment-reply-link:hover {
 	color: $regular_accent_color_2;
+}
+
+/*audio player*/
+.mejs-container.mejs-audio {
+	max-width: 651px ;
+	margin-bottom: 10px;
+}
+.mejs-controls .mejs-time-rail .mejs-time-current {
+	background: $regular_accent_color_1 !important;
 }

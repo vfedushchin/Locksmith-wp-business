@@ -30,9 +30,17 @@ if ( post_password_required() ) {
 		<h3 class="comments-title">
 			<?php
 				printf( // WPCS: XSS OK.
-					esc_html( _nx( 'One Response', '%1$s Responses', get_comments_number(), 'comments title', 'mechanna' ) ),
+					esc_html( _nx( 'One Review for', '%1$s Reviews for', get_comments_number(), 'comments title', 'mechanna' ) ),
 					number_format_i18n( get_comments_number() )
 				);
+			?>
+			<?php
+				$utility = mechanna_utility()->utility;
+				$utility->attributes->get_title( array(
+					'class' => 'entry-title',
+					'html'  => '%4$s',
+					'echo'  => true,
+					) );
 			?>
 		</h3>
 
@@ -52,7 +60,7 @@ if ( post_password_required() ) {
 			<?php
 				wp_list_comments( array(
 					'style'       => 'ol',
-					'avatar_size' => 98,
+					'avatar_size' => 72,
 					'short_ping'  => true,
 					'callback'    => 'mechanna_rewrite_comment_item',
 				) );

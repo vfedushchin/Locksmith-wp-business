@@ -15,7 +15,7 @@ if ( ! mechanna_is_top_panel_visible() ) {
 <div class="top-panel">
 	<div <?php echo mechanna_get_container_classes( array( 'top-panel__wrap' ) ); ?>><?php
 		mechanna_top_message( '<div class="top-panel__message">%s</div>' );
-		mechanna_top_search( '<div class="top-panel__search">%s</div>' );
+		mechanna_top_search( '<div class="header__search">%s<label for="s"><span class="search__toggle fa  fa-search"></span></label></div>' );
 		mechanna_top_menu();
 	?></div>
 </div><!-- .top-panel -->

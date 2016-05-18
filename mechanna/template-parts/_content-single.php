@@ -11,17 +11,9 @@
 
 	<?php $utility = mechanna_utility()->utility; ?>
 
-
-	<figure class="post-thumbnail">
-		<?php $utility->media->get_image( array(
-				'size'        => 'mechanna-thumb-l2',
-				'html'        => '<img class="post-thumbnail__img wp-post-image" src="%3$s" alt="%4$s">',
-				'placeholder' => false,
-				'echo'        => true,
-			) );
-		?>
-
+	<header class="entry-header">
 		<?php $cats_visible = mechanna_is_meta_visible( 'single_post_categories', 'single' ) ? 'true' : 'false'; ?>
+
 		<?php $utility->meta_data->get_terms( array(
 				'visible' => $cats_visible,
 				'type'    => 'category',
@@ -31,12 +23,6 @@
 				'echo'    => true,
 			) );
 		?>
-	</figure><!-- .post-thumbnail -->
-
-
-
-	<header class="entry-header">
-
 
 		<?php $utility->attributes->get_title( array(
 				'class' => 'entry-title',
@@ -52,7 +38,7 @@
 				<?php $utility->meta_data->get_author( array(
 						'visible' => $author_visible,
 						'class'   => 'posted-by__author',
-						'prefix'  => esc_html__( 'by ', 'mechanna' ),
+						'prefix'  => esc_html__( 'Posted by ', 'mechanna' ),
 						'html'    => '<span class="posted-by">%1$s<a href="%2$s" %3$s %4$s rel="author">%5$s%6$s</a></span>',
 						'echo'    => true,
 					) );
@@ -63,35 +49,22 @@
 						$utility->meta_data->get_date( array(
 							'visible' => $date_visible,
 							'class'   => 'post__date-link',
-							'icon'    => '',
+							'icon'    => '<i class="material-icons">event</i>',
 							'echo'    => true,
 						) );
 					?>
 				</span>
+				<span class="post__comments">
+					<?php $comment_visible = mechanna_is_meta_visible( 'single_post_comments', 'single' ) ? 'true' : 'false';
 
-				<!-- <span class="post__comments"> -->
-					<?php
-						mechanna_meta_comments( 'single', array(
-										'before' => '',
-										'zero'   => esc_html__( '0 comments', 'mechanna' ),
-										'one'    => esc_html__( '1 comment', 'mechanna' ),
-										'plural' => '% ' . esc_html__( 'comments', 'mechanna' ),
-								) );
+						$utility->meta_data->get_comment_count( array(
+							'visible' => $comment_visible,
+							'class'   => 'post__comments-link',
+							'icon'    => '<i class="material-icons">mode_comment</i>',
+							'echo'    => true,
+						) );
 					?>
-				<!-- </span> -->
-
-				<?php $tags_visible = mechanna_is_meta_visible( 'single_post_tags', 'single' ) ? 'true' : 'false'; ?>
-
-				<?php $utility->meta_data->get_terms( array(
-						'visible'   => $tags_visible,
-						'type'      => 'post_tag',
-						'delimiter' => ', ',
-						'icon'      => '',
-						'before'    => '<span class="post__tags">',
-						'after'     => '</span>',
-						'echo'      => true,
-					) );
-				?>
+				</span>
 			</div><!-- .entry-meta -->
 
 		<?php endif; ?>
@@ -100,7 +73,15 @@
 
 	<?php mechanna_ads_post_before_content() ?>
 
-
+	<figure class="post-thumbnail">
+		<?php $utility->media->get_image( array(
+				'size'        => 'mechanna-thumb-l',
+				'html'        => '<img class="post-thumbnail__img wp-post-image" src="%3$s" alt="%4$s">',
+				'placeholder' => false,
+				'echo'        => true,
+			) );
+		?>
+	</figure><!-- .post-thumbnail -->
 
 	<div class="entry-content">
 		<?php the_content(); ?>
@@ -116,14 +97,20 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<div class="entry-footer__share-block">
-			<?php
-				if ( mechanna_is_meta_visible( 'single_post_share_buttons', 'single' ) ) {
-					echo '<h6>' . __( 'Like this post? Share it!', 'mechanna' ) . '</h6>';
-				}
-				mechanna_share_buttons( 'single' );
-			?>
-		</div> <!-- .entry-footer__share-block -->
+		<?php $tags_visible = mechanna_is_meta_visible( 'single_post_tags', 'single' ) ? 'true' : 'false'; ?>
+
+		<?php $utility->meta_data->get_terms( array(
+				'visible'   => $tags_visible,
+				'type'      => 'post_tag',
+				'delimiter' => ', ',
+				'icon'      => '<i class="material-icons">folder_open</i>',
+				'before'    => '<div class="post__tags">',
+				'after'     => '</div>',
+				'echo'      => true,
+			) );
+		?>
+
+		<?php mechanna_share_buttons( 'single' ); ?>
 	</footer><!-- .entry-footer -->
 
 </article><!-- #post-## -->

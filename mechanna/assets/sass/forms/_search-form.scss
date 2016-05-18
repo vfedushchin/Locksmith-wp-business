@@ -1,4 +1,11 @@
 .search-form {
+	position: relative;
+	.widget-title + & {
+		@include media-breakpoint-up(lg) {
+			margin-top: 35px;
+			margin-bottom: 50px;
+		}
+	}
 	margin: 0;
 	padding: 0;
 	.top-panel & {
@@ -18,24 +25,49 @@
 	&__field[type='search'] {
 		float: left;
 		box-sizing: border-box;
-		width: calc(100% - 50px);
+		width: 100%;
+		@include media-breakpoint-up(xl) {
+			width: calc(100% - 80px);
+		}
+		padding-right: 35px;
 		.top-panel & {
 			width: 150px;
-			height: 30px;
-			padding: 7px;
+			height: 40px;
+			padding: 5px 10px;
+			line-height: 30px;
+			color: #fff;
 			border: none;
 			background: none;
+
+			&::-webkit-input-placeholder {color:#fff;}
+			&::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
+			&:-moz-placeholder           {color:#fff;}/* Firefox 18- */
+			&:-ms-input-placeholder      {color:#fff;}
+
 			&:focus {
 				box-shadow: none;
 			}
 		}
 	}
 	&__submit {
-		float: left;
-		width: 50px;
+		width: 30px;
 		padding-right: 0;
 		padding-left: 0;
 		border: none;
+		position: absolute;
+		.site-footer &.btn.btn-primary,
+		.site-content &.btn.btn-primary {
+			top: 3px;
+			right: 13px;
+			@include media-breakpoint-up(xl) {
+				right: 93px;
+			}
+			background: none;
+			color: #000;
+			&:hover {
+				opacity: 0.5;
+			}
+		}
 
 		&:after {
 			content: "\f002";

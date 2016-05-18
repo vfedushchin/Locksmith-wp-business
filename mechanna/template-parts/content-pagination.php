@@ -5,7 +5,7 @@
  * @package Mechanna
  */
 the_posts_pagination( array(
-		'prev_text' => '<i class="material-icons">navigate_before</i>',
-		'next_text' => '<i class="material-icons">navigate_next</i>'
+		'prev_text' => '<i class="fa fa-caret-left"></i>',
+		'next_text' => '<i class="fa fa-caret-right"></i>'
 	)
 );

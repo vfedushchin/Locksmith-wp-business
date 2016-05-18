@@ -22,6 +22,8 @@ function mechanna_get_template_part_name(){
 			break;
 	}
 
+	$layout = '';
+
 	$format = get_post_format();
 
 
@@ -275,6 +277,7 @@ function mechanna_post_thumbnail_size( $args = array() ) {
 	$size        = $args[ $size_option ];
 	$link_class  = sanitize_html_class( $args['class_prefix'] . $size_option );
 
+
 	if ( 'default' !== $layout
 		|| is_single()
 		|| is_sticky()
@@ -283,6 +286,27 @@ function mechanna_post_thumbnail_size( $args = array() ) {
 		$size       = $args['fullwidth'];
 		$link_class = $args['class_prefix'] . 'fullwidth';
 	}
+
+
+	$layout = get_theme_mod( 'blog_layout_type', mechanna_theme()->customizer->get_default( 'blog_layout_type' ) );
+	$format = get_post_format();
+	switch ( $layout ) {
+		case 'default':
+			$layout = '';
+			break;
+
+		case 'grid-2-cols':
+		case 'grid-3-cols':
+		case 'masonry-2-cols':
+		case 'masonry-3-cols':
+			$size = 'mechanna-thumb-m';
+
+			if ( 'gallery' === $format) {
+				$size = 'mechanna-thumb-m2';
+			}
+			break;
+	}
+
 
 	return array(
 		'size'  => $size,

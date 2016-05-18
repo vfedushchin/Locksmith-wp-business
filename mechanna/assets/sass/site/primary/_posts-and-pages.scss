@@ -13,13 +13,19 @@
 --------------------------------------------------------------*/
 .hentry {
 	position: relative;
-	margin-top: 3em;
+	margin-top: 1.2em;
 	// margin-top: -1.3em;
+	@include media-breakpoint-up(lg) {
+		margin-bottom: 4.2em;
+	}
+	.single & {
+		margin-bottom: 2.1em;
+	}
 
 	@include card;
 	&:last-child {
 		.posts-list & {
-			margin-bottom: 3em;
+			margin-bottom: 4em;
 		}
 	}
 	.card-columns & {
@@ -40,10 +46,11 @@
 --------------------------------------------------------------*/
 .entry {
 	&-title {
-		font-size: 20px;
+		font-size: 28px;
 		&:first-child {
 			.entry-header & {
 				margin-top: 0;
+				margin-bottom: 11px;
 			}
 		}
 		.posts-list--default & {
@@ -68,13 +75,14 @@
 			height: 3px;
 			background: #8d8d8f;
 			border-radius: 50%;
-			margin-right: 5px;
+			margin-left: 3px;
+			margin-right: 4px;
 		}
 	}
 	&-summary,
 	&-content {
 		.posts-list & {
-			display: none;
+			// display: none;
 
 			@include media-breakpoint-up(md) {
 				display: block;
@@ -89,9 +97,9 @@
 	}
 	&-footer {
 		position: relative;
-		margin-top: 1em;
+		margin-top: 0;
 		.btn {
-			float: right;
+			float: left;
 		}
 	}
 }
@@ -118,7 +126,7 @@
 			display: inline-block;
 			vertical-align: top;
 			.entry-header + .post-thumbnail > & {
-				margin-top: 25px;
+				// margin-top: 25px;
 			}
 		}
 		&--fullwidth {
@@ -127,7 +135,7 @@
 				margin-bottom: 1em;
 
 				@include media-breakpoint-up(lg) {
-					margin-bottom: 1.5em;
+					margin-bottom: 1.3em;
 				}
 			}
 		}
@@ -155,6 +163,33 @@
 				}
 			}
 		}
+
+		.single .post-thumbnail img + & {
+			position: absolute;
+			z-index: 99;
+			top: 10px;
+			left: 10px;
+			right: 10px;
+
+			@include media-breakpoint-up(lg) {
+				left: 20px;
+				top: 20px;
+			}
+		}
+
+
+		.post-gallery + & {
+			position: absolute;
+			z-index: 99;
+			top: 10px;
+			left: 10px;
+			right: 10px;
+
+			@include media-breakpoint-up(lg) {
+					left: 20px;
+					top: 20px;
+				}
+		}
 		.post-format-wrap & {
 			position: absolute;
 			z-index: 99;
@@ -162,8 +197,8 @@
 			left: 10px;
 
 			@include media-breakpoint-up(lg) {
-				top: 30px;
-				left: 30px;
+				top: 20px;
+				left: 20px;
 			}
 		}
 	}
@@ -185,10 +220,9 @@
 	}
 	&__date,
 	&__comments {
-		margin-right: 15px;
+		margin-right: 1px;
 		.single & {
 			margin-right: 0;
-			margin-left: 15px;
 		}
 	}
 	&__tags {
@@ -197,7 +231,7 @@
 			margin-top: 0;
 
 			@include media-breakpoint-up(sm) {
-				float: left;
+
 			}
 		}
 	}
@@ -252,3 +286,29 @@
 ### Sticky Post
 --------------------------------------------------------------*/
 @import "sticky";
+
+
+.entry-video {
+	margin-bottom: 10px;
+}
+
+.single {
+	.post-thumbnail {
+		margin-bottom: 27px;
+	}
+}
+
+.entry-footer__share-block {
+	margin-top: 40px;
+	h6 {
+		margin-top: -4px;
+		margin-right: 7px;
+		@media (min-width: 400px) {
+			float: left;
+		}
+		@include media-breakpoint-up(lg) {
+			letter-spacing: 1px;
+			margin-right: 20px;
+		}
+	}
+}

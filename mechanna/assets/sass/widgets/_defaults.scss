@@ -84,6 +84,14 @@
 	#next {
 		text-align: right;
 	}
+	tbody a {
+		@include media-breakpoint-up(lg) {
+			min-width: 17px;
+		}
+		@include media-breakpoint-up(xl) {
+			min-width: 32px;
+		}
+	}
 }
 
 /*--------------------------------------------------------------

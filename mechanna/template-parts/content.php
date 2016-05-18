@@ -79,17 +79,19 @@
 							) );
 						?>
 					</span>
-					<span class="post__comments">
-						<?php $comment_visible = mechanna_is_meta_visible( 'blog_post_comments', 'loop' ) ? 'true' : 'false';
-							$utility->meta_data->get_comment_count( array(
-								'visible' => $comment_visible,
-								'class'   => 'post__comments-link',
-								'icon'    => '',
-								'echo'    => true,
-							) );
+					<!-- <span class="post__comments"> -->
+						<?php
+							mechanna_meta_comments( 'loop', array(
+											'before' => '',
+											'zero'   => esc_html__( '0 comments', 'mechanna' ),
+											'one'    => esc_html__( '1 comment', 'mechanna' ),
+											'plural' => '% ' . esc_html__( 'comments', 'mechanna' ),
+									) );
 						?>
-					Comments
-					</span>
+					<!-- </span> -->
+
+
+
 					<?php $tags_visible = mechanna_is_meta_visible( 'blog_post_tags', 'loop' ) ? 'true' : 'false';
 
 						$utility->meta_data->get_terms( array(

@@ -1,10 +1,10 @@
 .share-btns {
 	&__list {
 		.hentry & {
-			float: left;
+			float: right;
 		}
 		.single-post & {
-			float: right;
+			float: none;
 		}
 	}
 	&__item {
@@ -15,9 +15,9 @@
 		display: block;
 		text-align: center;
 		text-decoration: none;
-		margin-right: 10px;
+		margin-left: 10px;
 		@include media-breakpoint-up(lg) {
-			margin-right: 25px;
+			margin-left: 25px;
 		}
 
 		@include font-size(1);

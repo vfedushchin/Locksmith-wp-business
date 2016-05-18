@@ -1,24 +1,29 @@
 /* #Paginations */
 .page-numbers,
 .page-links a {
-	color: $regular_accent_color_2;
+	font-style: $h6_font_style;
+	font-weight: $h6_font_weight;
+	font-size: $h6_font_size{px};
+	font-family: @font_family( $h6_font_family );
+	letter-spacing: $h6_letter_spacing{px};
+	color: $regular_h6_color;
 }
 a.page-numbers:hover,
 .page-numbers.current,
 .page-links a:hover,
 .page-links > .page-links__item {
 	color: $regular_accent_color_1;
-	background: $regular_accent_color_3;
+	border-color: $regular_accent_color_1;
 }
 .page-numbers.next,
 .page-numbers.prev {
-	color: $invert_link_color;
-	background: $regular_accent_color_1;
+	border: 1px solid $regular_h6_color;
+	color: $regular_h6_color;
 }
 .page-numbers.next:hover,
 .page-numbers.prev:hover {
-	color: $invert_link_color;
-	background: $regular_accent_color_2;
+	color: $regular_accent_color_1;
+	border-color: $regular_accent_color_1;
 }
 
 /* #Breadcrumbs */
@@ -32,4 +37,25 @@ a.page-numbers:hover,
 }
 @media (min-width: 991px) {
 	line-height: $breadcrumbs_line_height;
+}
+
+
+
+.post-navigation {
+	font-style: $h6_font_style;
+	font-weight: $h6_font_weight;
+	font-size: $h6_font_size{px};
+	line-height: $h6_line_height;
+	font-family: @font_family( $h6_font_family );
+	letter-spacing: $h6_letter_spacing{px};
+	text-align: $h6_text_align;
+	color: $regular_h6_color;
+}
+.post-navigation a {
+	color: $regular_h6_color;
+}
+.post-navigation a:before,
+.post-navigation a:after,
+.post-navigation a:hover {
+	color: $regular_accent_color_1;
 }

@@ -1,14 +1,14 @@
 .comments {
 	&-area {
 		position: relative;
-		margin-bottom: 1em;
+		margin-bottom: 2em;
 		@include media-breakpoint-up(lg) {
-			margin-bottom: 2em;
+			margin-bottom: 4em;
 		}
 	}
 	&-title {
 		@include media-breakpoint-up(lg) {
-			font-size: 20px;
+			font-size: 18px;
 			line-height: 1.4;
 			margin-bottom: 1em;
 		}
@@ -18,43 +18,48 @@
 .comment {
 	&-list {
 		margin: 0;
-		padding: 0 0 20px;
+		padding: 0 0 3px;
 		list-style: none;
+
+		li:before {
+			display: none;
+		}
 		.children {
 			margin-left: 0;
 			padding-left: 10px;
 			list-style: none;
-			border-top: 1px solid $color__background-hr;
+
+			.children {
+				padding-left: 10px;
+				@include media-breakpoint-up(lg) {
+					padding-left: 20px;
+				}
+			}
 
 			@include media-breakpoint-up(lg) {
-				padding-left: 30px;
+				padding-left: 50px;
 			}
 		}
 		> .comment,
 		> .ping {
 			margin-bottom: 10px;
-			padding-right: 10px;
-			padding-left: 10px;
-			background-color: $color__background-input;
 
-			@include media-breakpoint-up(lg) {
-				padding-right: 30px;
-				padding-left: 30px;
-			}
+
 		}
 	}
 	&-content {
+		line-height: 28px;
 		a {
 			word-wrap: break-word;
 		}
 	}
 	&-body {
-		padding-top: 10px;
+		padding-top: 7px;
 		padding-bottom: 10px;
 
 		@include media-breakpoint-up(lg) {
-			padding-top: 30px;
-			padding-bottom: 15px;
+			padding-top: 7px;
+			padding-bottom: 10px;
 		}
 		&__holder {
 			position: relative;
@@ -68,7 +73,7 @@
 
 			@include media-breakpoint-up(lg) {
 				width: auto;
-				margin: 0 30px 15px 0;
+				margin: 3px 37px 15px -5px;
 			}
 		}
 		.fn {
@@ -76,6 +81,18 @@
 
 			@include media-breakpoint-up(lg) {
 				margin-right: 25px;
+			}
+		}
+		.comment-metadata {
+			font-size: 14px;
+			margin-bottom: 7px;
+
+			.material-icons {
+				vertical-align: middle;
+				vertical-align: text-bottom;
+				font-size: 21px;
+				color: #888;
+				margin-right: 10px;
 			}
 		}
 		.reply {
@@ -101,7 +118,7 @@
 		&:before {
 			font-size: 17px;
 			margin-right: 4px;
-			content: '\E878';
+			// content: '\E7FD';
 			vertical-align: top;
 			opacity: .2;
 
@@ -119,4 +136,21 @@
 
 .bypostauthor {
 	display: block;
+}
+
+
+.comments-area {
+	background: #f4f4f4;
+	padding: 15px;
+	@include media-breakpoint-up(lg) {
+		padding: 11px 32px 34px;
+	}
+	.comments-title {
+		text-transform: capitalize;
+	}
+	.comments-title,
+		.comment-reply-title {
+			padding-bottom: 14px;
+			border-bottom: 1px solid $color__background-hr;
+		}
 }

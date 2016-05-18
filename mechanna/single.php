@@ -14,7 +14,10 @@ while ( have_posts() ) : the_post();
 	mechanna_post_author_bio();
 
 
-	the_post_navigation();
+	the_post_navigation( array(
+		'next_text' => esc_html__( 'Next Post ', 'mechanna' ),
+		'prev_text' => esc_html__( 'Previous Post ', 'mechanna' ),
+	) );
 
 
 	// If comments are open or we have at least one comment, load up the comment template.
