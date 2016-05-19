@@ -9,8 +9,8 @@
 //
 // Grid layout
 //
-
-@include media-breakpoint-up(md) {
+//@include media-breakpoint-up(sm) {
+@media (min-width: 420px) {
 	.card-deck {
 		display: flex;
 		margin-right: -$card-deck-margin / 2;
@@ -45,8 +45,14 @@
 		}
 		&--grid-3-cols {
 			.card {
-				max-width: calc(100%/3 - #{$card-deck-margin});
-				flex: 1 0 calc(100%/3 - #{$card-deck-margin});
+				max-width: calc(100%/2 - #{$card-deck-margin});
+				flex: 1 0 calc(100%/2 - #{$card-deck-margin});
+			}
+			@include media-breakpoint-up(xl) {
+				.card {
+					max-width: calc(100%/3 - #{$card-deck-margin});
+					flex: 1 0 calc(100%/3 - #{$card-deck-margin});
+				}
 			}
 		}
 	}
@@ -57,7 +63,8 @@
 // Masonry layout
 //
 
-@include media-breakpoint-up(md) {
+//@include media-breakpoint-up(sm) {
+@media (min-width: 420px) {
 	.card-columns {
 		column-gap: $card-deck-margin;
 		.card {
@@ -135,6 +142,7 @@
 // Reset (for tablet)
 //
 
+/*
 @include media-breakpoint-only(md) {
 	.posts-list--grid-3-cols {
 		display: block;
@@ -159,3 +167,4 @@
 		}
 	}
 }
+ */

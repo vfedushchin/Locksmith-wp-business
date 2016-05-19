@@ -28,7 +28,7 @@ function mechanna_get_customizer_options() {
 				'title'    => esc_html__( 'Show tagline after logo', 'mechanna' ),
 				'section'  => 'title_tagline',
 				'priority' => 60,
-				'default'  => true,
+				'default'  => false,
 				'field'    => 'checkbox',
 				'type'     => 'control',
 			),
@@ -92,7 +92,7 @@ function mechanna_get_customizer_options() {
 			'header_logo_font_family' => array(
 				'title'           => esc_html__( 'Font Family', 'mechanna' ),
 				'section'         => 'logo_favicon',
-				'default'         => 'Montserrat, sans-serif',
+				'default'         => 'Roboto Slab',
 				'field'           => 'fonts',
 				'type'            => 'control',
 				'active_callback' => 'mechanna_is_header_logo_text',
@@ -109,7 +109,7 @@ function mechanna_get_customizer_options() {
 			'header_logo_font_weight' => array(
 				'title'           => esc_html__( 'Font Weight', 'mechanna' ),
 				'section'         => 'logo_favicon',
-				'default'         => '700',
+				'default'         => '400',
 				'field'           => 'select',
 				'choices'         => mechanna_get_font_weight(),
 				'type'            => 'control',
@@ -118,7 +118,7 @@ function mechanna_get_customizer_options() {
 			'header_logo_font_size' => array(
 				'title'           => esc_html__( 'Font Size, px', 'mechanna' ),
 				'section'         => 'logo_favicon',
-				'default'         => '26',
+				'default'         => '22',
 				'field'           => 'number',
 				'input_attrs'     => array(
 					'min'  => 6,
@@ -162,7 +162,7 @@ function mechanna_get_customizer_options() {
 			'breadcrumbs_page_title' => array(
 				'title'   => esc_html__( 'Enable page title in breadcrumbs area', 'mechanna' ),
 				'section' => 'breadcrumbs',
-				'default' => true,
+				'default' => false,
 				'field'   => 'checkbox',
 				'type'    => 'control',
 			),
@@ -202,7 +202,7 @@ function mechanna_get_customizer_options() {
 			'blog_post_share_buttons' => array(
 				'title'   => esc_html__( 'Show social sharing to blog posts', 'mechanna' ),
 				'section' => 'social_links',
-				'default' => true,
+				'default' => false,
 				'field'   => 'checkbox',
 				'type'    => 'control',
 			),
@@ -467,7 +467,7 @@ function mechanna_get_customizer_options() {
 			'body_font_family' => array(
 				'title'   => esc_html__( 'Font Family', 'mechanna' ),
 				'section' => 'body_typography',
-				'default' => 'Open Sans, sans-serif',
+				'default' => 'Roboto',
 				'field'   => 'fonts',
 				'type'    => 'control',
 			),
@@ -482,7 +482,7 @@ function mechanna_get_customizer_options() {
 			'body_font_weight' => array(
 				'title'   => esc_html__( 'Font Weight', 'mechanna' ),
 				'section' => 'body_typography',
-				'default' => '400',
+				'default' => '300',
 				'field'   => 'select',
 				'choices' => mechanna_get_font_weight(),
 				'type'    => 'control',
@@ -490,7 +490,7 @@ function mechanna_get_customizer_options() {
 			'body_font_size' => array(
 				'title'       => esc_html__( 'Font Size, px', 'mechanna' ),
 				'section'     => 'body_typography',
-				'default'     => '14',
+				'default'     => '17',
 				'field'       => 'number',
 				'input_attrs' => array(
 					'min'  => 6,
@@ -551,7 +551,7 @@ function mechanna_get_customizer_options() {
 			'h1_font_family' => array(
 				'title'   => esc_html__( 'Font Family', 'mechanna' ),
 				'section' => 'h1_typography',
-				'default' => 'Montserrat, sans-serif',
+				'default' => 'Roboto Slab',
 				'field'   => 'fonts',
 				'type'    => 'control',
 			),
@@ -566,7 +566,7 @@ function mechanna_get_customizer_options() {
 			'h1_font_weight' => array(
 				'title'   => esc_html__( 'Font Weight', 'mechanna' ),
 				'section' => 'h1_typography',
-				'default' => '700',
+				'default' => '400',
 				'field'   => 'select',
 				'choices' => mechanna_get_font_weight(),
 				'type'    => 'control',
@@ -574,7 +574,7 @@ function mechanna_get_customizer_options() {
 			'h1_font_size' => array(
 				'title'       => esc_html__( 'Font Size, px', 'mechanna' ),
 				'section'     => 'h1_typography',
-				'default'     => '80',
+				'default'     => '134',
 				'field'       => 'number',
 				'input_attrs' => array(
 					'min'  => 10,
@@ -635,7 +635,7 @@ function mechanna_get_customizer_options() {
 			'h2_font_family' => array(
 				'title'   => esc_html__( 'Font Family', 'mechanna' ),
 				'section' => 'h2_typography',
-				'default' => 'Montserrat, sans-serif',
+				'default' => 'Roboto Slab',
 				'field'   => 'fonts',
 				'type'    => 'control',
 			),
@@ -650,7 +650,7 @@ function mechanna_get_customizer_options() {
 			'h2_font_weight' => array(
 				'title'   => esc_html__( 'Font Weight', 'mechanna' ),
 				'section' => 'h2_typography',
-				'default' => '700',
+				'default' => '400',
 				'field'   => 'select',
 				'choices' => mechanna_get_font_weight(),
 				'type'    => 'control',
@@ -658,7 +658,7 @@ function mechanna_get_customizer_options() {
 			'h2_font_size' => array(
 				'title'       => esc_html__( 'Font Size, px', 'mechanna' ),
 				'section'     => 'h2_typography',
-				'default'     => '60',
+				'default'     => '74',
 				'field'       => 'number',
 				'input_attrs' => array(
 					'min'  => 10,
@@ -683,7 +683,7 @@ function mechanna_get_customizer_options() {
 			'h2_letter_spacing' => array(
 				'title'       => esc_html__( 'Letter Spacing, px', 'mechanna' ),
 				'section'     => 'h2_typography',
-				'default'     => '-0.6',
+				'default'     => '-0.5',
 				'field'       => 'number',
 				'input_attrs' => array(
 					'min'  => -10,
@@ -719,7 +719,7 @@ function mechanna_get_customizer_options() {
 			'h3_font_family' => array(
 				'title'   => esc_html__( 'Font Family', 'mechanna' ),
 				'section' => 'h3_typography',
-				'default' => 'Montserrat, sans-serif',
+				'default' => 'Roboto Slab',
 				'field'   => 'fonts',
 				'type'    => 'control',
 			),
@@ -734,7 +734,7 @@ function mechanna_get_customizer_options() {
 			'h3_font_weight' => array(
 				'title'   => esc_html__( 'Font Weight', 'mechanna' ),
 				'section' => 'h3_typography',
-				'default' => '700',
+				'default' => '400',
 				'field'   => 'select',
 				'choices' => mechanna_get_font_weight(),
 				'type'    => 'control',
@@ -742,7 +742,7 @@ function mechanna_get_customizer_options() {
 			'h3_font_size' => array(
 				'title'       => esc_html__( 'Font Size, px', 'mechanna' ),
 				'section'     => 'h3_typography',
-				'default'     => '40',
+				'default'     => '44',
 				'field'       => 'number',
 				'input_attrs' => array(
 					'min'  => 10,
@@ -803,7 +803,7 @@ function mechanna_get_customizer_options() {
 			'h4_font_family' => array(
 				'title'   => esc_html__( 'Font Family', 'mechanna' ),
 				'section' => 'h4_typography',
-				'default' => 'Montserrat, sans-serif',
+				'default' => 'Roboto Slab',
 				'field'   => 'fonts',
 				'type'    => 'control',
 			),
@@ -818,7 +818,7 @@ function mechanna_get_customizer_options() {
 			'h4_font_weight' => array(
 				'title'   => esc_html__( 'Font Weight', 'mechanna' ),
 				'section' => 'h4_typography',
-				'default' => '700',
+				'default' => '400',
 				'field'   => 'select',
 				'choices' => mechanna_get_font_weight(),
 				'type'    => 'control',
@@ -826,7 +826,7 @@ function mechanna_get_customizer_options() {
 			'h4_font_size' => array(
 				'title'       => esc_html__( 'Font Size, px', 'mechanna' ),
 				'section'     => 'h4_typography',
-				'default'     => '30',
+				'default'     => '34',
 				'field'       => 'number',
 				'input_attrs' => array(
 					'min'  => 10,
@@ -887,7 +887,7 @@ function mechanna_get_customizer_options() {
 			'h5_font_family' => array(
 				'title'   => esc_html__( 'Font Family', 'mechanna' ),
 				'section' => 'h5_typography',
-				'default' => 'Montserrat, sans-serif',
+				'default' => 'Roboto Slab',
 				'field'   => 'fonts',
 				'type'    => 'control',
 			),
@@ -902,7 +902,7 @@ function mechanna_get_customizer_options() {
 			'h5_font_weight' => array(
 				'title'   => esc_html__( 'Font Weight', 'mechanna' ),
 				'section' => 'h5_typography',
-				'default' => '700',
+				'default' => '400',
 				'field'   => 'select',
 				'choices' => mechanna_get_font_weight(),
 				'type'    => 'control',
@@ -910,7 +910,7 @@ function mechanna_get_customizer_options() {
 			'h5_font_size' => array(
 				'title'       => esc_html__( 'Font Size, px', 'mechanna' ),
 				'section'     => 'h5_typography',
-				'default'     => '20',
+				'default'     => '28',
 				'field'       => 'number',
 				'input_attrs' => array(
 					'min'  => 10,
@@ -971,7 +971,7 @@ function mechanna_get_customizer_options() {
 			'h6_font_family' => array(
 				'title'   => esc_html__( 'Font Family', 'mechanna' ),
 				'section' => 'h6_typography',
-				'default' => 'Montserrat, sans-serif',
+				'default' => 'Roboto Slab',
 				'field'   => 'fonts',
 				'type'    => 'control',
 			),
@@ -986,7 +986,7 @@ function mechanna_get_customizer_options() {
 			'h6_font_weight' => array(
 				'title'   => esc_html__( 'Font Weight', 'mechanna' ),
 				'section' => 'h6_typography',
-				'default' => '700',
+				'default' => '400',
 				'field'   => 'select',
 				'choices' => mechanna_get_font_weight(),
 				'type'    => 'control',
@@ -994,7 +994,7 @@ function mechanna_get_customizer_options() {
 			'h6_font_size' => array(
 				'title'       => esc_html__( 'Font Size, px', 'mechanna' ),
 				'section'     => 'h6_typography',
-				'default'     => '16',
+				'default'     => '18',
 				'field'       => 'number',
 				'input_attrs' => array(
 					'min'  => 10,
@@ -1007,7 +1007,7 @@ function mechanna_get_customizer_options() {
 				'title'       => esc_html__( 'Line Height', 'mechanna' ),
 				'description' => esc_html__( 'Relative to the font-size of the element', 'mechanna' ),
 				'section'     => 'h6_typography',
-				'default'     => '1.4',
+				'default'     => '1.78',
 				'field'       => 'number',
 				'input_attrs' => array(
 					'min'  => 1.0,
@@ -1055,7 +1055,7 @@ function mechanna_get_customizer_options() {
 			'breadcrumbs_font_family' => array(
 				'title'   => esc_html__( 'Font Family', 'mechanna' ),
 				'section' => 'breadcrumbs_typography',
-				'default' => 'Montserrat, sans-serif',
+				'default' => 'Roboto',
 				'field'   => 'fonts',
 				'type'    => 'control',
 			),
@@ -1070,7 +1070,7 @@ function mechanna_get_customizer_options() {
 			'breadcrumbs_font_weight' => array(
 				'title'   => esc_html__( 'Font Weight', 'mechanna' ),
 				'section' => 'breadcrumbs_typography',
-				'default' => '400',
+				'default' => '300',
 				'field'   => 'select',
 				'choices' => mechanna_get_font_weight(),
 				'type'    => 'control',
@@ -1091,7 +1091,7 @@ function mechanna_get_customizer_options() {
 				'title'       => esc_html__( 'Line Height', 'mechanna' ),
 				'description' => esc_html__( 'Relative to the font-size of the element', 'mechanna' ),
 				'section'     => 'breadcrumbs_typography',
-				'default'     => '1.5',
+				'default'     => '2.7',
 				'field'       => 'number',
 				'input_attrs' => array(
 					'min'  => 1.0,
@@ -1244,7 +1244,7 @@ function mechanna_get_customizer_options() {
 			'header_menu_attributes' => array(
 				'title'   => esc_html__( 'Enable title attributes', 'mechanna' ),
 				'section' => 'header_main_menu',
-				'default' => true,
+				'default' => false,
 				'field'   => 'checkbox',
 				'type'    => 'control',
 			),
@@ -1270,7 +1270,6 @@ function mechanna_get_customizer_options() {
 				'choices' => array(
 					'one-left-sidebar'  => esc_html__( 'Sidebar on left side', 'mechanna' ),
 					'one-right-sidebar' => esc_html__( 'Sidebar on right side', 'mechanna' ),
-					'two-sidebars'      => esc_html__( '2 sidebars', 'mechanna' ),
 					'fullwidth'         => esc_html__( 'No sidebars', 'mechanna' ),
 				),
 				'type' => 'control',
@@ -1418,10 +1417,7 @@ function mechanna_get_customizer_options() {
 				'choices' => array(
 					'default'          => esc_html__( 'Listing', 'mechanna' ),
 					'grid-2-cols'      => esc_html__( 'Grid (2 Columns)', 'mechanna' ),
-					'grid-3-cols'      => esc_html__( 'Grid (3 Columns)', 'mechanna' ),
 					'masonry-2-cols'   => esc_html__( 'Masonry (2 Columns)', 'mechanna' ),
-					'masonry-3-cols'   => esc_html__( 'Masonry (3 Columns)', 'mechanna' ),
-					'vertical-justify' => esc_html__( 'Vertical Justify', 'mechanna' ),
 				),
 				'type' => 'control',
 			),
@@ -1867,5 +1863,5 @@ function mechanna_get_default_top_panel_text() {
  * @return string
  */
 function mechanna_get_default_footer_copyright() {
-	return __( '%%year%% (с) Mechanna <br>Privacy Policy', 'mechanna' );
+	return __( '%%year%% (с) %%site-name%% %%privacy-policy%%', 'mechanna' );
 }

@@ -11,9 +11,22 @@
 
 	<?php $utility = mechanna_utility()->utility; ?>
 
-	<header class="entry-header">
-		<?php $cats_visible = mechanna_is_meta_visible( 'single_post_categories', 'single' ) ? 'true' : 'false'; ?>
 
+	<figure class="post-thumbnail">
+
+		<div class="post-thumbnail__format-link">
+			<?php do_action( 'cherry_post_format_link', array( 'render' => true ) ); ?>
+		</div>
+
+		<?php $utility->media->get_image( array(
+				'size'        => 'mechanna-thumb-l2',
+				'html'        => '<img class="post-thumbnail__img wp-post-image" src="%3$s" alt="%4$s">',
+				'placeholder' => false,
+				'echo'        => true,
+			) );
+		?>
+
+		<?php $cats_visible = mechanna_is_meta_visible( 'single_post_categories', 'single' ) ? 'true' : 'false'; ?>
 		<?php $utility->meta_data->get_terms( array(
 				'visible' => $cats_visible,
 				'type'    => 'category',
@@ -23,6 +36,12 @@
 				'echo'    => true,
 			) );
 		?>
+	</figure><!-- .post-thumbnail -->
+
+
+
+	<header class="entry-header">
+
 
 		<?php $utility->attributes->get_title( array(
 				'class' => 'entry-title',
@@ -38,7 +57,7 @@
 				<?php $utility->meta_data->get_author( array(
 						'visible' => $author_visible,
 						'class'   => 'posted-by__author',
-						'prefix'  => esc_html__( 'Posted by ', 'mechanna' ),
+						'prefix'  => esc_html__( 'by ', 'mechanna' ),
 						'html'    => '<span class="posted-by">%1$s<a href="%2$s" %3$s %4$s rel="author">%5$s%6$s</a></span>',
 						'echo'    => true,
 					) );
@@ -49,45 +68,44 @@
 						$utility->meta_data->get_date( array(
 							'visible' => $date_visible,
 							'class'   => 'post__date-link',
-							'icon'    => '<i class="material-icons">event</i>',
+							'icon'    => '',
 							'echo'    => true,
-							'before' => '*',
 						) );
 					?>
 				</span>
-				<span class="post__comments">
-					<?php $comment_visible = mechanna_is_meta_visible( 'single_post_comments', 'single' ) ? 'true' : 'false';
 
-						$utility->meta_data->get_comment_count( array(
-							'visible' => $comment_visible,
-							'class'   => 'post__comments-link',
-							'icon'    => '<i class="material-icons">mode_comment</i>',
-							'echo'    => true,
-						) );
+				<!-- <span class="post__comments"> -->
+					<?php
+						mechanna_meta_comments( 'single', array(
+										'before' => '',
+										'zero'   => esc_html__( '0 comments', 'mechanna' ),
+										'one'    => esc_html__( '1 comment', 'mechanna' ),
+										'plural' => '% ' . esc_html__( 'comments', 'mechanna' ),
+								) );
 					?>
-				</span>
+				<!-- </span> -->
+
+				<?php $tags_visible = mechanna_is_meta_visible( 'single_post_tags', 'single' ) ? 'true' : 'false'; ?>
+
+				<?php $utility->meta_data->get_terms( array(
+						'visible'   => $tags_visible,
+						'type'      => 'post_tag',
+						'delimiter' => ', ',
+						'icon'      => '',
+						'before'    => '<span class="post__tags">',
+						'after'     => '</span>',
+						'echo'      => true,
+					) );
+				?>
 			</div><!-- .entry-meta -->
 
 		<?php endif; ?>
 
 	</header><!-- .entry-header -->
 
-	<figure class="post-thumbnail">
-		<?php $size = mechanna_post_thumbnail_size( array( 'class_prefix' => 'post-thumbnail--' ) ); ?>
+	<?php mechanna_ads_post_before_content() ?>
 
-		<?php $utility->media->get_image( array(
-				'size'        => $size['size'],
-				'class'       => 'post-thumbnail__link ' . $size[ 'class' ],
-				'html'        => '<img class="post-thumbnail__img wp-post-image" src="%3$s" alt="%4$s" %5$s>',
-				'placeholder' => false,
-				'echo'        => true,
-			) );
-		?>
 
-		<div class="post-thumbnail__format-link">
-			<?php do_action( 'cherry_post_format_link', array( 'render' => true ) ); ?>
-		</div>
-	</figure><!-- .post-thumbnail -->
 
 	<div class="entry-content">
 		<?php the_content(); ?>
@@ -103,20 +121,14 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php $tags_visible = mechanna_is_meta_visible( 'single_post_tags', 'single' ) ? 'true' : 'false'; ?>
-
-		<?php $utility->meta_data->get_terms( array(
-				'visible'   => $tags_visible,
-				'type'      => 'post_tag',
-				'delimiter' => ', ',
-				'icon'      => '<i class="material-icons">folder_open</i>',
-				'before'    => '<div class="post__tags">',
-				'after'     => '</div>',
-				'echo'      => true,
-			) );
-		?>
-
-		<?php mechanna_share_buttons( 'single' ); ?>
+		<div class="entry-footer__share-block">
+			<?php
+				if ( mechanna_is_meta_visible( 'single_post_share_buttons', 'single' ) ) {
+					echo '<h6>' . __( 'Like this post? Share it!', 'mechanna' ) . '</h6>';
+				}
+				mechanna_share_buttons( 'single' );
+			?>
+		</div> <!-- .entry-footer__share-block -->
 	</footer><!-- .entry-footer -->
 
 </article><!-- #post-## -->

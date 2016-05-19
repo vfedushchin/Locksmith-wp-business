@@ -101,11 +101,25 @@ function mechanna_render_macros( $string ) {
 	$macros = apply_filters( 'mechanna_data_macros', array(
 		'/%%year%%/' => date( 'Y' ),
 		'/%%date%%/' => date( get_option( 'date_format' ) ),
+		'/%%site-name%%/'        => '<span class="sitename">' . get_option( 'blogname' ) . '</span>',
+		'/%%privacy-policy%%/' => mechanna_get_privacy_link(),
 	) );
 
 	return preg_replace( array_keys( $macros ), array_values( $macros ), $string );
 
 }
+
+/**
+ * Get privacy policy link
+ *
+ * @return string
+ */
+function mechanna_get_privacy_link() {
+ $page = get_page_by_path( 'privacy-policy' );
+ if( ! is_object( $page ) ) return;
+ return '<a href="' . get_permalink( $page->ID ) . '">' . $page->post_title . '</a>';
+}
+
 
 /**
  * Render font icons in content
@@ -297,6 +311,9 @@ function mechanna_post_thumbnail_size( $args = array() ) {
 
 		case 'grid-2-cols':
 		case 'grid-3-cols':
+			$size = 'mechanna-thumb-m';
+			break;
+
 		case 'masonry-2-cols':
 		case 'masonry-3-cols':
 			$size = 'mechanna-thumb-m';

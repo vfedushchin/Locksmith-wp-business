@@ -18,6 +18,7 @@
 .btn-default:focus {
 	box-shadow: 0 0 10px $regular_link_color;_butt
 }
+.site-main .btn,
 .btn{
 	background-color: $regular_accent_color_1;
 	border-color: $regular_accent_color_1;
@@ -30,13 +31,18 @@
 }
 .btn-primary {
 }
+.btn-primary:focus,
+.btn-primary:active,
 .btn-primary:hover {
-	background-color: $regular_h3_color;
-	border-color: $regular_h3_color;
+	background-color: $regular_accent_color_1;
+	border-color: $regular_accent_color_1;
+	color: #fff;
+	box-shadow: 0 0 16px @alpha( $regular_accent_color_1, 80 );
 }
 .btn-primary:focus {
 	box-shadow: 0 0 0px $regular_accent_color_1;
 }
+.site-main .btn-secondary,
 .btn-secondary {
 	color: $regular_accent_color_1;
 	background: none;

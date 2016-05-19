@@ -2142,6 +2142,7 @@ textarea {
 .site-content .search-form__submit.btn.btn-primary {
   top: 3px;
   right: 13px;
+  box-shadow: none;
   background: none;
   color: #000;
 }
@@ -3414,7 +3415,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   word-break: break-word;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 420px) {
   .card-deck {
     display: flex;
     margin-right: -0.9375rem;
@@ -3442,12 +3443,19 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     flex: 1 0 calc(100%/2 - 1.875rem);
   }
   .posts-list--grid-3-cols .card {
+    max-width: calc(100%/2 - 1.875rem);
+    flex: 1 0 calc(100%/2 - 1.875rem);
+  }
+}
+
+@media (min-width: 420px) and (min-width: 1200px) {
+  .posts-list--grid-3-cols .card {
     max-width: calc(100%/3 - 1.875rem);
     flex: 1 0 calc(100%/3 - 1.875rem);
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 420px) {
   .card-columns {
     column-gap: 1.875rem;
   }
@@ -3504,28 +3512,32 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-  .posts-list--grid-3-cols {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .posts-list--grid-3-cols .card {
-    display: block;
-    max-width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    flex: none;
-  }
-  .posts-list--masonry-3-cols.one-left-sidebar, .posts-list--masonry-3-cols.one-right-sidebar {
-    column-gap: normal;
-    column-count: auto;
-  }
-  .posts-list--masonry-3-cols.one-left-sidebar .card, .posts-list--masonry-3-cols.one-right-sidebar .card {
-    display: block;
-  }
+/*
+@include media-breakpoint-only(md) {
+	.posts-list--grid-3-cols {
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+		.card {
+			display: block;
+			max-width: 100%;
+			margin-right: auto;
+			margin-left: auto;
+			flex: none;
+		}
+	}
+	.posts-list--masonry-3-cols {
+		&.one-left-sidebar,
+		&.one-right-sidebar {
+			column-gap: normal;
+			column-count: auto;
+			.card {
+				display: block;
+			}
+		}
+	}
 }
-
+ */
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -3908,6 +3920,12 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   outline: none;
 }
 
+.site-description {
+  color: #fff;
+  font-size: 15px;
+  margin-top: -5px;
+}
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
@@ -3915,6 +3933,10 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 .entry-content,
 .entry-summary {
   margin: 1em 0 0;
+}
+
+.post_format-post-format-status .entry-content {
+  margin: 0;
 }
 
 .card-columns {
@@ -3963,7 +3985,13 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 ### Entry (header, content, footer)
 --------------------------------------------------------------*/
 .entry-title {
-  font-size: 28px;
+  font-size: 22px;
+}
+
+@media (min-width: 992px) {
+  .entry-title {
+    font-size: 28px;
+  }
 }
 
 .entry-header .entry-title:first-child {
@@ -3986,7 +4014,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   margin-top: 1em;
 }
 
-.entry-meta > span + span:before {
+.entry-meta > span + span:not(:empty):before {
   position: relative;
   display: inline-block;
   content: '';
@@ -4058,7 +4086,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 .post__cats a {
   line-height: 27px;
   display: inline-block;
-  margin: 0 -3px 1px 0;
+  margin: 0 -2px 1px 0;
   padding: 0 6px;
   vertical-align: top;
   text-decoration: none;
@@ -4334,6 +4362,11 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   }
 }
 
+.no-sidebars-before .post-gallery__slide img,
+.no-sidebars-before .post-thumbnail img {
+  width: 100%;
+}
+
 /*--------------------------------------------------------------
 ## Post Formats
 --------------------------------------------------------------*/
@@ -4426,7 +4459,11 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 .has-thumb .post-thumbnail__format-link .post-format-link {
   margin: -20px 0 0 0;
   margin: 0;
-  margin-top: 20%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  margin-top: -20px;
 }
 
 .post-format-quote {

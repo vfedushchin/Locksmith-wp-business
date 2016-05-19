@@ -59,6 +59,7 @@
 		.site-content &.btn.btn-primary {
 			top: 3px;
 			right: 13px;
+			box-shadow: none;
 			@include media-breakpoint-up(xl) {
 				right: 93px;
 			}
