@@ -23,12 +23,19 @@
 
 		@include media-breakpoint-up(md) {
 			margin-top: 2em;
+		}
+	}
 
+
+	.sidebar-primary &,
+	.sidebar-secondary & {
+		@include media-breakpoint-up(md) {
 			&:first-child {
 				margin-top: 0.9em;
 			}
 		}
 	}
+
 	&:last-child {
 		.widget-area & {
 			margin-bottom: 1em;

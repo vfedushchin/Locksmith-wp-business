@@ -10,6 +10,9 @@
 			text-align: center;
 			&:hover {
 				text-decoration: none;
+				color: #000;
+				background: #fff;
+				border-radius: 50%;
 			}
 			&:focus {
 				outline: none;
@@ -69,12 +72,13 @@
 				@include font-size(1);
 				font-size: 15px;
 				display: block;
-				width: 20px;
-				height: 20px;
-				line-height: 20px;
+				width: 23px;
+				height: 23px;
+				line-height: 23px;
 				margin: auto;
 				border-radius: 0;
 				transition: .4s all ease;
+
 				.social-list--text & {
 					display: none;
 				}

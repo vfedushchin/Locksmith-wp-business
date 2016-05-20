@@ -1,11 +1,12 @@
 .site-header.minimal {
 	.site-branding {
-		padding: 0 0 15px;
+		padding: 1px 0 1px;
 
 		order: 1;
 		flex: 0 1 100%;
-		text-align: center;
+		text-align: left;
 		@include media-breakpoint-up(md) {
+			padding-top: 8px;
 			order: 0;
 			flex: 0 1 auto;
 			text-align: left;
@@ -16,28 +17,61 @@
 
 		order: 0;
 		flex: 0 1 100%;
-		text-align: center;
+		text-align: left;
+		position: absolute;
+		top: 7px;
+		left: 25px;
+		width: 200px;
+		padding: 15px;
+		background: #000;
+		opacity: 0;
+		visibility: hidden;
+		.header-mobilemenu-toggled & {
+			transition: 0.6s all ease;
+			display: block;
+			left: 7px;
+			opacity: 1;
+			visibility: visible;
+		}
 		@include media-breakpoint-up(md) {
-			order: 2;
-			flex: 0 1 auto;
-			text-align: left;
+			position: relative;
+			flex: 0 1 100%;
+			text-align: right;
+			background: none !important;
+			display: block;
+			opacity: 1;
+			visibility: visible;
+			padding: 0;
+			left: -5px;
+			padding-bottom: 26px;
+			transition: 0s all ease;
 		}
 	}
 	.main-navigation {
 		order: 2;
 		flex: 0 1 100%;
 		align-self: flex-end;
+
+		.menu {
+			justify-content: flex-end;
+			@include media-breakpoint-up(lg) {
+				margin-right: -10px;
+			}
+		}
 		@include media-breakpoint-up(md) {
 			order: 1;
-			flex: 0 1 50%;
+			flex: 10 1 auto;
 		}
 		@include media-breakpoint-only(md) {
 			order: 3;
 			flex: 0 1 100%;
 		}
+
+
 	}
 }
 .header-container {
+	position: relative;
 	&__flex {
 		display: flex;
 		flex-direction: row;
@@ -47,8 +81,5 @@
 		align-content: stretch;
 		-ms-flex-align: start;
 		align-items: flex-start;
-		@include media-breakpoint-up(lg) {
-			flex-wrap: nowrap;
-		}
 	}
 }

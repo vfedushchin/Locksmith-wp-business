@@ -10,7 +10,7 @@
 			}
 			width: 30px;
 			height: 36px;
-			top: -3px;
+			top: -1px;
 			z-index: 6;
 			text-align: right;
 			margin: 0 0 0 auto;
@@ -89,6 +89,9 @@
 
 	padding: .3rem $grid-gutter-width*1.4 .3rem;
 	padding: .3rem 2.325rem .3rem;
+	@include media-breakpoint-down(md) {
+		padding: .3rem 1.7rem .3rem;
+	}
 	color: #fff;
 	text-align: left;
 	a {

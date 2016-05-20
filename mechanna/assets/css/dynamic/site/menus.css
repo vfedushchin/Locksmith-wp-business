@@ -1,6 +1,14 @@
 /* #Main Menu */
+.main-navigation .menu,
 .main-navigation .menu > li > a {
-	color: $regular_accent_color_2;
+	color: $invert_h3_color;
+	font-style: $h3_font_style;
+	font-weight: $h3_font_weight;
+	font-family: @font_family( $h3_font_family );
+}
+.main-navigation .menu,
+.main-navigation .menu a{
+	color: $regular_accent_color_1;
 }
 .main-navigation .menu > li > a:hover,
 .main-navigation .menu > li.menu-hover > a,
@@ -9,9 +17,27 @@
 .main-navigation .menu > li.current-menu-item > a,
 .main-navigation .menu > li.current-menu-ancestor > a {
 	color: $regular_accent_color_1;
+	background: $invert_h3_color;
 }
+
+@media (max-width: 767px) {
+	.main-navigation .menu > li > a:hover,
+	.main-navigation .menu > li.menu-hover > a,
+	.main-navigation .menu > li.current_page_item > a,
+	.main-navigation .menu > li.current_page_ancestor > a,
+	.main-navigation .menu > li.current-menu-item > a,
+	.main-navigation .menu > li.current-menu-ancestor > a {
+		color: $regular_h3_color;
+		background: none;
+	}
+
+}
+
+
 .main-navigation .sub-menu {
-	background: $regular_accent_color_3;
+	background: $invert_h3_color;
+	border: 2px solid $regular_accent_color_1;
+	box-sizing: border-box;
 }
 .main-navigation ul ul a {
 	color: $regular_text_color;
@@ -22,7 +48,7 @@
 .main-navigation .sub-menu > li.current_page_ancestor > a,
 .main-navigation .sub-menu > li.current-menu-item > a,
 .main-navigation .sub-menu > li.current-menu-ancestor > a {
-	color: $regular_accent_color_1;
+	color: $regular_h3_color;
 }
 .menu-item__desc {
 	color: $regular_text_color;

@@ -64,7 +64,7 @@ function mechanna_get_customizer_options() {
 			'header_logo_type' => array(
 				'title'   => esc_html__( 'Logo Type', 'mechanna' ),
 				'section' => 'logo_favicon',
-				'default' => 'text',
+				'default' => 'image',
 				'field'   => 'radio',
 				'choices' => array(
 					'image' => esc_html__( 'Image', 'mechanna' ),
@@ -92,7 +92,7 @@ function mechanna_get_customizer_options() {
 			'header_logo_font_family' => array(
 				'title'           => esc_html__( 'Font Family', 'mechanna' ),
 				'section'         => 'logo_favicon',
-				'default'         => 'Roboto Slab',
+				'default'         => 'Roboto Slab, serif',
 				'field'           => 'fonts',
 				'type'            => 'control',
 				'active_callback' => 'mechanna_is_header_logo_text',
@@ -467,7 +467,7 @@ function mechanna_get_customizer_options() {
 			'body_font_family' => array(
 				'title'   => esc_html__( 'Font Family', 'mechanna' ),
 				'section' => 'body_typography',
-				'default' => 'Roboto',
+				'default' => 'Roboto, sans-serif',
 				'field'   => 'fonts',
 				'type'    => 'control',
 			),
@@ -551,7 +551,7 @@ function mechanna_get_customizer_options() {
 			'h1_font_family' => array(
 				'title'   => esc_html__( 'Font Family', 'mechanna' ),
 				'section' => 'h1_typography',
-				'default' => 'Roboto Slab',
+				'default' => 'Roboto Slab, serif',
 				'field'   => 'fonts',
 				'type'    => 'control',
 			),
@@ -635,7 +635,7 @@ function mechanna_get_customizer_options() {
 			'h2_font_family' => array(
 				'title'   => esc_html__( 'Font Family', 'mechanna' ),
 				'section' => 'h2_typography',
-				'default' => 'Roboto Slab',
+				'default' => 'Roboto Slab, serif',
 				'field'   => 'fonts',
 				'type'    => 'control',
 			),
@@ -719,7 +719,7 @@ function mechanna_get_customizer_options() {
 			'h3_font_family' => array(
 				'title'   => esc_html__( 'Font Family', 'mechanna' ),
 				'section' => 'h3_typography',
-				'default' => 'Roboto Slab',
+				'default' => 'Roboto Slab, serif',
 				'field'   => 'fonts',
 				'type'    => 'control',
 			),
@@ -803,7 +803,7 @@ function mechanna_get_customizer_options() {
 			'h4_font_family' => array(
 				'title'   => esc_html__( 'Font Family', 'mechanna' ),
 				'section' => 'h4_typography',
-				'default' => 'Roboto Slab',
+				'default' => 'Roboto Slab, serif',
 				'field'   => 'fonts',
 				'type'    => 'control',
 			),
@@ -887,7 +887,7 @@ function mechanna_get_customizer_options() {
 			'h5_font_family' => array(
 				'title'   => esc_html__( 'Font Family', 'mechanna' ),
 				'section' => 'h5_typography',
-				'default' => 'Roboto Slab',
+				'default' => 'Roboto Slab, serif',
 				'field'   => 'fonts',
 				'type'    => 'control',
 			),
@@ -971,7 +971,7 @@ function mechanna_get_customizer_options() {
 			'h6_font_family' => array(
 				'title'   => esc_html__( 'Font Family', 'mechanna' ),
 				'section' => 'h6_typography',
-				'default' => 'Roboto Slab',
+				'default' => 'Roboto Slab, serif',
 				'field'   => 'fonts',
 				'type'    => 'control',
 			),
@@ -1055,7 +1055,7 @@ function mechanna_get_customizer_options() {
 			'breadcrumbs_font_family' => array(
 				'title'   => esc_html__( 'Font Family', 'mechanna' ),
 				'section' => 'breadcrumbs_typography',
-				'default' => 'Roboto',
+				'default' => 'Roboto, sans-serif',
 				'field'   => 'fonts',
 				'type'    => 'control',
 			),

@@ -96,6 +96,7 @@ a:hover { color: $regular_link_hover_color; }
 .invert h6 { color: $invert_h6_color; }
 .invert a { color: $invert_link_color; }
 .invert a:hover { color: $invert_link_hover_color; }
+.invert .btn:hover { color: $invert_h3_color; }
 
 /* #Layout */
 @media (min-width: 1200px) {

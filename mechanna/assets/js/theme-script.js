@@ -32,6 +32,7 @@
 			self.search_trigger(self);
 			self.main_menu( self, $( '.main-navigation' ) );
 			self.to_top_init( self );
+			self.mobile_panel( self );
 		},
 
 		window_load_render: function ( self ) {
@@ -458,6 +459,7 @@
 
 				$menuToggle.on( 'click', function(){
 					$mainNavigation.toggleClass( 'toggled' );
+					$('#page').toggleClass( 'header-mobilemenu-toggled' );
 				});
 			};
 
@@ -480,7 +482,37 @@
 					scrollSpeed: 600
 				});
 			}
+		},
+
+
+		mobile_panel: function ( self ) {
+
+			var $btnToggle = $( '.mobile-panel .btn-toggle' ),
+			$itemHasChildren = $( '.main-navigation .menu li.menu-item-has-children, .main-navigation .menu li.page_item_has_children' ),
+			$itemHasChildrenUl = $( '.main-navigation .menu li.menu-item-has-children ul, .main-navigation .menu li.page_item_has_children ul' );
+
+			//$itemHasChildren.prepend( '<span class="sub-menu-toggle"></span>' );
+			$( '<span class="sub-menu-toggle"></span>' ).insertBefore( $itemHasChildrenUl );
+
+			var $subMenuToggle = $( '.sub-menu-toggle' ),
+			$mobileNavigation = $( '.mobile-panel .btn-toggle, .mobile-panel .nav-panel');
+
+			$subMenuToggle.on( 'click', function(){
+				$(this).toggleClass( 'active' );
+			});
+
+			$btnToggle.on( 'click', function(){
+				$mobileNavigation.toggleClass( 'active' );
+				if( $subMenuToggle.hasClass( 'active' ) ){
+					$subMenuToggle.removeClass( 'active' );
+				}
+			});
+
 		}
+
+
+
+
 	}
 	CherryJsCore.theme_script.init();
 }(jQuery));
