@@ -99,6 +99,7 @@ function mechanna_get_social_list( $context, $type = 'icon' ) {
 	static $instance = 0;
 	$instance++;
 
+
 	$container_class = array( 'social-list' );
 
 	if ( ! empty( $context ) ) {

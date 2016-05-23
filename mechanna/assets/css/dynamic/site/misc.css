@@ -1,14 +1,14 @@
 /* #ToTop button */
 #toTop {
-	color: $regular_accent_color_2;
+	color: $invert_h3_color;
+  background-color: $regular_accent_color_1;
 }
 #toTop:hover {
-	color: $invert_link_color;
-	background-color: $regular_accent_color_2;
-	border-color: $regular_accent_color_2;
+	color: $regular_accent_color_1;
+	background-color: $regular_h3_color;
 }
 #toTop:before {
-	color: $regular_accent_color_1;
+	color: inherit;
 }
 
 /* #Page Preloader */

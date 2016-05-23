@@ -5,18 +5,19 @@
 	bottom: 20px;
 	right: -999em;
 	overflow: hidden;
-	width: 70px;
-	height: 70px;
+	width: 55px;
+	height: 55px;
 	z-index: 999;
 	text-align: center;
-	border: 3px solid;
-	background-color: #fff;
+	background-color: #000;
+	border-radius: 50%;
 	&:before{
-		@include material-icon();
+		@include font-awesome-icon();
 		width: 100%;
-		margin: 10px 0 0 0;
-		font-size: 24px;
-		content: "arrow_upward";
+		font-size: 12px;
+		line-height: 55px;
+		content: "\f0d8";
+		color: #fff;
 	}
 	&:focus {
 		outline: none;

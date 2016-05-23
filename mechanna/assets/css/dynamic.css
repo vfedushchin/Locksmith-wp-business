@@ -98,6 +98,9 @@ a:hover { color: $regular_link_hover_color; }
 .invert a:hover { color: $invert_link_hover_color; }
 .invert .btn:hover { color: $invert_h3_color; }
 
+.footer-area.widget-area ul a { color: $invert_text_color; }
+.footer-area.widget-area ul a:hover { color: $invert_link_hover_color; }
+
 /* #Layout */
 @media (min-width: 1200px) {
 	.container {

@@ -299,11 +299,14 @@
 /* Menu items description */
 .menu-item__desc {
 	@include font-size(.625);
-	@include media-breakpoint-up(md) {
 		.menu > li > a > & {
 			position: absolute;
+			bottom: -2px;
+			width: 100%;
+			min-width: 50px;
+			color: inherit;
+			text-transform: lowercase;
 		}
-	}
 }
 
 /* Toogle button */
