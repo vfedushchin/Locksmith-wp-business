@@ -27,7 +27,9 @@
 		box-sizing: border-box;
 		width: 100%;
 		@include media-breakpoint-up(xl) {
-			width: calc(100% - 80px);
+			.sidebar-primary & {
+				width: calc(100% - 80px);
+			}
 		}
 		padding-right: 35px;
 		.top-panel & {
@@ -60,13 +62,16 @@
 			top: 3px;
 			right: 13px;
 			box-shadow: none;
-			@include media-breakpoint-up(xl) {
-				right: 93px;
-			}
 			background: none;
 			color: #000;
 			&:hover {
 				opacity: 0.5;
+			}
+		}
+
+		.site-content .sidebar-primary &.btn.btn-primary {
+			@include media-breakpoint-up(xl) {
+				right: 93px;
 			}
 		}
 
@@ -99,6 +104,15 @@
 			&:hover {
 				box-shadow: none;
 			}
+		}
+	}
+
+	.error404 & {
+		margin-top: 30px;
+		margin-bottom: 60px;
+		@include media-breakpoint-up(md) {
+			width: 365px;
+			margin: 33px auto 60px;
 		}
 	}
 }

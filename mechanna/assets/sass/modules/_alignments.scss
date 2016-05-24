@@ -15,3 +15,16 @@
 	@include center-block;
 	margin-bottom: 15px;
 }
+
+
+.marTop1 {
+  margin-top: 50px;
+  @include media-breakpoint-up(lg) {
+    margin-top: 106px;
+  }
+}
+.marTop2 {
+  @include media-breakpoint-up(lg) {
+    margin-top: -10px;
+  }
+}

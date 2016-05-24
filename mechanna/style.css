@@ -2,13 +2,13 @@
 Theme Name: Mechanna
 Theme URI: http://www.templatemonster.com/
 Author: Template Monster
-Author URI: http://www.templatemonster.com/
-Description: Your theme description.
+Author URI: http://www.templatemonster.com
+Description:
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: mechanna
-Tags: blue, white, light, one-column, two-columns, three-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-background, custom-colors, custom-menu, featured-images, post-formats, sticky-post, theme-options, threaded-comments, translation-ready
+Tags: one-column, two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-menu, featured-images, post-formats, sticky-post, theme-options, threaded-comments, translation-ready
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -1889,7 +1889,8 @@ input[type='submit'] {
   line-height: 25px;
 }
 
-.btn {
+.btn, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_contact_submit, .tm_pb_builder #tm_builder_outer_content a.tm_pb_button, .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button, body .booked-modal input.button-primary[type="submit"] {
   text-decoration: none;
   line-height: 1;
   display: inline-block;
@@ -1910,11 +1911,13 @@ input[type='submit'] {
   line-height: 25px;
 }
 
-.btn:hover {
+.btn:hover, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_contact_submit:hover, .tm_pb_builder #tm_builder_outer_content a.tm_pb_button:hover, .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link:hover, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button:hover,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button:hover, body .booked-modal input.button-primary[type="submit"]:hover {
   text-decoration: none;
 }
 
-.btn:focus {
+.btn:focus, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_contact_submit:focus, .tm_pb_builder #tm_builder_outer_content a.tm_pb_button:focus, .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link:focus, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button:focus,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button:focus, body .booked-modal input.button-primary[type="submit"]:focus {
   outline: none;
   box-shadow: 0 0 0;
 }
@@ -2082,7 +2085,7 @@ textarea {
 }
 
 @media (min-width: 1200px) {
-  .search-form__field[type='search'] {
+  .sidebar-primary .search-form__field[type='search'] {
     width: calc(100% - 80px);
   }
 }
@@ -2127,8 +2130,24 @@ textarea {
   position: absolute;
 }
 
-.site-footer .search-form__submit.btn.btn-primary,
-.site-content .search-form__submit.btn.btn-primary {
+.site-footer .search-form__submit.btn.btn-primary, .site-footer #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .search-form__submit.btn-primary.tm_pb_contact_submit, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .site-footer .search-form__submit.btn-primary.tm_pb_contact_submit, .site-footer .tm_pb_builder #tm_builder_outer_content a.search-form__submit.btn-primary.tm_pb_button, .tm_pb_builder #tm_builder_outer_content .site-footer a.search-form__submit.btn-primary.tm_pb_button, .site-footer .tm_pb_builder #tm_builder_outer_content .tm_pb_post .search-form__submit.btn-primary.more-link, .tm_pb_builder #tm_builder_outer_content .tm_pb_post .site-footer .search-form__submit.btn-primary.more-link, .site-footer #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .search-form__submit.btn-primary.button, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .site-footer .search-form__submit.btn-primary.button, .site-footer
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .search-form__submit.btn-primary.button,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .site-footer .search-form__submit.btn-primary.button, .site-footer body .booked-modal input.search-form__submit.btn-primary.button-primary[type="submit"], body .booked-modal .site-footer input.search-form__submit.btn-primary.button-primary[type="submit"],
+.site-content .search-form__submit.btn.btn-primary,
+.site-content #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .search-form__submit.btn-primary.tm_pb_contact_submit, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container
+.site-content .search-form__submit.btn-primary.tm_pb_contact_submit,
+.site-content .tm_pb_builder #tm_builder_outer_content a.search-form__submit.btn-primary.tm_pb_button, .tm_pb_builder #tm_builder_outer_content
+.site-content a.search-form__submit.btn-primary.tm_pb_button,
+.site-content .tm_pb_builder #tm_builder_outer_content .tm_pb_post .search-form__submit.btn-primary.more-link, .tm_pb_builder #tm_builder_outer_content .tm_pb_post
+.site-content .search-form__submit.btn-primary.more-link,
+.site-content #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .search-form__submit.btn-primary.button, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td
+.site-content .search-form__submit.btn-primary.button,
+.site-content
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .search-form__submit.btn-primary.button,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td
+.site-content .search-form__submit.btn-primary.button,
+.site-content body .booked-modal input.search-form__submit.btn-primary.button-primary[type="submit"], body .booked-modal
+.site-content input.search-form__submit.btn-primary.button-primary[type="submit"] {
   top: 3px;
   right: 13px;
   box-shadow: none;
@@ -2136,16 +2155,33 @@ textarea {
   color: #000;
 }
 
-@media (min-width: 1200px) {
-  .site-footer .search-form__submit.btn.btn-primary,
-  .site-content .search-form__submit.btn.btn-primary {
-    right: 93px;
-  }
+.site-footer .search-form__submit.btn.btn-primary:hover, .site-footer #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .search-form__submit.btn-primary.tm_pb_contact_submit:hover, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .site-footer .search-form__submit.btn-primary.tm_pb_contact_submit:hover, .site-footer .tm_pb_builder #tm_builder_outer_content a.search-form__submit.btn-primary.tm_pb_button:hover, .tm_pb_builder #tm_builder_outer_content .site-footer a.search-form__submit.btn-primary.tm_pb_button:hover, .site-footer .tm_pb_builder #tm_builder_outer_content .tm_pb_post .search-form__submit.btn-primary.more-link:hover, .tm_pb_builder #tm_builder_outer_content .tm_pb_post .site-footer .search-form__submit.btn-primary.more-link:hover, .site-footer #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .search-form__submit.btn-primary.button:hover, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .site-footer .search-form__submit.btn-primary.button:hover, .site-footer
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .search-form__submit.btn-primary.button:hover,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .site-footer .search-form__submit.btn-primary.button:hover, .site-footer body .booked-modal input.search-form__submit.btn-primary.button-primary[type="submit"]:hover, body .booked-modal .site-footer input.search-form__submit.btn-primary.button-primary[type="submit"]:hover,
+.site-content .search-form__submit.btn.btn-primary:hover,
+.site-content #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .search-form__submit.btn-primary.tm_pb_contact_submit:hover, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container
+.site-content .search-form__submit.btn-primary.tm_pb_contact_submit:hover,
+.site-content .tm_pb_builder #tm_builder_outer_content a.search-form__submit.btn-primary.tm_pb_button:hover, .tm_pb_builder #tm_builder_outer_content
+.site-content a.search-form__submit.btn-primary.tm_pb_button:hover,
+.site-content .tm_pb_builder #tm_builder_outer_content .tm_pb_post .search-form__submit.btn-primary.more-link:hover, .tm_pb_builder #tm_builder_outer_content .tm_pb_post
+.site-content .search-form__submit.btn-primary.more-link:hover,
+.site-content #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .search-form__submit.btn-primary.button:hover, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td
+.site-content .search-form__submit.btn-primary.button:hover,
+.site-content
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .search-form__submit.btn-primary.button:hover,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td
+.site-content .search-form__submit.btn-primary.button:hover,
+.site-content body .booked-modal input.search-form__submit.btn-primary.button-primary[type="submit"]:hover, body .booked-modal
+.site-content input.search-form__submit.btn-primary.button-primary[type="submit"]:hover {
+  opacity: 0.5;
 }
 
-.site-footer .search-form__submit.btn.btn-primary:hover,
-.site-content .search-form__submit.btn.btn-primary:hover {
-  opacity: 0.5;
+@media (min-width: 1200px) {
+  .site-content .sidebar-primary .search-form__submit.btn.btn-primary, .site-content .sidebar-primary #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .search-form__submit.btn-primary.tm_pb_contact_submit, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .site-content .sidebar-primary .search-form__submit.btn-primary.tm_pb_contact_submit, .site-content .sidebar-primary .tm_pb_builder #tm_builder_outer_content a.search-form__submit.btn-primary.tm_pb_button, .tm_pb_builder #tm_builder_outer_content .site-content .sidebar-primary a.search-form__submit.btn-primary.tm_pb_button, .site-content .sidebar-primary .tm_pb_builder #tm_builder_outer_content .tm_pb_post .search-form__submit.btn-primary.more-link, .tm_pb_builder #tm_builder_outer_content .tm_pb_post .site-content .sidebar-primary .search-form__submit.btn-primary.more-link, .site-content .sidebar-primary #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .search-form__submit.btn-primary.button, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .site-content .sidebar-primary .search-form__submit.btn-primary.button, .site-content .sidebar-primary
+  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .search-form__submit.btn-primary.button,
+  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .site-content .sidebar-primary .search-form__submit.btn-primary.button, .site-content .sidebar-primary body .booked-modal input.search-form__submit.btn-primary.button-primary[type="submit"], body .booked-modal .site-content .sidebar-primary input.search-form__submit.btn-primary.button-primary[type="submit"] {
+    right: 93px;
+  }
 }
 
 .search-form__submit:after {
@@ -2184,6 +2220,18 @@ textarea {
 
 .top-panel .search-form__submit:active, .top-panel .search-form__submit:focus, .top-panel .search-form__submit:hover {
   box-shadow: none;
+}
+
+.error404 .search-form {
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+@media (min-width: 768px) {
+  .error404 .search-form {
+    width: 365px;
+    margin: 33px auto 60px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -2678,6 +2726,14 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     margin-top: -40px;
     padding: 50px 45px 9px;
   }
+}
+
+.header-container .set-menu a {
+  color: #fff;
+}
+
+.header-container .set-menu a:hover {
+  color: #000;
 }
 
 /*--------------------------------------------------------------
@@ -3228,6 +3284,22 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 15px;
+}
+
+.marTop1 {
+  margin-top: 50px;
+}
+
+@media (min-width: 992px) {
+  .marTop1 {
+    margin-top: 106px;
+  }
+}
+
+@media (min-width: 992px) {
+  .marTop2 {
+    margin-top: -10px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -4398,7 +4470,9 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   margin-top: 0;
 }
 
-.entry-footer .btn {
+.entry-footer .btn, .entry-footer #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_contact_submit, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .entry-footer .tm_pb_contact_submit, .entry-footer .tm_pb_builder #tm_builder_outer_content a.tm_pb_button, .tm_pb_builder #tm_builder_outer_content .entry-footer a.tm_pb_button, .entry-footer .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link, .tm_pb_builder #tm_builder_outer_content .tm_pb_post .entry-footer .more-link, .entry-footer #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .entry-footer .button, .entry-footer
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .entry-footer .button, .entry-footer body .booked-modal input.button-primary[type="submit"], body .booked-modal .entry-footer input.button-primary[type="submit"] {
   float: left;
 }
 
@@ -4546,7 +4620,9 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 /*--------------------------------------------------------------
 ### Read More button
 --------------------------------------------------------------*/
-.posts-list__item .btn {
+.posts-list__item .btn, .posts-list__item #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_contact_submit, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .posts-list__item .tm_pb_contact_submit, .posts-list__item .tm_pb_builder #tm_builder_outer_content a.tm_pb_button, .tm_pb_builder #tm_builder_outer_content .posts-list__item a.tm_pb_button, .posts-list__item .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link, .tm_pb_builder #tm_builder_outer_content .tm_pb_post .posts-list__item .more-link, .posts-list__item #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .posts-list__item .button, .posts-list__item
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .posts-list__item .button, .posts-list__item body .booked-modal input.button-primary[type="submit"], body .booked-modal .posts-list__item input.button-primary[type="submit"] {
   padding: 0;
 }
 
@@ -4556,7 +4632,35 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 
 .posts-list__item .btn__icon,
 .posts-list__item .btn .material-icons,
-.posts-list__item .btn .fa {
+.posts-list__item #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_contact_submit .material-icons, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container
+.posts-list__item .tm_pb_contact_submit .material-icons,
+.posts-list__item .tm_pb_builder #tm_builder_outer_content a.tm_pb_button .material-icons, .tm_pb_builder #tm_builder_outer_content
+.posts-list__item a.tm_pb_button .material-icons,
+.posts-list__item .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link .material-icons, .tm_pb_builder #tm_builder_outer_content .tm_pb_post
+.posts-list__item .more-link .material-icons,
+.posts-list__item #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button .material-icons, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td
+.posts-list__item .button .material-icons,
+.posts-list__item
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button .material-icons,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td
+.posts-list__item .button .material-icons,
+.posts-list__item body .booked-modal input.button-primary[type="submit"] .material-icons, body .booked-modal
+.posts-list__item input.button-primary[type="submit"] .material-icons,
+.posts-list__item .btn .fa,
+.posts-list__item #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_contact_submit .fa, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container
+.posts-list__item .tm_pb_contact_submit .fa,
+.posts-list__item .tm_pb_builder #tm_builder_outer_content a.tm_pb_button .fa, .tm_pb_builder #tm_builder_outer_content
+.posts-list__item a.tm_pb_button .fa,
+.posts-list__item .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link .fa, .tm_pb_builder #tm_builder_outer_content .tm_pb_post
+.posts-list__item .more-link .fa,
+.posts-list__item #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button .fa, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td
+.posts-list__item .button .fa,
+.posts-list__item
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button .fa,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td
+.posts-list__item .button .fa,
+.posts-list__item body .booked-modal input.button-primary[type="submit"] .fa, body .booked-modal
+.posts-list__item input.button-primary[type="submit"] .fa {
   line-height: 46px;
   width: 46px;
   height: 46px;
@@ -4573,7 +4677,35 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 @media (min-width: 992px) {
   .posts-list--default:not(.two-sidebars) .posts-list__item .btn__icon,
   .posts-list--default:not(.two-sidebars) .posts-list__item .btn .material-icons,
-  .posts-list--default:not(.two-sidebars) .posts-list__item .btn .fa {
+  .posts-list--default:not(.two-sidebars) .posts-list__item #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_contact_submit .material-icons, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container
+  .posts-list--default:not(.two-sidebars) .posts-list__item .tm_pb_contact_submit .material-icons,
+  .posts-list--default:not(.two-sidebars) .posts-list__item .tm_pb_builder #tm_builder_outer_content a.tm_pb_button .material-icons, .tm_pb_builder #tm_builder_outer_content
+  .posts-list--default:not(.two-sidebars) .posts-list__item a.tm_pb_button .material-icons,
+  .posts-list--default:not(.two-sidebars) .posts-list__item .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link .material-icons, .tm_pb_builder #tm_builder_outer_content .tm_pb_post
+  .posts-list--default:not(.two-sidebars) .posts-list__item .more-link .material-icons,
+  .posts-list--default:not(.two-sidebars) .posts-list__item #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button .material-icons, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td
+  .posts-list--default:not(.two-sidebars) .posts-list__item .button .material-icons,
+  .posts-list--default:not(.two-sidebars) .posts-list__item
+  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button .material-icons,
+  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td
+  .posts-list--default:not(.two-sidebars) .posts-list__item .button .material-icons,
+  .posts-list--default:not(.two-sidebars) .posts-list__item body .booked-modal input.button-primary[type="submit"] .material-icons, body .booked-modal
+  .posts-list--default:not(.two-sidebars) .posts-list__item input.button-primary[type="submit"] .material-icons,
+  .posts-list--default:not(.two-sidebars) .posts-list__item .btn .fa,
+  .posts-list--default:not(.two-sidebars) .posts-list__item #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_contact_submit .fa, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container
+  .posts-list--default:not(.two-sidebars) .posts-list__item .tm_pb_contact_submit .fa,
+  .posts-list--default:not(.two-sidebars) .posts-list__item .tm_pb_builder #tm_builder_outer_content a.tm_pb_button .fa, .tm_pb_builder #tm_builder_outer_content
+  .posts-list--default:not(.two-sidebars) .posts-list__item a.tm_pb_button .fa,
+  .posts-list--default:not(.two-sidebars) .posts-list__item .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link .fa, .tm_pb_builder #tm_builder_outer_content .tm_pb_post
+  .posts-list--default:not(.two-sidebars) .posts-list__item .more-link .fa,
+  .posts-list--default:not(.two-sidebars) .posts-list__item #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button .fa, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td
+  .posts-list--default:not(.two-sidebars) .posts-list__item .button .fa,
+  .posts-list--default:not(.two-sidebars) .posts-list__item
+  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button .fa,
+  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td
+  .posts-list--default:not(.two-sidebars) .posts-list__item .button .fa,
+  .posts-list--default:not(.two-sidebars) .posts-list__item body .booked-modal input.button-primary[type="submit"] .fa, body .booked-modal
+  .posts-list--default:not(.two-sidebars) .posts-list__item input.button-primary[type="submit"] .fa {
     display: none;
   }
 }
@@ -4626,11 +4758,29 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
 @media (min-width: 992px) {
-  .posts-list--grid-2-cols .sticky.posts-list__item .btn,
-  .posts-list--grid-3-cols .sticky.posts-list__item .btn {
+  .posts-list--grid-2-cols .sticky.posts-list__item .btn, .posts-list--grid-2-cols .sticky.posts-list__item #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_contact_submit, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .posts-list--grid-2-cols .sticky.posts-list__item .tm_pb_contact_submit, .posts-list--grid-2-cols .sticky.posts-list__item .tm_pb_builder #tm_builder_outer_content a.tm_pb_button, .tm_pb_builder #tm_builder_outer_content .posts-list--grid-2-cols .sticky.posts-list__item a.tm_pb_button, .posts-list--grid-2-cols .sticky.posts-list__item .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link, .tm_pb_builder #tm_builder_outer_content .tm_pb_post .posts-list--grid-2-cols .sticky.posts-list__item .more-link, .posts-list--grid-2-cols .sticky.posts-list__item #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .posts-list--grid-2-cols .sticky.posts-list__item .button, .posts-list--grid-2-cols .sticky.posts-list__item
+  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button,
+  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .posts-list--grid-2-cols .sticky.posts-list__item .button, .posts-list--grid-2-cols .sticky.posts-list__item body .booked-modal input.button-primary[type="submit"], body .booked-modal .posts-list--grid-2-cols .sticky.posts-list__item input.button-primary[type="submit"],
+  .posts-list--grid-3-cols .sticky.posts-list__item .btn,
+  .posts-list--grid-3-cols .sticky.posts-list__item #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_contact_submit, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container
+  .posts-list--grid-3-cols .sticky.posts-list__item .tm_pb_contact_submit,
+  .posts-list--grid-3-cols .sticky.posts-list__item .tm_pb_builder #tm_builder_outer_content a.tm_pb_button, .tm_pb_builder #tm_builder_outer_content
+  .posts-list--grid-3-cols .sticky.posts-list__item a.tm_pb_button,
+  .posts-list--grid-3-cols .sticky.posts-list__item .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link, .tm_pb_builder #tm_builder_outer_content .tm_pb_post
+  .posts-list--grid-3-cols .sticky.posts-list__item .more-link,
+  .posts-list--grid-3-cols .sticky.posts-list__item #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td
+  .posts-list--grid-3-cols .sticky.posts-list__item .button,
+  .posts-list--grid-3-cols .sticky.posts-list__item
+  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button,
+  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td
+  .posts-list--grid-3-cols .sticky.posts-list__item .button,
+  .posts-list--grid-3-cols .sticky.posts-list__item body .booked-modal input.button-primary[type="submit"], body .booked-modal
+  .posts-list--grid-3-cols .sticky.posts-list__item input.button-primary[type="submit"] {
     padding: 8px 50px;
   }
-  .two-sidebars .sticky.posts-list__item .btn {
+  .two-sidebars .sticky.posts-list__item .btn, .two-sidebars .sticky.posts-list__item #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_contact_submit, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .two-sidebars .sticky.posts-list__item .tm_pb_contact_submit, .two-sidebars .sticky.posts-list__item .tm_pb_builder #tm_builder_outer_content a.tm_pb_button, .tm_pb_builder #tm_builder_outer_content .two-sidebars .sticky.posts-list__item a.tm_pb_button, .two-sidebars .sticky.posts-list__item .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link, .tm_pb_builder #tm_builder_outer_content .tm_pb_post .two-sidebars .sticky.posts-list__item .more-link, .two-sidebars .sticky.posts-list__item #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .two-sidebars .sticky.posts-list__item .button, .two-sidebars .sticky.posts-list__item
+  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button,
+  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .two-sidebars .sticky.posts-list__item .button, .two-sidebars .sticky.posts-list__item body .booked-modal input.button-primary[type="submit"], body .booked-modal .two-sidebars .sticky.posts-list__item input.button-primary[type="submit"] {
     padding: 0;
   }
 }
@@ -4652,24 +4802,160 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 @media (min-width: 992px) {
   .sticky.posts-list__item .btn__icon,
   .sticky.posts-list__item .btn .material-icons,
-  .sticky.posts-list__item .btn .fa {
+  .sticky.posts-list__item #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_contact_submit .material-icons, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container
+  .sticky.posts-list__item .tm_pb_contact_submit .material-icons,
+  .sticky.posts-list__item .tm_pb_builder #tm_builder_outer_content a.tm_pb_button .material-icons, .tm_pb_builder #tm_builder_outer_content
+  .sticky.posts-list__item a.tm_pb_button .material-icons,
+  .sticky.posts-list__item .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link .material-icons, .tm_pb_builder #tm_builder_outer_content .tm_pb_post
+  .sticky.posts-list__item .more-link .material-icons,
+  .sticky.posts-list__item #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button .material-icons, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td
+  .sticky.posts-list__item .button .material-icons,
+  .sticky.posts-list__item
+  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button .material-icons,
+  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td
+  .sticky.posts-list__item .button .material-icons,
+  .sticky.posts-list__item body .booked-modal input.button-primary[type="submit"] .material-icons, body .booked-modal
+  .sticky.posts-list__item input.button-primary[type="submit"] .material-icons,
+  .sticky.posts-list__item .btn .fa,
+  .sticky.posts-list__item #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_contact_submit .fa, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container
+  .sticky.posts-list__item .tm_pb_contact_submit .fa,
+  .sticky.posts-list__item .tm_pb_builder #tm_builder_outer_content a.tm_pb_button .fa, .tm_pb_builder #tm_builder_outer_content
+  .sticky.posts-list__item a.tm_pb_button .fa,
+  .sticky.posts-list__item .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link .fa, .tm_pb_builder #tm_builder_outer_content .tm_pb_post
+  .sticky.posts-list__item .more-link .fa,
+  .sticky.posts-list__item #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button .fa, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td
+  .sticky.posts-list__item .button .fa,
+  .sticky.posts-list__item
+  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button .fa,
+  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td
+  .sticky.posts-list__item .button .fa,
+  .sticky.posts-list__item body .booked-modal input.button-primary[type="submit"] .fa, body .booked-modal
+  .sticky.posts-list__item input.button-primary[type="submit"] .fa {
     display: none;
   }
   .posts-list--masonry-2-cols .sticky.posts-list__item .btn__icon,
   .posts-list--masonry-3-cols .sticky.posts-list__item .btn__icon, .posts-list--masonry-2-cols
+  .sticky.posts-list__item .btn .material-icons, .posts-list--masonry-2-cols
+  .sticky.posts-list__item #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_contact_submit .material-icons, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .posts-list--masonry-2-cols
+  .sticky.posts-list__item .tm_pb_contact_submit .material-icons, .posts-list--masonry-2-cols
+  .sticky.posts-list__item .tm_pb_builder #tm_builder_outer_content a.tm_pb_button .material-icons, .tm_pb_builder #tm_builder_outer_content .posts-list--masonry-2-cols
+  .sticky.posts-list__item a.tm_pb_button .material-icons, .posts-list--masonry-2-cols
+  .sticky.posts-list__item .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link .material-icons, .tm_pb_builder #tm_builder_outer_content .tm_pb_post .posts-list--masonry-2-cols
+  .sticky.posts-list__item .more-link .material-icons, .posts-list--masonry-2-cols
+  .sticky.posts-list__item #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button .material-icons, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .posts-list--masonry-2-cols
+  .sticky.posts-list__item .button .material-icons, .posts-list--masonry-2-cols
+  .sticky.posts-list__item
+  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button .material-icons,
+  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .posts-list--masonry-2-cols
+  .sticky.posts-list__item .button .material-icons, .posts-list--masonry-2-cols
+  .sticky.posts-list__item body .booked-modal input.button-primary[type="submit"] .material-icons, body .booked-modal .posts-list--masonry-2-cols
+  .sticky.posts-list__item input.button-primary[type="submit"] .material-icons,
+  .posts-list--masonry-3-cols
   .sticky.posts-list__item .btn .material-icons,
   .posts-list--masonry-3-cols
-  .sticky.posts-list__item .btn .material-icons, .posts-list--masonry-2-cols
+  .sticky.posts-list__item #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_contact_submit .material-icons, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container
+  .posts-list--masonry-3-cols
+  .sticky.posts-list__item .tm_pb_contact_submit .material-icons,
+  .posts-list--masonry-3-cols
+  .sticky.posts-list__item .tm_pb_builder #tm_builder_outer_content a.tm_pb_button .material-icons, .tm_pb_builder #tm_builder_outer_content
+  .posts-list--masonry-3-cols
+  .sticky.posts-list__item a.tm_pb_button .material-icons,
+  .posts-list--masonry-3-cols
+  .sticky.posts-list__item .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link .material-icons, .tm_pb_builder #tm_builder_outer_content .tm_pb_post
+  .posts-list--masonry-3-cols
+  .sticky.posts-list__item .more-link .material-icons,
+  .posts-list--masonry-3-cols
+  .sticky.posts-list__item #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button .material-icons, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td
+  .posts-list--masonry-3-cols
+  .sticky.posts-list__item .button .material-icons,
+  .posts-list--masonry-3-cols
+  .sticky.posts-list__item
+  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button .material-icons,
+  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td
+  .posts-list--masonry-3-cols
+  .sticky.posts-list__item .button .material-icons,
+  .posts-list--masonry-3-cols
+  .sticky.posts-list__item body .booked-modal input.button-primary[type="submit"] .material-icons, body .booked-modal
+  .posts-list--masonry-3-cols
+  .sticky.posts-list__item input.button-primary[type="submit"] .material-icons, .posts-list--masonry-2-cols
+  .sticky.posts-list__item .btn .fa, .posts-list--masonry-2-cols
+  .sticky.posts-list__item #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_contact_submit .fa, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .posts-list--masonry-2-cols
+  .sticky.posts-list__item .tm_pb_contact_submit .fa, .posts-list--masonry-2-cols
+  .sticky.posts-list__item .tm_pb_builder #tm_builder_outer_content a.tm_pb_button .fa, .tm_pb_builder #tm_builder_outer_content .posts-list--masonry-2-cols
+  .sticky.posts-list__item a.tm_pb_button .fa, .posts-list--masonry-2-cols
+  .sticky.posts-list__item .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link .fa, .tm_pb_builder #tm_builder_outer_content .tm_pb_post .posts-list--masonry-2-cols
+  .sticky.posts-list__item .more-link .fa, .posts-list--masonry-2-cols
+  .sticky.posts-list__item #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button .fa, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .posts-list--masonry-2-cols
+  .sticky.posts-list__item .button .fa, .posts-list--masonry-2-cols
+  .sticky.posts-list__item
+  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button .fa,
+  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .posts-list--masonry-2-cols
+  .sticky.posts-list__item .button .fa, .posts-list--masonry-2-cols
+  .sticky.posts-list__item body .booked-modal input.button-primary[type="submit"] .fa, body .booked-modal .posts-list--masonry-2-cols
+  .sticky.posts-list__item input.button-primary[type="submit"] .fa,
+  .posts-list--masonry-3-cols
   .sticky.posts-list__item .btn .fa,
   .posts-list--masonry-3-cols
-  .sticky.posts-list__item .btn .fa {
+  .sticky.posts-list__item #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_contact_submit .fa, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container
+  .posts-list--masonry-3-cols
+  .sticky.posts-list__item .tm_pb_contact_submit .fa,
+  .posts-list--masonry-3-cols
+  .sticky.posts-list__item .tm_pb_builder #tm_builder_outer_content a.tm_pb_button .fa, .tm_pb_builder #tm_builder_outer_content
+  .posts-list--masonry-3-cols
+  .sticky.posts-list__item a.tm_pb_button .fa,
+  .posts-list--masonry-3-cols
+  .sticky.posts-list__item .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link .fa, .tm_pb_builder #tm_builder_outer_content .tm_pb_post
+  .posts-list--masonry-3-cols
+  .sticky.posts-list__item .more-link .fa,
+  .posts-list--masonry-3-cols
+  .sticky.posts-list__item #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button .fa, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td
+  .posts-list--masonry-3-cols
+  .sticky.posts-list__item .button .fa,
+  .posts-list--masonry-3-cols
+  .sticky.posts-list__item
+  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button .fa,
+  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td
+  .posts-list--masonry-3-cols
+  .sticky.posts-list__item .button .fa,
+  .posts-list--masonry-3-cols
+  .sticky.posts-list__item body .booked-modal input.button-primary[type="submit"] .fa, body .booked-modal
+  .posts-list--masonry-3-cols
+  .sticky.posts-list__item input.button-primary[type="submit"] .fa {
     display: inline-block;
   }
 }
 
 .two-sidebars .sticky.posts-list__item .btn__icon, .two-sidebars
 .sticky.posts-list__item .btn .material-icons, .two-sidebars
-.sticky.posts-list__item .btn .fa {
+.sticky.posts-list__item #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_contact_submit .material-icons, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .two-sidebars
+.sticky.posts-list__item .tm_pb_contact_submit .material-icons, .two-sidebars
+.sticky.posts-list__item .tm_pb_builder #tm_builder_outer_content a.tm_pb_button .material-icons, .tm_pb_builder #tm_builder_outer_content .two-sidebars
+.sticky.posts-list__item a.tm_pb_button .material-icons, .two-sidebars
+.sticky.posts-list__item .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link .material-icons, .tm_pb_builder #tm_builder_outer_content .tm_pb_post .two-sidebars
+.sticky.posts-list__item .more-link .material-icons, .two-sidebars
+.sticky.posts-list__item #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button .material-icons, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .two-sidebars
+.sticky.posts-list__item .button .material-icons, .two-sidebars
+.sticky.posts-list__item
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button .material-icons,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .two-sidebars
+.sticky.posts-list__item .button .material-icons, .two-sidebars
+.sticky.posts-list__item body .booked-modal input.button-primary[type="submit"] .material-icons, body .booked-modal .two-sidebars
+.sticky.posts-list__item input.button-primary[type="submit"] .material-icons, .two-sidebars
+.sticky.posts-list__item .btn .fa, .two-sidebars
+.sticky.posts-list__item #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_contact_submit .fa, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .two-sidebars
+.sticky.posts-list__item .tm_pb_contact_submit .fa, .two-sidebars
+.sticky.posts-list__item .tm_pb_builder #tm_builder_outer_content a.tm_pb_button .fa, .tm_pb_builder #tm_builder_outer_content .two-sidebars
+.sticky.posts-list__item a.tm_pb_button .fa, .two-sidebars
+.sticky.posts-list__item .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link .fa, .tm_pb_builder #tm_builder_outer_content .tm_pb_post .two-sidebars
+.sticky.posts-list__item .more-link .fa, .two-sidebars
+.sticky.posts-list__item #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button .fa, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .two-sidebars
+.sticky.posts-list__item .button .fa, .two-sidebars
+.sticky.posts-list__item
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button .fa,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .two-sidebars
+.sticky.posts-list__item .button .fa, .two-sidebars
+.sticky.posts-list__item body .booked-modal input.button-primary[type="submit"] .fa, body .booked-modal .two-sidebars
+.sticky.posts-list__item input.button-primary[type="submit"] .fa {
   display: inline-block;
 }
 
@@ -5441,7 +5727,9 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   line-height: 28px;
 }
 
-.widget_text .btn {
+.widget_text .btn, .widget_text #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_contact_submit, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .widget_text .tm_pb_contact_submit, .widget_text .tm_pb_builder #tm_builder_outer_content a.tm_pb_button, .tm_pb_builder #tm_builder_outer_content .widget_text a.tm_pb_button, .widget_text .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link, .tm_pb_builder #tm_builder_outer_content .tm_pb_post .widget_text .more-link, .widget_text #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .widget_text .button, .widget_text
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .widget_text .button, .widget_text body .booked-modal input.button-primary[type="submit"], body .booked-modal .widget_text input.button-primary[type="submit"] {
   margin-top: 34px;
 }
 
@@ -6815,6 +7103,1756 @@ object {
 
 .fb_iframe_widget > span {
   max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Builder
+--------------------------------------------------------------*/
+#tm_builder_outer_content .img_add.tm_pb_module img {
+  margin-top: 10px;
+}
+
+#tm_builder_outer_content .img_add2.tm_pb_module img {
+  margin-top: 20px;
+}
+
+#tm_builder_outer_content hr.dash {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#tm_builder_outer_content hr {
+  margin: 30px 0 8px;
+}
+
+#tm_builder_outer_content .tm_pb_module p > em {
+  font-weight: 700;
+  letter-spacing: 0.06px;
+}
+
+#tm_builder_outer_content .tm_pb_module h5 + p {
+  margin-top: 33px;
+}
+
+#tm_builder_outer_content .tm_pb_module h3 + h5 {
+  margin-top: 7px;
+}
+
+#tm_builder_outer_content .tm_pb_module h3 + h4 {
+  margin-top: 7px;
+}
+
+#tm_builder_outer_content .tm_pb_module h4 + p {
+  margin-top: 35px;
+}
+
+#tm_builder_outer_content .tm_pb_module h5 + .offset1 {
+  margin-top: 12px;
+}
+
+#tm_builder_outer_content .tm_pb_module * + .offset2 {
+  margin-top: 12px;
+}
+
+#tm_builder_outer_content .tm_pb_module p.offset1 + h5 {
+  margin-top: 32px;
+  margin-bottom: 0;
+}
+
+#tm_builder_outer_content .tm_pb_module address {
+  font-style: normal;
+}
+
+#tm_builder_outer_content .tm_pb_module address + h5 {
+  margin-bottom: 0;
+}
+
+#tm_builder_outer_content .tm_pb_module p > a[href^="callto"] {
+  font-weight: 800;
+}
+
+#tm_builder_outer_content .tm_pb_module p > a[href^="mailto"] {
+  font-style: italic;
+}
+
+#tm_builder_outer_content .ins1 {
+  padding: 0;
+}
+
+@media (min-width: 544px) {
+  #tm_builder_outer_content .ins1 {
+    padding: 0 10%;
+  }
+}
+
+#tm_builder_outer_content .tm_pb_with_background .container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#tm_builder_outer_content .tm_pb_with_background .container .tm_pb_row.row {
+  width: auto;
+}
+
+#tm_builder_outer_content .custom-services .tm_pb_blurb .tm_pb_main_blurb_image a, .tm_pb_builder #tm_builder_outer_content .entry-featured-image-url {
+  overflow: hidden;
+  position: relative;
+  line-height: 0;
+  display: block;
+}
+
+#tm_builder_outer_content .custom-services .tm_pb_blurb .tm_pb_main_blurb_image a::before, .tm_pb_builder #tm_builder_outer_content .entry-featured-image-url::before {
+  position: absolute;
+  top: 0;
+  left: -75%;
+  z-index: 2;
+  display: block;
+  content: '';
+  width: 50%;
+  height: 100%;
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+  -webkit-transform: skewX(-25deg);
+  transform: skewX(-25deg);
+}
+
+#tm_builder_outer_content .custom-services .tm_pb_blurb .tm_pb_main_blurb_image a:hover::before, .tm_pb_builder #tm_builder_outer_content .entry-featured-image-url:hover::before {
+  -webkit-animation: shine 1s;
+  animation: shine 1s;
+}
+
+@-webkit-keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+
+#tm_builder_outer_content .tm_pb_contact_form_container.custom-form .tm_pb_contact_main_title {
+  font-size: 30px;
+  font-weight: 400;
+  text-align: left;
+  margin-top: 6px;
+  margin-bottom: 33px;
+}
+
+#tm_builder_outer_content .tm_pb_contact_form_container.custom-form .tm_pb_contact_right {
+  display: none;
+}
+
+#tm_builder_outer_content .tm_pb_contact_form_container.custom-form .tm_pb_contact_form .tm_contact_bottom_container {
+  text-align: left;
+  margin-top: 5px;
+}
+
+#tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_main_title {
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 29px;
+}
+
+#tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_field {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_field {
+    width: auto;
+  }
+}
+
+#tm_builder_outer_content .tm_pb_contact_form_container .tm-pb-contact-message {
+  margin-bottom: 30px;
+}
+
+#tm_builder_outer_content .tm_pb_contact_form_container .tm-pb-contact-message ul li {
+  color: red;
+}
+
+#tm_builder_outer_content .tm_pb_contact_form_container .tm-pb-contact-message ul li::before {
+  display: none;
+}
+
+#tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_pb_contact_form_input {
+  font-style: italic;
+  padding: 13px 20px;
+  margin: 0 0 25px 0;
+}
+
+#tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_pb_contact_form_label {
+  margin-bottom: 12px;
+  display: block;
+}
+
+#tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_pb_contact_message {
+  min-height: 200px;
+}
+
+#tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container {
+  float: none;
+  text-align: center;
+  overflow: visible;
+  margin-top: 18px;
+}
+
+#tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_contact_submit {
+  color: #fff;
+}
+
+#tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_contact_submit:after {
+  display: none;
+}
+
+#tm_builder_outer_content .tm_pb_with_background .tm_pb_module.tm_pb_blurb .tm-pb-icon:hover {
+  background: #fff !important;
+}
+
+#tm_builder_outer_content .tm_pb_with_background .tm_pb_module.tm_pb_blurb .tm_pb_blurb_content {
+  padding: 0;
+}
+
+#tm_builder_outer_content .tm_pb_with_background .tm_pb_module.tm_pb_blurb h4 {
+  margin-top: 30px;
+}
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_blurb.liner .tm_pb_blurb_content {
+  max-width: 100%;
+  position: relative;
+}
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_blurb.liner .tm_pb_blurb_content .tm_pb_blurb_content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  padding: 25px 10px;
+}
+
+@media (min-width: 768px) {
+  #tm_builder_outer_content .tm_pb_module.tm_pb_blurb.liner .tm_pb_blurb_content .tm_pb_blurb_content {
+    padding: 50px 10px;
+  }
+}
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_blurb.liner .tm_pb_blurb_content .tm_pb_blurb_content h5, #tm_builder_outer_content .tm_pb_module.tm_pb_blurb.liner .tm_pb_blurb_content .tm_pb_blurb_content p {
+  color: #fff;
+}
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_blurb.liner .tm_pb_blurb_content .tm_pb_blurb_content h5 {
+  font-weight: 800;
+  font-size: 30px;
+}
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_blurb.tm_pb_blurb_position_left h4 {
+  margin-top: 0;
+}
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_blurb.tm_pb_blurb_position_left .tm_pb_blurb_container {
+  padding-left: 0;
+}
+
+@media (min-width: 992px) {
+  #tm_builder_outer_content .tm_pb_module.tm_pb_blurb.tm_pb_blurb_position_left .tm_pb_blurb_container {
+    padding-left: 22px;
+  }
+}
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_blurb.tm_pb_blurb_position_left .tm_pb_main_blurb_image {
+  width: 100%;
+  display: block;
+}
+
+@media (min-width: 992px) {
+  #tm_builder_outer_content .tm_pb_module.tm_pb_blurb.tm_pb_blurb_position_left .tm_pb_main_blurb_image {
+    display: table-cell;
+    width: auto;
+  }
+}
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_blurb.tm_pb_blurb_position_left .tm_pb_main_blurb_image a {
+  margin-top: 6px;
+}
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_blurb.tm_pb_blurb_position_left .tm_pb_blurb_content {
+  padding: 0;
+}
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_blurb .tm_pb_blurb_content {
+  padding: 0;
+}
+
+@media (min-width: 992px) {
+  #tm_builder_outer_content .tm_pb_module.tm_pb_blurb .tm_pb_blurb_content {
+    padding: 0 20px;
+  }
+}
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_blurb .tm-pb-icon-circle-border {
+  border-width: 2px;
+}
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_blurb a {
+  transition: 0.3s ease all;
+}
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_blurb h4 {
+  padding-bottom: 15px;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_blurb p {
+  margin-top: 0;
+}
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_blurb .tm_pb_main_blurb_image {
+  margin-bottom: 20px;
+}
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_blurb .tm-pb-icon {
+  height: 133px;
+  width: 133px;
+  transition: 0.3s ease all;
+}
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_blurb .tm-pb-icon::before {
+  transition: 0.3s ease all;
+}
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_blurb .tm-pb-icon:hover {
+  color: #fff !important;
+}
+
+#tm_builder_outer_content .custom-services .tm_pb_module.tm_pb_blurb .tm_pb_main_blurb_image {
+  margin-bottom: 28px;
+}
+
+#tm_builder_outer_content .custom-services .tm_pb_module.tm_pb_blurb .tm_pb_blurb_content {
+  padding: 0;
+}
+
+#tm_builder_outer_content .services-list .tm_pb_module.tm_pb_blurb .tm_pb_main_blurb_image {
+  text-align: center;
+}
+
+@media (min-width: 544px) {
+  #tm_builder_outer_content .services-list .tm_pb_module.tm_pb_blurb .tm_pb_main_blurb_image {
+    text-align: left;
+  }
+}
+
+#tm_builder_outer_content .services-list .tm_pb_module.tm_pb_blurb .tm_pb_main_blurb_image a {
+  display: inline-block;
+}
+
+@media (min-width: 544px) {
+  #tm_builder_outer_content .services-list .tm_pb_module.tm_pb_blurb .tm_pb_main_blurb_image a {
+    display: block;
+  }
+}
+
+.tm_pb_builder #tm_builder_outer_content .services-list .tm_pb_button {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .tm_pb_builder #tm_builder_outer_content .services-list .tm_pb_button {
+    display: inline-block;
+  }
+}
+
+#tm_builder_outer_content .service-info .tm_pb_blurb.tm_pb_blurb_position_left .tm_pb_main_blurb_image {
+  margin-bottom: 0;
+  display: block;
+  width: 100%;
+}
+
+@media (min-width: 544px) {
+  #tm_builder_outer_content .service-info .tm_pb_blurb.tm_pb_blurb_position_left .tm_pb_main_blurb_image {
+    display: table-cell;
+    width: 32px;
+  }
+}
+
+#tm_builder_outer_content .service-info .tm_pb_blurb.tm_pb_blurb_position_left .tm_pb_blurb_container {
+  padding-left: 0;
+}
+
+@media (min-width: 544px) {
+  #tm_builder_outer_content .service-info .tm_pb_blurb.tm_pb_blurb_position_left .tm_pb_blurb_container {
+    padding-left: 15px;
+  }
+}
+
+#tm_builder_outer_content .service-info .tm_pb_blurb.tm_pb_text_align_center .tm_pb_blurb_content {
+  display: inline-block;
+}
+
+#tm_builder_outer_content .service-info .tm_pb_blurb.tm_pb_text_align_center .tm_pb_blurb_content h4 {
+  font-size: 50px;
+  font-weight: 700;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+
+@media (min-width: 544px) {
+  #tm_builder_outer_content .service-info .tm_pb_blurb.tm_pb_text_align_center .tm_pb_blurb_content h4 {
+    padding: 10px 0 8px 5px;
+  }
+}
+
+#tm_builder_outer_content .service-info h5 {
+  margin-bottom: 4px;
+  margin-top: 0;
+}
+
+#tm_builder_outer_content .service-info h5 > .price {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+#tm_builder_outer_content .service-info h5 + p {
+  margin-top: 0;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_slider .tm_pb_container {
+  max-width: 1170px;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_module h1 {
+  margin-bottom: 0;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_module h1 span {
+  font-weight: 300;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_slider.custom-swiper .tm_pb_slide_content {
+  padding: 0 30px;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_slider div.tm_pb_slide.tm_pb_slide_1 h5 {
+  color: #fff;
+  font-weight: 700;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_slider div.tm_pb_slide.tm_pb_slide_2 h1 {
+  color: #fff;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_slider div.tm_pb_slide.tm_pb_slide_2 h4 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 17px;
+  margin-bottom: 0;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_slider div.tm_pb_slide.tm_pb_slide_2 h4 + p {
+  margin-top: 11px;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_slider div.tm_pb_slide.tm_pb_slide_2 .tm_pb_slide_description {
+  text-align: center;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_slider div.tm_pb_slide.tm_pb_slide_2 .tm_pb_more_button {
+  margin-top: 30px;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_module h5 {
+  font-style: normal;
+  margin-top: 7px;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm-pb-active-slide .tm_pb_slide_description,
+.tm_pb_builder #tm_builder_outer_content .tm_pb_slider div.tm_pb_slide {
+  text-align: left;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm-pb-active-slide .tm_pb_slide_description h5 + p,
+.tm_pb_builder #tm_builder_outer_content .tm_pb_slider div.tm_pb_slide h5 + p {
+  margin-top: 23px;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_slide_content p {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_slide_content p > a[href^="callto"] {
+  color: #fff;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_slide_content p a.fa {
+  margin-top: 11px;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 1.1;
+  transition: 0.3s ease all;
+}
+
+@media (min-width: 768px) {
+  .tm_pb_builder #tm_builder_outer_content .tm_pb_slide_content p a.fa {
+    font-size: 80px;
+  }
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_slide_content p a.fa:before {
+  pointer-events: none;
+  text-align: center;
+  font-size: 50px;
+  line-height: 80px;
+  font-family: FontAwesome;
+  display: inline-block;
+  border: 2px solid #fff;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+  color: #fff;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_fullwidth_slider_0.tm_pb_slider .tm_pb_slide_description h2.tm_pb_slide_title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 34px;
+  color: #fff;
+  max-width: 500px;
+  padding-bottom: 21px;
+}
+
+.tm_pb_builder #tm_builder_outer_content a.tm_pb_button {
+  color: #fff;
+  border: none;
+}
+
+.tm_pb_builder #tm_builder_outer_content a.tm_pb_button::after {
+  display: none;
+}
+
+.tm_pb_builder #tm_builder_outer_content a.tm_pb_button:hover {
+  color: #fff;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm-pb-slider-arrows .tm-pb-arrow-prev,
+.tm_pb_builder #tm_builder_outer_content .tm-pb-slider-arrows .tm-pb-arrow-next {
+  display: none;
+  height: 51px;
+  width: 51px;
+  border-radius: 50%;
+  opacity: 1;
+  color: #fff !important;
+  box-shadow: 10px 10px 10px -3px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease all;
+}
+
+@media (min-width: 544px) {
+  .tm_pb_builder #tm_builder_outer_content .tm-pb-slider-arrows .tm-pb-arrow-prev,
+  .tm_pb_builder #tm_builder_outer_content .tm-pb-slider-arrows .tm-pb-arrow-next {
+    display: inline-block;
+  }
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm-pb-slider-arrows .tm-pb-arrow-prev:hover,
+.tm_pb_builder #tm_builder_outer_content .tm-pb-slider-arrows .tm-pb-arrow-next:hover {
+  box-shadow: none;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm-pb-slider-arrows .tm-pb-arrow-prev:before,
+.tm_pb_builder #tm_builder_outer_content .tm-pb-slider-arrows .tm-pb-arrow-next:before {
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm-pb-slider-arrows .tm-pb-arrow-prev {
+  left: 30px !important;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm-pb-slider-arrows .tm-pb-arrow-prev:before {
+  content: '\f104';
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm-pb-slider-arrows .tm-pb-arrow-next {
+  right: 30px !important;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm-pb-slider-arrows .tm-pb-arrow-next:before {
+  content: '\f105';
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm-pb-controllers {
+  bottom: 50px;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm-pb-controllers > a {
+  height: 14px;
+  width: 14px;
+  margin-right: 20px;
+  position: relative;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm-pb-controllers > a::before {
+  content: '';
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 0.5s ease all;
+  z-index: -1;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm-pb-controllers > a:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm-pb-controllers > a.tm-pb-active-control::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+#tm_builder_outer_content .tm_pb_slider_fullwidth_off .tm_pb_slide_description {
+  margin: 0 -8% !important;
+}
+
+#tm_builder_outer_content .tm_pb_with_background .tm_pb_column .tm_pb_testimonial::before {
+  top: 155px;
+  left: 0;
+}
+
+@media (max-width: 479px) {
+  #tm_builder_outer_content .tm_pb_with_background .tm_pb_column .tm_pb_testimonial::before {
+    top: 125px;
+  }
+}
+
+#tm_builder_outer_content .tm_pb_with_background .tm_pb_column .tm_pb_testimonial .tm_pb_testimonial_portrait {
+  margin: 0 auto;
+}
+
+#tm_builder_outer_content .tm_pb_testimonial {
+  position: relative;
+}
+
+#tm_builder_outer_content .tm_pb_testimonial.centered {
+  text-align: center;
+}
+
+#tm_builder_outer_content .tm_pb_testimonial.centered .tm_pb_testimonial_portrait {
+  float: none;
+  display: inline-block;
+  margin-right: 0;
+  margin-bottom: 21px;
+}
+
+#tm_builder_outer_content .tm_pb_testimonial.centered .tm_pb_testimonial_description {
+  text-align: left;
+}
+
+#tm_builder_outer_content .tm_pb_testimonial.centered .tm_pb_testimonial_description .tm_pb_testimonial_description_inner {
+  width: 100% !important;
+  margin-top: 15px;
+}
+
+#tm_builder_outer_content .tm_pb_testimonial.centered:before {
+  left: 0;
+  top: 50%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #tm_builder_outer_content .tm_pb_testimonial.centered:before {
+    top: 45%;
+  }
+}
+
+#tm_builder_outer_content .tm_pb_testimonial .tm_pb_testimonial_portrait:before {
+  display: none;
+}
+
+#tm_builder_outer_content .tm_pb_testimonial:before {
+  position: absolute;
+  left: 135px;
+  top: 10%;
+  transform: translate(0, -50%);
+}
+
+@media (min-width: 544px) {
+  #tm_builder_outer_content .tm_pb_testimonial:before {
+    top: 25%;
+  }
+}
+
+#tm_builder_outer_content .tm_pb_testimonial p {
+  line-height: 1.2;
+}
+
+#tm_builder_outer_content .tm_pb_column_1_3 .tm_pb_testimonial .tm_pb_testimonial_portrait,
+#tm_builder_outer_content .tm_pb_column_1_4 .tm_pb_testimonial .tm_pb_testimonial_portrait,
+#tm_builder_outer_content .tm_pb_column_3_8 .tm_pb_testimonial .tm_pb_testimonial_portrait {
+  margin: 0 auto 28px;
+}
+
+#tm_builder_outer_content .tm_pb_testimonial .tm_pb_testimonial_portrait {
+  margin-right: 20px;
+}
+
+#tm_builder_outer_content .tm_pb_testimonial_description .tm_pb_testimonial_description_inner {
+  margin-top: 0;
+}
+
+@media (min-width: 544px) {
+  #tm_builder_outer_content .tm_pb_testimonial_description .tm_pb_testimonial_description_inner {
+    margin-top: 40px;
+  }
+}
+
+#tm_builder_outer_content .tm_pb_testimonial_description .tm_pb_testimonial_author,
+#tm_builder_outer_content .tm_pb_testimonial_description .tm_pb_testimonial_meta {
+  display: inline-block;
+}
+
+#tm_builder_outer_content .tm_pb_testimonial_description .tm_pb_testimonial_meta {
+  margin-top: 2px;
+  font-style: italic;
+}
+
+#tm_builder_outer_content .tm_pb_testimonial_description .tm_pb_testimonial_author {
+  margin-top: 0;
+}
+
+#tm_builder_outer_content .tm_pb_testimonial_description .tm_pb_testimonial_author a {
+  transition: 0.3s ease all;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_promo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_promo.tm_pb_module {
+  padding: 0;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_promo .tm_pb_promo_button {
+  flex: 0 1 auto;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_promo .tm_pb_promo_description {
+  flex: 0 1 auto;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_promo .tm_pb_button {
+  padding: 14px 30px;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_promo .tm_pb_promo_description {
+  padding-bottom: 5px;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_promo .tm_pb_promo_description h2 {
+  margin-top: 0;
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_promo .tm_pb_promo_description h5 {
+  margin-top: 0;
+  font-style: italic;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_promo.invert a.tm_pb_promo_button {
+  background: #fff;
+}
+
+#tm_builder_outer_content .tm_pb_team_member {
+  height: 100%;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+#tm_builder_outer_content .tm_pb_team_member .tm_pb_team_member_image {
+  margin-bottom: 23px;
+  text-align: center;
+}
+
+#tm_builder_outer_content .tm_pb_team_member .tm_pb_team_member_description {
+  position: static;
+  margin-bottom: 72px;
+}
+
+#tm_builder_outer_content .tm_pb_team_member .tm_pb_team_member_description h4 {
+  margin-top: 20px;
+}
+
+#tm_builder_outer_content .tm_pb_team_member .tm_pb_team_member_description h4 + p {
+  margin-top: 14px;
+}
+
+#tm_builder_outer_content .tm_pb_team_member .tm_pb_team_member_description .tm_pb_member_position {
+  font-weight: 800;
+  padding-bottom: 3px;
+}
+
+#tm_builder_outer_content .tm_pb_team_member .tm_pb_team_member_description .tm_pb_member_social_links {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#tm_builder_outer_content .tm_pb_team_member .tm_pb_team_member_description .tm_pb_member_social_links li {
+  margin-right: 25px;
+}
+
+#tm_builder_outer_content .tm_pb_team_member .tm_pb_team_member_description .tm_pb_member_social_links li::before {
+  display: none;
+}
+
+#tm_builder_outer_content .tm_pb_team_member .tm_pb_team_member_description .tm_pb_member_social_links .tm-pb-icon::before {
+  font-size: 20px;
+  transition: 0.3s ease all;
+}
+
+#tm_builder_outer_content .tm_pb_column_4_4 .tm_pb_team_member {
+  height: auto;
+  margin-bottom: 0;
+}
+
+#tm_builder_outer_content .tm_pb_column_4_4 .tm_pb_team_member .tm_pb_team_member_image {
+  float: left;
+  margin-bottom: 0;
+  margin-right: 27px;
+  margin-top: 5px;
+}
+
+#tm_builder_outer_content .tm_pb_column_4_4 .tm_pb_team_member .tm_pb_member_social_links {
+  position: relative;
+  bottom: auto;
+  top: auto;
+}
+
+#tm_builder_outer_content .tm_pb_column_4_4 .tm_pb_team_member .tm_pb_team_member_description {
+  margin-bottom: 0;
+}
+
+#tm_builder_outer_content .tm_pb_text h3 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+#tm_builder_outer_content .faqs .tm_pb_text {
+  padding: 10px 0 31px 0;
+  border-bottom: 1px solid #e4e4e5;
+}
+
+@media (min-width: 1200px) {
+  #tm_builder_outer_content .faqs .tm_pb_text {
+    padding: 10px 250px 31px 0;
+  }
+}
+
+#tm_builder_outer_content .faqs .tm_pb_text:first-child {
+  padding-right: 0;
+}
+
+#tm_builder_outer_content .faqs .tm_pb_text strong {
+  font-size: 30px;
+}
+
+#tm_builder_outer_content .faqs .tm_pb_text h5 {
+  margin-bottom: 0;
+}
+
+#tm_builder_outer_content .faqs .tm_pb_text h6 {
+  margin-top: 15px;
+}
+
+#tm_builder_outer_content .faqs .tm_pb_text h5 + p {
+  margin-top: 10px;
+}
+
+#tm_builder_outer_content .faqs .tm_pb_text ul {
+  margin-top: 16px;
+  margin-bottom: 12px;
+}
+
+#tm_builder_outer_content .faqs .tm_pb_text ul li {
+  padding-left: 16px;
+}
+
+#tm_builder_outer_content .faqs .tm_pb_text ul li + li {
+  margin-top: 10px;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_audio_content h2,
+.tm_pb_builder #tm_builder_outer_content .tm_link_content h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_blog_grid_wrapper .col-lg-4:last-child {
+  max-width: 100%;
+  flex: 0 0 100%;
+}
+
+@media (min-width: 992px) {
+  .tm_pb_builder #tm_builder_outer_content .tm_pb_blog_grid_wrapper .col-lg-4:last-child {
+    max-width: 33.33333%;
+    flex: 0 0 33.33333%;
+  }
+}
+
+.tm_pb_builder #tm_builder_outer_content .entry-featured-image-url {
+  text-align: center;
+}
+
+.tm_pb_builder #tm_builder_outer_content .entry-featured-image-url img {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .tm_pb_builder #tm_builder_outer_content .entry-featured-image-url img {
+    max-width: 100%;
+  }
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_post .tm_quote_content {
+  text-align: left;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_post .tm_quote_content blockquote h4 q {
+  color: #fff;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_post .tm_quote_content h6 cite {
+  font-weight: 700;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_blog_list_wrapper .tm_pb_post.post_format-post-format-link {
+  width: 100%;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_blog_list_wrapper article {
+  width: 100%;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_post .tm_pb_gallery_post_type .tm_pb_slide {
+  min-height: 350px !important;
+}
+
+@media (min-width: 768px) {
+  .tm_pb_builder #tm_builder_outer_content .tm_pb_post .tm_pb_gallery_post_type .tm_pb_slide {
+    min-height: 270px !important;
+  }
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm-pb-slider-arrows .tm-pb-arrow-prev:before,
+.tm_pb_builder #tm_builder_outer_content .tm-pb-slider-arrows .tm-pb-arrow-next:before {
+  font-size: 24px;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link {
+  margin-top: 30px;
+  color: #fff;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_post .entry-title {
+  margin-top: 27px;
+  font-weight: 700;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_post .tm_pb_post_meta {
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_post .tm_pb_post_meta * + * {
+  margin-left: 30px;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_post .tm_pb_post_meta > *:last-child {
+  margin-right: 30px;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_post .tm_pb_post_meta .author {
+  margin-left: 0;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_post .tm_pb_post_meta .author > a {
+  margin-left: 0;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_post .tm_pb_post_meta a + a {
+  margin-left: 0;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_post .tm_pb_post_meta a + a:before {
+  display: none;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_post .tm_pb_post_meta > a {
+  font-style: normal;
+}
+
+#tm_builder_outer_content .tm_pb_module .tm_pb_map {
+  height: 300px;
+}
+
+@media (min-width: 768px) {
+  #tm_builder_outer_content .tm_pb_module .tm_pb_map {
+    height: 550px;
+  }
+}
+
+#tm_builder_outer_content .tm_pb_column .tm_pb_module.tm_pb_pricing {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#tm_builder_outer_content .tm_pb_column .tm_pb_module.tm_pb_pricing .tm_pb_pricing_table {
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  #tm_builder_outer_content .tm_pb_column .tm_pb_module.tm_pb_pricing .tm_pb_pricing_table {
+    width: 33.3333333%;
+    margin-bottom: 21px;
+    margin-top: 21px;
+  }
+}
+
+#tm_builder_outer_content .tm_pb_column .tm_pb_module.tm_pb_pricing .tm_pb_pricing_table.tm_pb_featured_table {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#tm_builder_outer_content .tm_pb_column .tm_pb_module.tm_pb_pricing .tm_pb_pricing_table.tm_pb_featured_table .tm_pb_pricing_heading {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 25px;
+}
+
+#tm_builder_outer_content .tm_pb_column .tm_pb_module.tm_pb_pricing .tm_pb_pricing_table.tm_pb_featured_table .tm_pb_pricing_heading .tm_pb_pricing_title {
+  flex: 1 1 100%;
+  order: 2;
+}
+
+#tm_builder_outer_content .tm_pb_column .tm_pb_module.tm_pb_pricing .tm_pb_pricing_table.tm_pb_featured_table .tm_pb_pricing_heading .tm_pb_best_value {
+  flex: 1 1 100%;
+  order: 1;
+}
+
+#tm_builder_outer_content .tm_pb_column .tm_pb_module.tm_pb_pricing .tm_pb_pricing_table.tm_pb_featured_table .tm_pb_pricing_content_top .tm_pb_frequency {
+  color: #fff !important;
+}
+
+#tm_builder_outer_content .tm_pb_column .tm_pb_module.tm_pb_pricing .tm_pb_pricing_table.tm_pb_featured_table .tm_pb_pricing_content .tm_pb_pricing li::before {
+  background: #fff;
+}
+
+#tm_builder_outer_content .tm_pb_column .tm_pb_module.tm_pb_pricing .tm_pb_pricing_table.tm_pb_featured_table .tm_pb_pricing_table_button {
+  background: #fff;
+}
+
+#tm_builder_outer_content .tm_pb_column .tm_pb_module.tm_pb_pricing .tm_pb_pricing_table.tm_pb_featured_table .tm_pb_pricing_table_button:hover {
+  color: #fff;
+}
+
+#tm_builder_outer_content .tm_pb_column .tm_pb_module.tm_pb_pricing .tm_pb_pricing_heading {
+  padding-top: 35px;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+#tm_builder_outer_content .tm_pb_column .tm_pb_module.tm_pb_pricing .tm_pb_pricing_heading .tm_pb_pricing_title {
+  font-weight: 400;
+  margin: 0;
+  padding: 0 50px;
+}
+
+#tm_builder_outer_content .tm_pb_column .tm_pb_module.tm_pb_pricing .tm_pb_pricing_content_top {
+  position: relative;
+  padding-bottom: 23px;
+  border-bottom: 1px solid rgba(97, 98, 98, 0.2);
+}
+
+#tm_builder_outer_content .tm_pb_column .tm_pb_module.tm_pb_pricing .tm_pb_pricing_content_top .tm_pb_dollar_sign {
+  position: relative;
+  margin: 0;
+  font-weight: 800;
+}
+
+#tm_builder_outer_content .tm_pb_column .tm_pb_module.tm_pb_pricing .tm_pb_pricing_content_top .tm_pb_sum {
+  font-weight: 800;
+}
+
+#tm_builder_outer_content .tm_pb_column .tm_pb_module.tm_pb_pricing .tm_pb_pricing_content_top .tm_pb_frequency {
+  font-size: 20px;
+  font-style: italic;
+  margin-left: 3px;
+  position: absolute;
+  bottom: 30px;
+}
+
+#tm_builder_outer_content .tm_pb_column .tm_pb_module.tm_pb_pricing .tm_pb_pricing_content {
+  padding: 20px 25px;
+}
+
+#tm_builder_outer_content .tm_pb_column .tm_pb_module.tm_pb_pricing .tm_pb_pricing_content .tm_pb_pricing {
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  #tm_builder_outer_content .tm_pb_column .tm_pb_module.tm_pb_pricing .tm_pb_pricing_content .tm_pb_pricing {
+    text-align: left;
+  }
+}
+
+#tm_builder_outer_content .tm_pb_column .tm_pb_module.tm_pb_pricing .tm_pb_pricing_content .tm_pb_pricing li {
+  padding: 0 0 0 20px;
+  line-height: 24px !important;
+}
+
+#tm_builder_outer_content .tm_pb_column .tm_pb_module.tm_pb_pricing .tm_pb_pricing_content .tm_pb_pricing li::before {
+  content: '';
+  top: 50%;
+  left: 4px;
+  width: 0;
+  height: 0;
+}
+
+@media (min-width: 992px) {
+  #tm_builder_outer_content .tm_pb_column .tm_pb_module.tm_pb_pricing .tm_pb_pricing_content .tm_pb_pricing li::before {
+    height: 5px;
+    width: 5px;
+  }
+}
+
+#tm_builder_outer_content .tm_pb_column .tm_pb_module.tm_pb_pricing .tm_pb_pricing_content .tm_pb_pricing li + li {
+  margin-top: 2px;
+}
+
+#tm_builder_outer_content .tm_pb_column .tm_pb_module.tm_pb_pricing .tm_pb_pricing_table_button {
+  margin: 0 30px;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  #tm_builder_outer_content .tm_pb_column .tm_pb_module.tm_pb_pricing .tm_pb_pricing_table_button {
+    margin: 0 5px;
+  }
+}
+
+#tm_builder_outer_content .tm_pb_column .tm_pb_module.tm_pb_pricing.custom-table .tm_pb_featured_table {
+  padding-bottom: 100px;
+}
+
+#tm_builder_outer_content .tm_pb_column .tm_pb_module.tm_pb_pricing.custom-table .tm_pb_featured_table .tm_pb_pricing_title {
+  line-height: 0.85;
+  margin-bottom: 7px;
+}
+
+#tm_builder_outer_content .tm_pb_column .tm_pb_module.tm_pb_pricing.custom-table .tm_pb_featured_table .tm_pb_pricing_table_button {
+  margin-top: 0;
+}
+
+#tm_builder_outer_content .tm_pb_column .tm_pb_module.tm_pb_pricing.custom-table .tm_pb_featured_table .tm_pb_pricing_content_top {
+  padding-bottom: 20px;
+}
+
+#tm_builder_outer_content .tm_pb_column .tm_pb_module.tm_pb_pricing.custom-table .tm_pb_pricing_content_top .tm_pb_frequency {
+  position: relative;
+  bottom: auto;
+}
+
+#tm_builder_outer_content .tm_pb_column .tm_pb_module.tm_pb_pricing.custom-table .tm_pb_pricing_content {
+  padding: 25px 35px 13px 10px;
+}
+
+#tm_builder_outer_content .tm_pb_column .tm_pb_module.tm_pb_pricing.custom-table .tm_pb_pricing_table_button {
+  padding: 15px 75px;
+}
+
+#tm_builder_outer_content .tm_pb_column .tm_pb_module.tm_pb_pricing.custom-table .tm_pb_pricing_table_button:hover {
+  padding: 15px 75px;
+}
+
+#tm_builder_outer_content .tm_pb_column .tm_pb_module.tm_pb_pricing.custom-table .tm_pb_pricing_table_button {
+  margin-top: 10px;
+}
+
+#tm_builder_outer_content .tm_pb_column .tm_pb_module.tm_pb_pricing.custom-table .tm_pb_best_value {
+  margin-bottom: 5px;
+}
+
+#tm_builder_outer_content .tm_pb_counters.tm_pb_module .tm_pb_counter_title {
+  font-style: italic;
+  line-height: 1.3;
+}
+
+#tm_builder_outer_content .tm_pb_counters.tm_pb_module .tm_pb_counter_container {
+  border-radius: 3px;
+  margin-bottom: 21px;
+}
+
+#tm_builder_outer_content .tm_pb_counters.tm_pb_module .tm_pb_counter_container .tm_pb_counter_amount {
+  padding: 1px 1% 1px 1px;
+  line-height: 1;
+}
+
+#tm_builder_outer_content .tm_pb_counters.tm_pb_module .tm_pb_counter_container .tm_pb_counter_amount .tm_pb_counter_amount_number {
+  font-weight: 400;
+}
+
+#tm_builder_outer_content .tm_pb_circle_counter.tm_pb_module {
+  margin: 0 auto 9px;
+}
+
+#tm_builder_outer_content .tm_pb_circle_counter.tm_pb_module h3 {
+  font-weight: 400;
+  margin: 0 -50px;
+  padding: 5px 0;
+}
+
+#tm_builder_outer_content .tm_pb_number_counter.tm_pb_module .percent {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+#tm_builder_outer_content .tm_pb_number_counter.tm_pb_module h3 {
+  font-weight: 400;
+  padding: 0 50px 20px;
+  margin-top: 0;
+}
+
+@media (min-width: 544px) and (max-width: 991px) {
+  #tm_builder_outer_content .tm_pb_number_counter.tm_pb_module h3 {
+    padding: 0 10px 20px;
+  }
+}
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_accordion .tm_pb_toggle_title {
+  margin: 0;
+  font-weight: 800;
+}
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_accordion .tm_pb_toggle_title:before {
+  font-size: 20px;
+}
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_accordion .tm_pb_toggle {
+  border-radius: 3px;
+  padding: 23px 25px 24px 25px;
+  margin-bottom: 20px;
+}
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_accordion .tm_pb_toggle_content {
+  padding-top: 5px;
+}
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_accordion .tm_pb_toggle_content p {
+  margin-bottom: 0;
+}
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_tabs .tm_pb_tabs_controls {
+  text-align: center;
+  border-color: #e4e4e5;
+}
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_tabs .tm_pb_tabs_controls li {
+  padding: 4px 19px;
+  position: relative;
+}
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_tabs .tm_pb_tabs_controls li::before {
+  content: '';
+  height: 2px;
+  width: auto;
+  position: absolute;
+  bottom: -2px;
+  left: 10px;
+  right: 10px;
+  border-radius: 0;
+  top: auto;
+  transform: translate(0, 0);
+  transition: 0.5s ease all;
+  transform: scale(0);
+  opacity: 0;
+}
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_tabs .tm_pb_tabs_controls li:hover::before {
+  transform: scale(1);
+  opacity: 1;
+}
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_tabs .tm_pb_tabs_controls li.tm_pb_tab_active {
+  bottom: 0;
+}
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_tabs .tm_pb_tabs_controls li.tm_pb_tab_active::before {
+  transform: scale(1);
+  opacity: 1;
+}
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_tabs .tm_pb_all_tabs {
+  padding: 10px 0 1px;
+}
+
+#tm_builder_outer_content .tm_pb_audio_module.tm_pb_module.fullwidth-img .tm_audio_container {
+  margin-left: 0;
+}
+
+#tm_builder_outer_content .tm_pb_audio_module.tm_pb_module.fullwidth-img .tm_pb_audio_cover_art {
+  width: 100%;
+  height: 270px;
+  position: relative !important;
+}
+
+#tm_builder_outer_content .tm_pb_audio_module.tm_pb_module.tm_pb_audio_no_image .tm_audio_container {
+  margin-left: 0;
+}
+
+#tm_builder_outer_content .tm_pb_audio_module.tm_pb_module .tm_pb_audio_cover_art {
+  width: 100%;
+  height: 270px;
+  position: relative;
+}
+
+@media (min-width: 544px) {
+  #tm_builder_outer_content .tm_pb_audio_module.tm_pb_module .tm_pb_audio_cover_art {
+    width: 180px;
+    height: 100%;
+    position: absolute;
+  }
+}
+
+#tm_builder_outer_content .tm_pb_audio_module.tm_pb_module .tm_audio_container {
+  padding: 35px 40px 4px 40px;
+  margin-left: 0;
+}
+
+@media (min-width: 544px) {
+  #tm_builder_outer_content .tm_pb_audio_module.tm_pb_module .tm_audio_container {
+    margin-left: 180px;
+  }
+}
+
+#tm_builder_outer_content .tm_pb_audio_module.tm_pb_module .tm_audio_container h2 {
+  font-weight: 400;
+}
+
+#tm_builder_outer_content .tm_pb_audio_module.tm_pb_module .tm_audio_container .tm_audio_module_meta {
+  font-style: italic;
+  margin-top: 10px;
+  margin-bottom: 14px;
+}
+
+#tm_builder_outer_content .tm_pb_column_4_4 .tm_pb_module.tm_pb_countdown_timer {
+  padding: 4% 4% 6% 4%;
+}
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_countdown_timer {
+  padding: 10px 10px 30px;
+}
+
+@media (min-width: 1200px) {
+  #tm_builder_outer_content .tm_pb_module.tm_pb_countdown_timer {
+    padding: 25px 0 60px 0;
+  }
+}
+
+body #tm_builder_outer_content .tm_pb_module.tm_pb_countdown_timer.tm_pb_countdown_timer_circle_layout.tm_pb_module {
+  padding: 0;
+}
+
+body #tm_builder_outer_content .tm_pb_module.tm_pb_countdown_timer.tm_pb_countdown_timer_circle_layout.tm_pb_module .sep {
+  margin: 0 13px;
+}
+
+body #tm_builder_outer_content .tm_pb_module.tm_pb_countdown_timer.tm_pb_countdown_timer_circle_layout.tm_pb_module .values {
+  border-radius: 50% !important;
+  margin: 0;
+  width: 137px;
+}
+
+body #tm_builder_outer_content .tm_pb_module.tm_pb_countdown_timer.tm_pb_countdown_timer_circle_layout.tm_pb_module .values > span {
+  color: #fff !important;
+}
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_countdown_timer .tm_pb_countdown_timer_container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 1200px) {
+  #tm_builder_outer_content .tm_pb_module.tm_pb_countdown_timer .tm_pb_countdown_timer_container {
+    display: block;
+  }
+}
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_countdown_timer .tm_pb_countdown_timer_container h4 {
+  flex: 1 1 100%;
+}
+
+@media (min-width: 1200px) {
+  #tm_builder_outer_content .tm_pb_module.tm_pb_countdown_timer .tm_pb_countdown_timer_container h4 {
+    flex: auto;
+  }
+}
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_countdown_timer .tm_pb_countdown_timer_container .section.values {
+  flex: 1 1 auto;
+  margin: 5px 10px;
+  width: auto;
+}
+
+@media (min-width: 1200px) {
+  #tm_builder_outer_content .tm_pb_module.tm_pb_countdown_timer .tm_pb_countdown_timer_container .section.values {
+    flex: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  #tm_builder_outer_content .tm_pb_module.tm_pb_countdown_timer .tm_pb_countdown_timer_container .section.values {
+    margin: 0;
+  }
+}
+
+@media (min-width: 544px) {
+  #tm_builder_outer_content .tm_pb_module.tm_pb_countdown_timer .tm_pb_countdown_timer_container .section.values {
+    margin: 5px 15px;
+  }
+}
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_countdown_timer .tm_pb_countdown_timer_container .section.sep {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  #tm_builder_outer_content .tm_pb_module.tm_pb_countdown_timer .tm_pb_countdown_timer_container .section.sep {
+    display: inline-block;
+  }
+}
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_countdown_timer .tm_pb_countdown_timer_container .section .value {
+  font-weight: 700;
+}
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_countdown_timer .tm_pb_countdown_timer_container .section .label {
+  font-style: italic;
+  font-size: 20px;
+}
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_countdown_timer .tm_pb_countdown_timer_container .section .countdown-sep {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+#tm_builder_outer_content .tm_pb_social_media_follow.tm_pb_module li a.icon {
+  height: auto;
+  width: auto;
+}
+
+#tm_builder_outer_content .tm_pb_social_media_follow.tm_pb_module li:before {
+  display: none;
+}
+
+#tm_builder_outer_content .tm_pb_social_media_follow.tm_pb_module li + li {
+  margin-top: 0;
+  margin-left: 16px;
+}
+
+#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar {
+  max-width: 100%;
+  margin: 0 auto;
+  border: none;
+  border-collapse: separate;
+  border-spacing: 5px;
+  background: transparent !important;
+  table-layout: fixed;
+}
+
+@media (min-width: 544px) {
+  #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar,
+  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar {
+    border-spacing: 10px;
+    max-width: 780px;
+    table-layout: auto;
+  }
+}
+
+#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead {
+  background: transparent !important;
+}
+
+#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th {
+  border: none;
+  padding: 21px 0 13px;
+}
+
+#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th .monthName,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th .monthName {
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: none;
+}
+
+#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th .monthName .backToMonth,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th .monthName .backToMonth {
+  display: none;
+}
+
+#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th > a,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th > a {
+  top: 24px;
+}
+
+#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th > a::before,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th > a::before {
+  font-size: 30px;
+  font-family: FontAwesome;
+}
+
+#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th > a.page-right,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th > a.page-right {
+  right: 0;
+}
+
+#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th > a.page-right::before,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th > a.page-right::before {
+  content: '\f105';
+}
+
+#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th > a.page-right:hover,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th > a.page-right:hover {
+  right: 0;
+}
+
+#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th > a.page-left,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th > a.page-left {
+  left: 0;
+}
+
+#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th > a.page-left::before,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th > a.page-left::before {
+  content: '\f104';
+}
+
+#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th > a.page-left:hover,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th > a.page-left:hover {
+  left: 0;
+}
+
+#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th > a i,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th > a i {
+  display: none;
+}
+
+#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead .days,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead .days {
+  background: transparent !important;
+}
+
+#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead .days th,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead .days th {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left !important;
+  border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  text-transform: none;
+  border: none;
+  padding: 5px;
+}
+
+@media (min-width: 544px) {
+  #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead .days th,
+  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead .days th {
+    padding: 15px 10px 15px;
+    font-size: 20px;
+  }
+}
+
+#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock {
+  background: transparent;
+}
+
+#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td {
+  background: transparent;
+  border: 10px solid;
+}
+
+#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button {
+  font-size: 16px;
+  padding: 10px;
+  transition: 0.3s ease all;
+}
+
+#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr td,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr td {
+  border: none;
+  border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+}
+
+#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr td.active .date .number,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr td.active .date .number {
+  background: transparent;
+  color: #fff;
+  transform: scale(1);
+}
+
+#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr td > span,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr td > span {
+  position: relative;
+  transition: 0.3s ease all;
+}
+
+#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr td > span .number,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr td > span .number {
+  transform: scale(1);
+  position: absolute;
+  left: 12px;
+  top: 4px;
+  font-size: 24px;
+  font-weight: 700;
+  width: auto;
+}
+
+#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr td > span .number .sidebar-primary,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr td > span .number .sidebar-primary {
+  font-size: 16px;
+}
+
+@media (min-width: 544px) {
+  #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr td > span .number,
+  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr td > span .number {
+    font-size: 40px;
+  }
+}
+
+#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr td.blur,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr td.blur {
+  pointer-events: none;
+}
+
+#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr td.blur .number,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr td.blur .number {
+  opacity: .2;
+}
+
+#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr td .date,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr td .date {
+  transition: 0.3s ease all;
+  height: inherit;
+}
+
+#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr td .date:hover .number,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr td .date:hover .number {
+  color: #fff;
+}
+
+body .booked-modal input.button-primary[type="submit"] {
+  font-size: 16px;
+  padding: 6px 10px;
+  transition: 0.3s ease all;
+}
+
+body .booked-modal input.button-primary[type="submit"]:hover {
+  border: none;
+}
+
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button {
+  box-shadow: none;
+  max-width: 315px;
+  margin: 0 auto 12px;
+  padding: 13px;
+}
+
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button:hover {
+  box-shadow: none;
+}
+
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button .button-timeslot {
+  font-size: 16px;
+}
+
+body .booked-calendar-wrap.small table.booked-calendar .booked-appt-list {
+  text-align: center;
+}
+
+body .bookedClearFix::after {
+  display: none;
+}
+
+body .booked-calendarSwitcher {
+  display: block;
+  max-width: 780px;
+  margin: 0 auto;
+  border-radius: 3px;
+}
+
+body .booked-calendarSwitcher i {
+  display: none;
+}
+
+body .booked-calendarSwitcher select {
+  width: 98%;
+  padding: 10px;
+}
+
+body table.booked-calendar td.prev-date .number {
+  opacity: .2;
+}
+
+body table.booked-calendar td.today .number {
+  opacity: 1;
+}
+
+#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th, .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th {
+  background: transparent !important;
+}
+
+#tm_builder_outer_content .tm_pb_widget_area .btn, #tm_builder_outer_content .tm_pb_widget_area .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_contact_submit, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_widget_area .tm_pb_contact_submit, .tm_pb_builder #tm_builder_outer_content .tm_pb_widget_area a.tm_pb_button, .tm_pb_builder #tm_builder_outer_content .tm_pb_widget_area .tm_pb_post .more-link, .tm_pb_builder #tm_builder_outer_content .tm_pb_post .tm_pb_widget_area .more-link, #tm_builder_outer_content .tm_pb_widget_area .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .tm_pb_widget_area .button, #tm_builder_outer_content .tm_pb_widget_area
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td #tm_builder_outer_content .tm_pb_widget_area .button, #tm_builder_outer_content .tm_pb_widget_area body .booked-modal input.button-primary[type="submit"], body .booked-modal #tm_builder_outer_content .tm_pb_widget_area input.button-primary[type="submit"] {
+  color: #fff;
+}
+
+#tm_builder_outer_content .tm_pb_widget_area table tfoot td {
+  border: none;
+}
+
+#tm_builder_outer_content .tm_pb_widget_area .widget_calendar table, #tm_builder_outer_content .tm_pb_widget_area #wp-calendar {
+  table-layout: auto !important;
 }
 
 /*--------------------------------------------------------------

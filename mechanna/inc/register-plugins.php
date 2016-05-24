@@ -42,9 +42,15 @@ function mechanna_register_required_plugins() {
 			'required'  => false,
 		),
 		array(
-			'name'     => esc_html__( 'Easy Twitter Feed Widget', 'cosmetro' ),
+			'name'     => esc_html__( 'Easy Twitter Feed Widget', 'mechanna' ),
 			'slug'     => 'easy-twitter-feed-widget',
 			'required' => false,
+		),
+		array(
+			'name'      => 'power-builder',
+			'slug'      => 'power-builder',
+			'required'  => false,
+			'source' => MECHANNA_THEME_DIR . '/assets/plugins/power-builder.zip',
 		),
 	);
 

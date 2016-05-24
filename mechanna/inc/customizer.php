@@ -195,7 +195,7 @@ function mechanna_get_customizer_options() {
 			'footer_social_links' => array(
 				'title'   => esc_html__( 'Show social links in footer', 'mechanna' ),
 				'section' => 'social_links',
-				'default' => true,
+				'default' => false,
 				'field'   => 'checkbox',
 				'type'    => 'control',
 			),

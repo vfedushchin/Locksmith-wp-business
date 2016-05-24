@@ -14,9 +14,11 @@
 	</header><!-- .page-header -->
 
 	<div class="page-content">
-		<h4><?php esc_html_e( 'The page not found.', 'mechanna' ); ?></h4>
-		<p><a class="btn btn-primary" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php esc_html_e( 'Visit home page', 'mechanna' ); ?></a></p>
-		<p><?php esc_html_e( 'Unfortunately the page you were looking for could not be found. Maybe search can help.', 'mechanna' ); ?></p>
+		<h3 class="marTop2"><?php esc_html_e( 'The page not found...', 'mechanna' ); ?></h3>
+		<p class="marTop1">
+      <?php esc_html_e( "Can't find what you need? Take a moment and do a search below or start from", 'mechanna' ); ?>
+      <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php esc_html_e( 'our homepage.', 'mechanna' ); ?></a>
+    </p>
 
 		<?php get_search_form(); ?>
 

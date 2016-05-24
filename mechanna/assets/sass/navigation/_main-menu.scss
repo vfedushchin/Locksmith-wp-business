@@ -394,3 +394,12 @@
 
 	}
 }
+
+.header-container .set-menu {
+	a {
+		color: #fff;
+		&:hover {
+			color: #000;
+		}
+	}
+}
