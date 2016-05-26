@@ -414,6 +414,77 @@ if ( ! class_exists( 'Mechanna_Theme_Setup' ) ) {
 							),
 						)
 					),
+
+
+
+
+
+					'mechanna_header_container_type' => array(
+						'type'        => 'radio',
+						'title'       => esc_html__( 'Header layout', 'mechanna' ),
+						'value'         => 'inherit',
+						'display_input' => false,
+						'options'       => array(
+							'inherit' => array(
+								'label'   => esc_html__( 'Header Inherit Layout', 'mechanna' ),
+								'img_src' => trailingslashit( MECHANNA_THEME_URI ) . 'assets/images/admin/inherit.svg',
+							),
+							'boxed' => array(
+								'label'   => esc_html__( 'Header Boxed Layout', 'mechanna' ),
+								'img_src' => trailingslashit( MECHANNA_THEME_URI ) . 'assets/images/admin/type-boxed.svg',
+							),
+							'fullwidth' => array(
+								'label'   => esc_html__( 'Header Fullwidth Layout', 'mechanna' ),
+								'img_src' => trailingslashit( MECHANNA_THEME_URI ) . 'assets/images/admin/type-fullwidth.svg',
+							),
+						)
+					),
+					'mechanna_content_container_type' => array(
+						'type'        => 'radio',
+						'title'       => esc_html__( 'Content layout', 'mechanna' ),
+						'value'         => 'inherit',
+						'display_input' => false,
+						'options'       => array(
+							'inherit' => array(
+								'label'   => esc_html__( 'Content Inherit Layout', 'mechanna' ),
+								'img_src' => trailingslashit( MECHANNA_THEME_URI ) . 'assets/images/admin/inherit.svg',
+							),
+							'boxed' => array(
+								'label'   => esc_html__( 'Content Boxed Layout', 'mechanna' ),
+								'img_src' => trailingslashit( MECHANNA_THEME_URI ) . 'assets/images/admin/type-boxed.svg',
+							),
+							'fullwidth' => array(
+								'label'   => esc_html__( 'Content Fullwidth Layout', 'mechanna' ),
+								'img_src' => trailingslashit( MECHANNA_THEME_URI ) . 'assets/images/admin/type-fullwidth.svg',
+							),
+						)
+					),
+					'mechanna_footer_container_type' => array(
+						'type'        => 'radio',
+						'title'       => esc_html__( 'Footer layout', 'mechanna' ),
+						'value'         => 'inherit',
+						'display_input' => false,
+						'options'       => array(
+							'inherit' => array(
+								'label'   => esc_html__( 'Footer Inherit Layout', 'mechanna' ),
+								'img_src' => trailingslashit( MECHANNA_THEME_URI ) . 'assets/images/admin/inherit.svg',
+							),
+							'boxed' => array(
+								'label'   => esc_html__( 'Footer Boxed Layout', 'mechanna' ),
+								'img_src' => trailingslashit( MECHANNA_THEME_URI ) . 'assets/images/admin/type-boxed.svg',
+							),
+							'fullwidth' => array(
+								'label'   => esc_html__( 'Footer Fullwidth Layout', 'mechanna' ),
+								'img_src' => trailingslashit( MECHANNA_THEME_URI ) . 'assets/images/admin/type-fullwidth.svg',
+							),
+						)
+					),
+
+
+
+
+
+
 				),
 			) );
 		}

@@ -7,7 +7,7 @@
 
 ?>
 <div class="footer-container container">
-	<div <?php echo mechanna_get_container_classes( array( 'site-info' ) ); ?>>
+  <div <?php echo mechanna_get_container_classes( array( 'site-info' ), 'footer' ); ?>>
 		<?php
       mechanna_footer_logo();
       mechanna_social_list( 'footer' );

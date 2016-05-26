@@ -319,13 +319,18 @@ function mechanna_extra_body_classes( $classes ) {
 	}
 
 	// Adds a options-based classes.
-	$layout      = get_theme_mod( 'page_layout_type', mechanna_theme()->customizer->get_default( 'page_layout_type' ) );
+	$header_layout      = get_theme_mod( 'page_layout_type', mechanna_theme()->customizer->get_default( 'header_container_type' ) );
+	$content_layout      = get_theme_mod( 'content_container_type', mechanna_theme()->customizer->get_default( 'content_container_type' ) );
+	$footer_layout      = get_theme_mod( 'footer_container_type', mechanna_theme()->customizer->get_default( 'footer_container_type' ) );
+
 	$blog_layout = get_theme_mod( 'blog_layout_type', mechanna_theme()->customizer->get_default( 'blog_layout_type' ) );
 	$sb_position = get_theme_mod( 'sidebar_position', mechanna_theme()->customizer->get_default( 'sidebar_position' ) );
 	$sidebar     = get_theme_mod( 'sidebar_width', mechanna_theme()->customizer->get_default( 'sidebar_width' ) );
 
 	return array_merge( $classes, array(
-		'layout-' . $layout,
+		'header-layout-' . $header_layout,
+		'content-layout-' . $content_layout,
+		'footer-layout-' . $footer_layout,
 		'blog-' . $blog_layout,
 		'position-' . $sb_position,
 		'sidebar-' . str_replace( '/', '-', $sidebar ),

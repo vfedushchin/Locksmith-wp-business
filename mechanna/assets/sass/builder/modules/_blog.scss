@@ -2,7 +2,11 @@
   .tm_audio_content h2,
   .tm_link_content h2 {
     font-size: 30px;
-    font-weight: 700;
+
+  }
+
+  .tm_pb_module .hentry.has-post-thumbnail:first-child {
+    margin-top: 1.2em;
   }
 
   .tm_pb_blog_grid_wrapper {
@@ -35,7 +39,7 @@
       }
     }
     h6 cite {
-      font-weight: 700;
+
     }
   }
 
@@ -71,11 +75,10 @@
 
     .entry-title {
       margin-top: 27px;
-      font-weight: 700;
+
     }
     .tm_pb_post_meta {
       margin-bottom: 15px;
-      font-style: italic;
       * + * {
         margin-left: 30px;
       }
@@ -86,7 +89,7 @@
         margin-left: 0;
         > a {
           margin-left: 0;
-          font-weight: 700;
+
           text-transform: capitalize;
         }
       }

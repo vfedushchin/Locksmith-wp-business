@@ -1,0 +1,2 @@
+# BeDENTIST
+WordPress BeDENTIST theme

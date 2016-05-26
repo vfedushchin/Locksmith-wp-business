@@ -13,7 +13,7 @@
 </div>
 
 <div class="footer-container container">
-	<div <?php echo mechanna_get_container_classes( array( 'site-info' ) ); ?>>
+<div <?php echo mechanna_get_container_classes( array( 'site-info' ), 'footer' ); ?>>
 		<div class="site-info__flex">
 			<?php mechanna_footer_logo(); ?>
 			<?php mechanna_social_list( 'footer' ); ?>

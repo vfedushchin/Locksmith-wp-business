@@ -4,7 +4,14 @@
 }
 
 #tm_builder_outer_content .tm_pb_module h2{
-	color: $regular_h2_color;
+	color: $regular_h2_color !important;
+}
+
+#tm_builder_outer_content .tm_audio_module_meta {
+	color: $regular_text_color;
+}
+#tm_builder_outer_content .tm_audio_container .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current {
+	background: $regular_accent_color_1;
 }
 
 #tm_builder_outer_content .tm_pb_module h3{
@@ -45,12 +52,21 @@
 .tm_pb_builder #tm_builder_outer_content .tm-pb-slider-arrows .tm-pb-arrow-prev,
 .tm_pb_builder #tm_builder_outer_content .tm-pb-slider-arrows .tm-pb-arrow-next {
 	background: $regular_accent_color_1;
+	border: 2px solid @alpha($invert_h3_color,50%);
+	color: @alpha($invert_h3_color,50%) !important;
+	box-shadow: none !important;
+}
+
+.tm_pb_builder #page #tm_builder_outer_content .tm_pb_slider h3 {
+	font-family: @font_family( $body_font_family );
 }
 
 
 .tm_pb_builder #tm_builder_outer_content .tm-pb-slider-arrows .tm-pb-arrow-prev:hover,
 .tm_pb_builder #tm_builder_outer_content .tm-pb-slider-arrows .tm-pb-arrow-next:hover {
-	background: $regular_link_hover_color;
+	background: $regular_accent_color_1;
+	border: 2px solid $invert_h3_color;
+	color: $invert_h3_color !important;
 }
 
 .tm_pb_builder #tm_builder_outer_content .tm-pb-controllers > a::before {
@@ -63,11 +79,12 @@
 
 .tm_pb_builder #tm_builder_outer_content .tm-pb-controllers > a:hover,
 #tm_builder_outer_content .tm-pb-controllers .tm-pb-active-control {
-	background:  $regular_accent_color_1 !important;
+	background:  $regular_h3_color !important;
 }
 
 #tm_builder_outer_content .tm_pb_button{
 	background-color: $regular_accent_color_1;
+	border-color: $regular_accent_color_1;
 }
 
 #tm_builder_outer_content .tm_pb_button:hover{
@@ -158,7 +175,7 @@ p > a[href^="mailto"]:hover {
 
 /*social*/
 #tm_builder_outer_content ul.tm_pb_social_media_follow .tm_pb_social_icon a.icon:hover {
-	color: $regular_text_color !important;
+	color: $regular_accent_color_1 !important;
 }
 
 /*booked*/
@@ -288,4 +305,17 @@ body .widget.widget_booked_calendar table.booked-calendar td.today:hover .date:h
 
 .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link:hover{
 	background: $regular_link_hover_color;
+}
+
+
+
+
+/* btns on red bg */
+/* small no padding */
+#page #tm_builder_outer_content .tm_pb_slider .tm_pb_button {
+	color: $invert_h3_color;;
+	padding: 0;
+}
+#page #tm_builder_outer_content .tm_pb_slider .tm_pb_button:hover {
+	color: $regular_h3_color;
 }

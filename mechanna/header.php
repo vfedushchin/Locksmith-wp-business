@@ -27,7 +27,7 @@
 		<?php mechanna_ads_header() ?>
 		<?php get_template_part( 'template-parts/header/top-panel' ); ?>
 		<div class="header-container">
-			<div <?php echo mechanna_get_container_classes( array( 'header-container_wrap' ) ); ?>>
+			<div <?php echo mechanna_get_container_classes( array( 'header-container_wrap' ), 'header' ); ?>>
 				<?php get_template_part( 'template-parts/header/layout', get_theme_mod( 'header_layout_type' ) ); ?>
 			</div>
 		</div><!-- .header-container -->

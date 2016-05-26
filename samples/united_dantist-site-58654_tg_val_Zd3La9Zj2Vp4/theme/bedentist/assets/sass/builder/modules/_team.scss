@@ -1,0 +1,69 @@
+#tm_builder_outer_content {
+  .tm_pb_team_member {
+    height: 100%;
+    position: relative;
+    margin-bottom: 30px;
+    .tm_pb_team_member_image {
+      margin-bottom: 23px;
+      text-align: center;
+    }
+    .tm_pb_team_member_description {
+      position: static;
+      margin-bottom: 72px;
+
+      h4 {
+        margin-top: 20px;
+      }
+
+      h4 + p {
+        margin-top: 14px;
+      }
+
+      .tm_pb_member_position {
+        font-weight: 800;
+        padding-bottom: 3px;
+      }
+      .tm_pb_member_social_links {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        li {
+          margin-right: 25px;
+          &::before {
+            display: none;
+          }
+        }
+        .tm-pb-icon::before {
+          font-size: 20px;
+          @include transition(.3s ease all);
+        }
+      }
+    }
+  }
+
+
+  .tm_pb_column_4_4 {
+    .tm_pb_team_member {
+      height: auto;
+      margin-bottom: 0;
+
+      .tm_pb_team_member_image {
+        float: left;
+        margin-bottom: 0;
+        margin-right: 27px;
+        margin-top: 5px;
+      }
+
+      .tm_pb_member_social_links{
+        position: relative;
+        bottom:auto;
+        top: auto;
+      }
+
+      .tm_pb_team_member_description {
+        margin-bottom: 0;
+      }
+
+    }
+  }
+}

@@ -1,0 +1,47 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  @include button;
+
+  &:hover {
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn {
+  @include button;
+  font-weight: 700;
+  -webkit-box-shadow: 10px 10px 10px -3px rgba(0,0,0,0.08);
+  -moz-box-shadow: 10px 10px 10px -3px rgba(0,0,0,0.08);
+  box-shadow: 10px 10px 10px -3px rgba(0,0,0,0.08);
+  border: none;
+  &__text,
+  &__icon {
+    display: inline-block;
+    vertical-align: top;
+  }
+  &__icon {
+    @include material-icon();
+    font-size: 1.5em;
+    line-height: inherit;
+    &:before {
+      content: '\E5C8';
+    }
+  }
+  &.btn-fullwidth {
+    width: 100%;
+    text-align: center;
+  }
+  &:hover{
+    box-shadow: none;
+  }
+}
+
+a {
+  @include transition(.3s ease all);
+}

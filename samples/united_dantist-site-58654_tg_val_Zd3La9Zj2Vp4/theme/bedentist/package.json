@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "scss": "sass --update --style=expanded --sourcemap=none assets/sass/style.scss:style.css"
+  },
+  "devDependencies": {
+    "sass": "^0.5.0"
+  }
+}

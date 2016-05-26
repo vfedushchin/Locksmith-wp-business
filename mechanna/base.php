@@ -4,7 +4,7 @@
 
 	<?php mechanna_site_breadcrumbs(); ?>
 
-	<div class="container">
+	<div <?php echo mechanna_get_container_classes( array( 'site-content_wrap' ), 'content' ); ?>>
 
 		<?php do_action( 'mechanna_render_widget_area', 'before-content-area' ); ?>
 

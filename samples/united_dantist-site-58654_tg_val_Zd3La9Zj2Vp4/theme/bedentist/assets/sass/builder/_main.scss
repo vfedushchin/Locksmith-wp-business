@@ -1,0 +1,128 @@
+#tm_builder_outer_content .img_add.tm_pb_module img {
+  margin-top: 10px;
+}
+
+#tm_builder_outer_content .img_add2.tm_pb_module img {
+  margin-top: 20px;
+}
+
+
+#tm_builder_outer_content {
+
+  hr.dash {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  hr {
+    margin: 30px 0 8px;
+  }
+
+  .tm_pb_module {
+
+    p > em {
+      font-weight: 700;
+      letter-spacing: 0.06px;
+    }
+
+    h5 + p {
+      margin-top: 33px;
+    }
+
+    h3 + h5 {
+      margin-top: 7px;
+    }
+
+    h3 + h4 {
+      margin-top: 7px;
+    }
+
+    h4 + p {
+      margin-top: 35px;
+    }
+
+    h5 + .offset1 {
+      margin-top: 12px;
+    }
+
+    * + .offset2 {
+      margin-top: 12px;
+    }
+
+    p.offset1 + h5 {
+      margin-top: 32px;
+      margin-bottom: 0;
+    }
+
+    address {
+      font-style: normal;
+    }
+
+    address + h5 {
+      margin-bottom: 0;
+    }
+
+    p > a[href^="callto"] {
+      font-weight: 800;
+    }
+    p > a[href^="mailto"] {
+      font-style: italic;
+    }
+  }
+
+  .ins1 {
+    padding: 0;
+    @include media-breakpoint-up(sm){
+      padding: 0 10%;
+    }
+  }
+}
+
+#tm_builder_outer_content .tm_pb_with_background {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    .tm_pb_row.row {
+      width: auto;
+    }
+  }
+}
+
+%make-hover {
+  overflow: hidden;
+  position: relative;
+  line-height: 0;
+  display: block;
+  &::before {
+    position: absolute;
+    top: 0;
+    left: -75%;
+    z-index: 2;
+    display: block;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+    -webkit-transform: skewX(-25deg);
+    transform: skewX(-25deg);
+  }
+  &:hover::before {
+    -webkit-animation: shine 1s;
+    animation: shine 1s;
+  }
+}
+
+@-webkit-keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+
+

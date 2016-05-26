@@ -1,3 +1,5 @@
+
+
 #tm_builder_outer_content .tm_pb_contact_form_container {
 
   &.custom-form {
@@ -19,10 +21,8 @@
   }
 
   .tm_pb_contact_main_title {
-    font-size: 50px;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 29px;
+    font-size: 28px;
+    margin-bottom: 9px;
   }
 
   .tm_pb_contact_field {
@@ -39,33 +39,31 @@
         display: none;
       }
     }
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
 
   .tm_pb_contact_form {
     .tm_pb_contact_form_input {
-      font-style: italic;
-      padding: 13px 20px;
-      margin: 0 0 25px 0;
+      padding: 8px 16px 9px;
+      margin: 0 0 6px 0;
     }
     .tm_pb_contact_form_label {
       margin-bottom: 12px;
       display: block;
     }
     .tm_pb_contact_message {
-      min-height: 200px;
+      min-height: 175px;
     }
+
     .tm_contact_bottom_container {
       float: none;
-      text-align: center;
       overflow: visible;
-      margin-top: 18px;
+      margin-top: 26px;
+
+
       .tm_pb_contact_submit {
-        @extend .btn;
         color: #fff;
-        &:after {
-          display: none;
-        }
+        @extend .btn;
       }
     }
   }

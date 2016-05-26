@@ -1,0 +1,54 @@
+.site-header.centered {
+  .header-container {
+    text-align: center;
+    padding: 26px 30px 0;
+  }
+
+  .site-branding {
+    text-align: center;
+    display: block;
+    .site-description{
+      display: block;
+    }
+  }
+
+
+  .site-menu {
+    display: inline-block;
+    position: relative;
+    margin-top: 26px;
+    @media (max-width: 600px) {
+      width: 100%;
+      display: block;
+      margin-top: 26px;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      left: -10000px;
+      right: -10000px;
+      top: 0;
+      width: 100000px;
+      height: 1px;
+      background: $color__background-hr;
+    }
+  }
+
+  .main-navigation {
+    display: inline-block;
+    text-align: center;
+    padding: 15px 0 15px;
+    @media (max-width: 600px) {
+      padding: 0;
+    }
+    ul.menu {
+      margin-right: 60px;
+      @media (max-width: 600px) {
+        margin-right: -25px;
+      }
+      > li:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

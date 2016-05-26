@@ -27,7 +27,7 @@ function mechanna_utility() {
 function mechanna_header_class( $classes = array() ) {
 	$classes[] = 'site-header';
 	$classes[] = get_theme_mod( 'header_layout_type' );
-	echo mechanna_get_container_classes( $classes );
+	echo mechanna_get_container_classes( $classes, 'header' );
 }
 
 /**
@@ -39,7 +39,7 @@ function mechanna_header_class( $classes = array() ) {
  */
 function mechanna_content_class( $classes = array() ) {
 	$classes[] = 'site-content';
-	echo mechanna_get_container_classes( $classes );
+	echo mechanna_get_container_classes( $classes, 'content' );
 }
 
 /**
@@ -52,7 +52,7 @@ function mechanna_content_class( $classes = array() ) {
 function mechanna_footer_class( $classes = array() ) {
 	$classes[] = 'site-footer';
 	$classes[] = get_theme_mod( 'footer_layout_type' );
-	echo mechanna_get_container_classes( $classes );
+	echo mechanna_get_container_classes( $classes, 'footer' );
 }
 
 /**
@@ -62,8 +62,18 @@ function mechanna_footer_class( $classes = array() ) {
  * @param  array  $classes Additional classes.
  * @return string
  */
-function mechanna_get_container_classes( $classes ) {
-	$layout_type = get_theme_mod( 'page_layout_type' );
+function mechanna_get_container_classes( $classes, $target = 'content' ) {
+	switch ( $target ) {
+		case 'header':
+			$layout_type = get_theme_mod( 'header_container_type' );
+			break;
+		case 'footer':
+			$layout_type = get_theme_mod( 'footer_container_type' );
+			break;
+		default:
+			$layout_type = get_theme_mod( 'content_container_type' );
+			break;
+	}
 
 	if ( 'boxed' == $layout_type ) {
 		$classes[] = 'container';

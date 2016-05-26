@@ -52,22 +52,22 @@ function mechanna_get_template_part_name(){
  */
 
 /**
- * Set post specific sidebar position
+ * Set post specific meta value
  *
- * @param  string $position Default sidebar position.
+ * @param  string $value Default meta-value.
  * @return string
  */
-function mechanna_set_sidebar_position( $position ) {
+function mechanna_set_post_meta_value( $value ) {
 	$queried_obj = apply_filters( 'mechanna_queried_object_id', false );
 
 	if ( ! $queried_obj ) {
 
 		if ( ! is_singular() ) {
-			return $position;
+			return $value;
 		}
 
 		if ( is_front_page() && 'page' !== get_option( 'show_on_front' ) ) {
-			return $position;
+			return $value;
 		}
 
 	}
@@ -75,19 +75,40 @@ function mechanna_set_sidebar_position( $position ) {
 	$queried_obj = ( ! $queried_obj ) ? get_the_id() : $queried_obj;
 
 	if ( ! $queried_obj ) {
-		return $position;
+		return $value;
 	}
 
-	$post_position = get_post_meta( $queried_obj, 'mechanna_sidebar_position', true );
+	$curr_opions = 'mechanna_' . str_replace( 'theme_mod_', '', current_filter() );
+	$post_position = get_post_meta( $queried_obj, $curr_opions, true );
 
 	if ( ! $post_position || 'inherit' === $post_position ) {
-		return $position;
+		return $value;
 	}
 
 	return $post_position;
 
 }
-add_filter( 'theme_mod_sidebar_position', 'mechanna_set_sidebar_position' );
+
+/**
+ * Sidebar position
+ */
+add_filter( 'theme_mod_sidebar_position', 'mechanna_set_post_meta_value' );
+
+/**
+ * Header container type
+ */
+add_filter( 'theme_mod_header_container_type', 'mechanna_set_post_meta_value' );
+
+/**
+ * Content container type
+ */
+add_filter( 'theme_mod_content_container_type', 'mechanna_set_post_meta_value' );
+
+/**
+ * Footer container type
+ */
+add_filter( 'theme_mod_fotter_container_type', 'mechanna_set_post_meta_value' );
+
 
 /**
  * Render existing macros in passed string.

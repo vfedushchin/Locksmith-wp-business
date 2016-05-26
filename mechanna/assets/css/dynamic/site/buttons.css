@@ -31,6 +31,9 @@
 }
 .btn-primary {
 }
+#page #tm_builder_outer_content .tm_pb_button:focus,
+#page #tm_builder_outer_content .tm_pb_button:active,
+#page #tm_builder_outer_content .tm_pb_button:hover,
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary:hover {
@@ -39,6 +42,7 @@
 	color: #fff;
 	box-shadow: 0 0 16px @alpha( $regular_accent_color_1, 80 );
 }
+#page #tm_builder_outer_content .tm_pb_button:focus,
 .btn-primary:focus {
 	box-shadow: 0 0 0px $regular_accent_color_1;
 }

@@ -1,52 +1,96 @@
 #tm_builder_outer_content {
-  .tm_pb_audio_module.tm_pb_module {
+	.tm_pb_audio_module.tm_pb_module {
+		margin-top: 29px;
+		background: #e2e2e2;
 
-    &.fullwidth-img {
-      .tm_audio_container {
-        margin-left: 0;
-      }
-      .tm_pb_audio_cover_art {
-        width: 100%;
-        height: 270px;
-        position: relative !important;
+		strong {
+			font-weight: 400;
+		}
 
-      }
-    }
+		.tm_audio_container .mejs-controls .mejs-horizontal-volume-slider,
+		.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total {
+			width: 72px;
+		}
 
-    &.tm_pb_audio_no_image .tm_audio_container {
-      margin-left: 0;
-    }
+		.tm_audio_container .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total,
+		.tm_audio_container .mejs-controls .mejs-time-rail .mejs-time-total, #tm_builder_outer_content .tm_audio_container .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total {
+			background: #727278;
+		}
 
-    .tm_pb_audio_cover_art {
-      width: 100%;
-      height: 270px;
-      position: relative;
-      @include media-breakpoint-up(sm) {
-        width: 180px;
-        height: 100%;
-        position: absolute;
-      }
-    }
+		.tm_audio_container .mejs-time.mejs-currenttime-container.custom {
+			margin-right: 30px;
+		}
 
-    .tm_audio_container {
-      padding: 35px 40px 4px 40px;
-      margin-left: 0;
-      @include media-breakpoint-up(sm) {
-        margin-left: 180px;
-      }
+		.tm_audio_container span.mejs-currenttime {
+			font-size: 15px;
+			line-height: 30px;
+		}
 
-      h2 {
-        font-weight: 400;
-      }
+		.mejs-container.mejs-audio {
+			max-width: 100%;
+			margin-bottom: 34px;
+		}
 
-      .tm_audio_module_meta {
-        font-style: italic;
-        margin-top: 10px;
-        margin-bottom: 14px;
-      }
-    }
+		&.fullwidth-img {
+			.tm_audio_container {
+				margin-left: 0;
+			}
+			.tm_pb_audio_cover_art {
+				width: 100%;
+				max-height: 100%;
+				height: 316px;
+				top: 0;
+				left: 0;
+				position: relative !important;
+				margin-bottom: -16px;
+
+			}
+		}
+
+		&.tm_pb_audio_no_image .tm_audio_container {
+			margin-left: 0;
+		}
+
+		.tm_pb_audio_cover_art {
+			width: 100%;
+			height: 270px;
+			position: relative;
+			top: 40px;
+			left: 43px;
+			max-height: 180px;
+			@media (max-width: 61.9em) {
+				top: 0;
+				left: 0;
+			}
+			@include media-breakpoint-up(sm) {
+				width: 180px;
+				height: 100%;
+				position: absolute;
+			}
+		}
+
+		.tm_audio_container {
+			padding: 36px 40px 1px 40px;
+			@media (max-width: 61.9em) {
+				padding: 36px 20px 1px 20px;
+			}
+			margin-left: 0;
+			@include media-breakpoint-up(sm) {
+				margin-left: 180px;
+			}
+
+			h2 {
+				font-size: 24px;
+				margin-bottom: -12px;
+			}
+
+			.tm_audio_module_meta {
+				margin-top: 10px;
+				margin-bottom: 24px;
+			}
+		}
 
 
 
-  }
+	}
 }

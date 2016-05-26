@@ -1,8 +1,22 @@
 #tm_builder_outer_content {
   .tm_pb_module .tm_pb_map {
-    height: 300px;
+    margin-top: 30px;
+    height: 250px;
     @include media-breakpoint-up(md){
-      height: 550px;
+      height: 362px;
     }
   }
+
+  .tm_pb_module.map-big .tm_pb_map {
+    @include media-breakpoint-up(md){
+        height: 433px;
+    }
+  }
+
+  .tm_pb_module.map-small .tm_pb_map {
+    @include media-breakpoint-up(md){
+        height: 240px;
+    }
+  }
+
 }

@@ -1,0 +1,21 @@
+#tm_builder_outer_content {
+	.tm_pb_circle_counter{
+		word-wrap: break-word;
+		margin-top: 30px;
+	}
+	.tm_pb_circle_counter {
+		max-width: 100%;
+
+		canvas {
+			max-width: 100%;
+		}
+
+		.percent {
+			p {
+				margin-bottom: 24px;
+			}
+		}
+	}
+
+
+}
