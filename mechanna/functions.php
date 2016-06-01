@@ -339,6 +339,11 @@ if ( ! class_exists( 'Mechanna_Theme_Setup' ) ) {
 			 * Extensions.
 			 */
 			require_once trailingslashit( MECHANNA_THEME_EXT ) . 'woocommerce.php';
+
+			/**
+			 * Builder.
+			 */
+			require_once trailingslashit( MECHANNA_THEME_DIR ) . 'builder/tm-content-builder-extras.php';
 		}
 
 		/**

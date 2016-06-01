@@ -69,9 +69,9 @@
     a.tm_pb_button {
       @extend .btn;
       color: #fff;
-      border: none;
+      // border: none;
       &::after {
-        display: none;
+        //display: none;
       }
       &:hover {
         color: #fff;

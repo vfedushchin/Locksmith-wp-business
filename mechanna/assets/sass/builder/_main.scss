@@ -20,62 +20,18 @@
 
   .tm_pb_module {
 
-    p > em {
-      font-weight: 700;
-      letter-spacing: 0.06px;
-    }
-
     h5 + p {
-      margin-top: 33px;
     }
 
-    h3 + h5 {
-      margin-top: 7px;
-    }
-
-    h3 + h4 {
-      margin-top: 7px;
-    }
-
-    h4 + p {
-      margin-top: 35px;
-    }
-
-    h5 + .offset1 {
-      margin-top: 12px;
-    }
-
-    * + .offset2 {
-      margin-top: 12px;
-    }
-
-    p.offset1 + h5 {
-      margin-top: 32px;
-      margin-bottom: 0;
-    }
-
-    address {
-      font-style: normal;
-    }
-
-    address + h5 {
-      margin-bottom: 0;
-    }
 
     p > a[href^="callto"] {
-      font-weight: 800;
+
     }
     p > a[href^="mailto"] {
-      font-style: italic;
+
     }
   }
 
-  .ins1 {
-    padding: 0;
-    @include media-breakpoint-up(sm){
-      padding: 0 10%;
-    }
-  }
 }
 
 #tm_builder_outer_content .tm_pb_with_background {

@@ -13,7 +13,7 @@
 
 	.vertical-line {
 		position: relative;
-		&:before {
+		&:after {
 			position: absolute;
 			display: inline-block;
 			content: '';
@@ -21,16 +21,18 @@
 			right: -15px;
 			top: auto;
 			bottom: -10px;
-			height: 1px;
+			height: 1px !important;
 			background: $color__background-hr2;
+			visibility: visible !important;
+			z-index: 1;
 
 			@include media-breakpoint-up(sm) {
 				width: 1px;
 				left: auto;
-				height: auto;
+				height: auto  !important;
 				right: -15px;
 				top: 0;
-				bottom: 0;
+				bottom: -10px;
 			}
 
 		}

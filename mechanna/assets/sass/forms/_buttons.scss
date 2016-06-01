@@ -14,6 +14,8 @@ input[type='submit'] {
 	@include border-radius;
 	font-size: 13px;
 	line-height: 25px;
+	border-width: 2px;
+	border-style: solid;
 	&:hover {
 		text-decoration: none;
 	}
@@ -47,4 +49,12 @@ input[type='submit'] {
 	background: none;
 	border: none;
 
+}
+
+.invert-btn {
+	.tm_pb_button,
+	.btn {
+		border: 2px solid #fff;
+		box-sizing: border-box;
+	}
 }

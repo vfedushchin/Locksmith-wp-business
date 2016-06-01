@@ -1,0 +1,38 @@
+#page #tm_builder_outer_content {
+	.tm_pb_link_box {
+		.tm_pb_link_box_content {
+			min-height: 426px;
+			background-position: 50% 50%;
+			background-repeat: no-repeat;
+			background-size: cover;
+			padding: 30px;
+			text-align: left;
+
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			color: #fff;
+
+			h2 {
+				color: #fff !important;
+			}
+		}
+		.tm_pb_link_box_title {
+			margin: 0 0 15px;
+			@include media-breakpoint-up(lg) {
+				font-size: 34px;
+			}
+
+			&:before, &:after {
+				content: none;
+			}
+		}
+		.tm_pb_button {
+			width: auto;
+		}
+	}
+}
+
+.link_box__under-slider {
+
+}

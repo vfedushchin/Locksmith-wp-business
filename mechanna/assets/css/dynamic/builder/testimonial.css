@@ -29,3 +29,12 @@
 #tm_builder_outer_content .tm_pb_testimonial .tm_pb_testimonial_description .tm_pb_testimonial_description_inner .tm_pb_testimonial_meta {
 	color: $regular_link_color;
 }
+
+
+#tm_builder_outer_content .tm_pb_testimonial {
+  font-family: @font_family( $h2_font_family );
+}
+#page #tm_builder_outer_content .tm_pb_testimonial .tm_pb_testimonial_author{
+  font-size: 24px;
+  color: $regular_accent_color_1;
+}

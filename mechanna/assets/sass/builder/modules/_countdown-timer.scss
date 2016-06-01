@@ -1,48 +1,12 @@
 #tm_builder_outer_content {
 
   .tm_pb_column_4_4 {
-    .tm_pb_module.tm_pb_countdown_timer {
-      padding: 4% 4% 6% 4%;
-    }
+
   }
   .tm_pb_module.tm_pb_countdown_timer {
-    padding: 10px 10px 30px;
 
-    @include media-breakpoint-up(xl) {
-      padding: 25px 0 60px 0;
-    }
-
-    &.tm_pb_countdown_timer_circle_layout.tm_pb_module {
-      body & {
-        padding: 0;
-        .sep {
-          margin: 0 13px;
-        }
-        .values {
-          border-radius: 50% !important;
-          margin: 0;
-          width: 137px;
-          > span {
-            color: #fff !important;
-          }
-        }
-      }
-    }
 
     .tm_pb_countdown_timer_container {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      @include media-breakpoint-up(xl) {
-        display: block;
-      }
-
-      h4 {
-        flex: 1 1 100%;
-        @include media-breakpoint-up(xl) {
-          flex: auto;
-        }
-      }
 
       .section {
 
@@ -50,6 +14,7 @@
           flex: 1 1 auto;
           margin: 5px 10px;
           width: auto;
+
           @include media-breakpoint-up(xl) {
             flex: auto;
           }
@@ -72,14 +37,23 @@
 
         .value {
           font-weight: 700;
+          font-size: 56px;
+          @include media-breakpoint-up(xl) {
+            font-size: 96px;
+          }
+          line-height: 1;
         }
 
         .label {
+          font-size: 17px;
 
         }
 
         .countdown-sep {
-          font-size: 50px;
+          font-size: 56px;
+          @include media-breakpoint-up(xl) {
+            font-size: 96px;
+          }
           font-weight: 700;
         }
       }

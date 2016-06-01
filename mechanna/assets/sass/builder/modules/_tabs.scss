@@ -1,19 +1,38 @@
-#tm_builder_outer_content {
+#page #tm_builder_outer_content {
   .tm_pb_module.tm_pb_tabs {
+    p {
+      font-weight: 300;
+      line-height: 28px;
+      span {
+        line-height: 34px;
+        font-weight: 400;
+      }
+    }
     .tm_pb_tabs_controls {
-      text-align: center;
+      text-align: left;
       border-color: $color__background-hr;
+      @include media-breakpoint-down(lg) {
+        border: none;
+      }
+      font-weight: 400;
       li {
-        padding: 4px 19px;
+        padding: 9px 20px 9px 0;
+        @include media-breakpoint-up(xl) {
+          padding: 9px 55px 15px 0;
+        }
         position: relative;
+        font-size: 21px;
+        @include media-breakpoint-up(lg) {
+          font-size: 24px;
+        }
         &::before {
           content: '';
           height: 2px;
           width: auto;
           position: absolute;
           bottom: -2px;
-          left: 10px;
-          right: 10px;
+          left: 0;
+          right: 0;
           border-radius: 0;
           top: auto;
           @include translate(0, 0);
@@ -35,11 +54,15 @@
           }
         }
 
+        &:last-child {
+          padding-right: 5px;
+        }
+
       }
     }
 
     .tm_pb_all_tabs {
-      padding: 10px 0 1px;
+      padding: 20px 0 1px;
     }
 
   }
