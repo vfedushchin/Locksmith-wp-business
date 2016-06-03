@@ -77,9 +77,14 @@
 	background: @alpha(#040404, 50);
 }
 
+
+.tm_pb_builder #tm_builder_outer_content .tm-pb-controllers > a,
+#tm_builder_outer_content .tm-pb-controllers .tm-pb-active-control {
+	border-color:  $invert_h3_color !important;
+}
 .tm_pb_builder #tm_builder_outer_content .tm-pb-controllers > a:hover,
 #tm_builder_outer_content .tm-pb-controllers .tm-pb-active-control {
-	background:  $regular_h3_color !important;
+	background:  $invert_h3_color !important;
 }
 
 #tm_builder_outer_content .tm_pb_button{

@@ -20,6 +20,8 @@ class Tm_Builder_Module_Link_Box extends Tm_Builder_Module {
 			'url_new_window'      => array( 'off' ),
 		);
 
+		$this->main_css_element = '%%order_class%%.' . $this->slug;
+
 		$this->advanced_options = array(
 			'fonts' => array(
 				'header' => array(
@@ -30,6 +32,12 @@ class Tm_Builder_Module_Link_Box extends Tm_Builder_Module {
 				),
 				'body'   => array(
 					'label'    => esc_html__( 'Body', 'tm_builder' ),
+					'font_size' => array(
+						'default' => '20px',
+					),
+					'line_height' => array(
+						'default' => '1.2em',
+					),
 					'css'      => array(
 						'line_height' => "{$this->main_css_element} p",
 					),

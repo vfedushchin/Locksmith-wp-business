@@ -12,6 +12,19 @@ p {
 	}
 }
 
+.line-height-text_big {
+	@media (min-width: 991px) {
+		line-height: 28px;
+
+		h5 {
+			margin-bottom: 15px;
+		}
+		p + h5 {
+			margin-top: 18px;
+		}
+	}
+}
+
 dfn, cite, em, i {
 	font-style: italic;
 }
@@ -68,3 +81,4 @@ mark, ins {
 big {
 	font-size: 125%;
 }
+

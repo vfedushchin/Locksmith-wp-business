@@ -26,6 +26,7 @@
       h2 {
         font-size: 34px;
         color: #fff !important;
+        max-width: 700px;
         @include media-breakpoint-up(lg) {
           font-size: 74px;
         }
@@ -37,13 +38,18 @@
           font-size: 54px;
           line-height: 60px;
         }
+        @include media-breakpoint-down(sm) {
+          margin-top: 0;
+          font-size: 24px;
+          line-height: 32px;
+        }
       }
 
       .tm_pb_slide_description {
         text-align: left;
-        padding: 56px 30px 80px;
+        padding: 50px 30px 120px;
         @include media-breakpoint-up(lg) {
-          padding: 56px 40px 112px;
+          padding: 246px 0px 388px;
         }
 
         .tm_pb_slide_title {
@@ -51,6 +57,24 @@
           @include media-breakpoint-up(lg) {
             margin-bottom: -13px;
           }
+        }
+      }
+
+      a.tm_pb_button {
+        @extend .btn;
+        color: #fff;
+        border: none;
+        padding: 0;
+        box-shadow: none;
+        margin-top: 0;
+        @include media-breakpoint-up(lg) {
+          margin-top: 42px;
+        }
+        &::after {
+          //display: none;
+        }
+        &:hover {
+          color: #000;
         }
       }
 
@@ -69,16 +93,21 @@
     a.tm_pb_button {
       @extend .btn;
       color: #fff;
-      // border: none;
-      &::after {
-        //display: none;
-      }
-      &:hover {
-        color: #fff;
-      }
     }
 
     .tm-pb-slider-arrows {
+      position: relative;
+      left: 25px;
+
+      @include media-breakpoint-up(lg) {
+        left: 50%;
+        margin-left: -533px;
+      }
+
+      @include media-breakpoint-up(xl) {
+        left: 50%;
+        margin-left: -613px;
+      }
       .tm-pb-arrow-prev,
       .tm-pb-arrow-next {
         @include media-breakpoint-up(sm){
@@ -91,7 +120,10 @@
         color: #fff !important;
         box-shadow: 10px 10px 10px -3px rgba(0, 0, 0, 0.08);
         top: auto !important;
-        bottom: 30px;
+        bottom: 50px;
+        @include media-breakpoint-up(lg) {
+          bottom: 182px;
+        }
         @include transition(.3s ease all);
         &:hover {
           box-shadow: none;
@@ -124,10 +156,12 @@
       bottom: 30px;
       right: 0;
       > a {
-        height: 14px;
-        width: 14px;
-        margin-right: 20px;
+        height: 12px;
+        width: 12px;
+        margin-right: 4px;
         position: relative;
+        background: none;
+        border: 1px solid #fff;
         &::before {
           content: '';
           height: 24px;
@@ -139,6 +173,10 @@
           transform: translate(-50%, -50%) scale(0);
           @include transition(.5s ease all);
           z-index: -1;
+        }
+
+        &:hover {
+          background: #fff;
         }
 
         &:hover::before {
@@ -155,5 +193,5 @@
 }
 
 #tm_builder_outer_content .tm_pb_slider_fullwidth_off .tm_pb_slide_description {
-  margin: 0 -8% !important;
+
 }
