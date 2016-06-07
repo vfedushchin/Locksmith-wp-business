@@ -22,12 +22,17 @@
 .btn{
 	background-color: $regular_accent_color_1;
 	border-color: $regular_accent_color_1;
+	font-weight: 300;
 }
 .btn:hover,
 .btn:active {
-	color: $regular_accent_color_1;
-	background-color: $regular_h3_color;
-	border-color: $regular_h3_color;
+	color: $invert_h3_color;
+	font-weight: 300;
+	box-shadow: 0 0 16px @alpha( $regular_accent_color_1, 80 );
+}
+.btn-secondary:hover,
+.btn-secondary:active {
+	box-shadow: none;
 }
 .btn-primary {
 }

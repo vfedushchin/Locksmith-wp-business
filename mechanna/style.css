@@ -1919,7 +1919,7 @@ input[type='submit'] {
   line-height: 25px;
 }
 
-.btn, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_contact_submit, .tm_pb_builder #page #tm_builder_outer_content .tm_pb_slider a.tm_pb_button, .tm_pb_builder #page #tm_builder_outer_content a.tm_pb_button, .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button,
+.btn, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_contact_submit, .tm_pb_builder #page #tm_builder_outer_content a.tm_pb_button, .tm_pb_builder #page #tm_builder_outer_content .tm_pb_slider_fullwidth_on a.tm_pb_button, .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button,
 .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button, body .booked-modal input.button-primary[type="submit"] {
   text-decoration: none;
   line-height: 1;
@@ -2032,6 +2032,7 @@ textarea {
   font-size: 14px;
   line-height: 25px;
   border-radius: 27px;
+  border-radius: 2opx;
 }
 
 input[type='text']:focus,
@@ -6614,6 +6615,71 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   padding-bottom: 20px;
 }
 
+#tm_builder_outer_content .tm_pb_widget_area .widget-subscribe {
+  text-align: center;
+  padding: 10px 10px 10px;
+}
+
+@media (min-width: 992px) {
+  #tm_builder_outer_content .tm_pb_widget_area .widget-subscribe .subscribe-block {
+    padding: 35px 24px 51px;
+  }
+}
+
+#tm_builder_outer_content .tm_pb_widget_area .widget-subscribe .subscribe-block__form {
+  margin-top: 0;
+}
+
+@media (min-width: 768px) {
+  #tm_builder_outer_content .tm_pb_widget_area .widget-subscribe .subscribe-block__form {
+    max-width: 530px;
+    margin: 0 auto;
+  }
+}
+
+#tm_builder_outer_content .tm_pb_widget_area .widget-subscribe .subscribe-block__input {
+  width: 360px;
+  margin-right: 10px;
+  font-style: italic;
+}
+
+#tm_builder_outer_content .tm_pb_widget_area .widget-subscribe .subscribe-block__submit {
+  width: auto;
+  min-width: 155px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+@media (min-width: 768px) {
+  #tm_builder_outer_content .tm_pb_widget_area .widget-subscribe .subscribe-block__submit {
+    margin-top: 0;
+  }
+}
+
+#tm_builder_outer_content .tm_pb_widget_area .widget-subscribe .subscribe-block__message {
+  font-size: 17px;
+  opacity: 0.7;
+  padding-bottom: 36px;
+}
+
+@media (min-width: 992px) {
+  #tm_builder_outer_content .tm_pb_widget_area .widget-subscribe .subscribe-block .widget-title {
+    font-size: 44px;
+    margin-bottom: 14px;
+  }
+}
+
+#tm_builder_outer_content .tm_pb_widget_area .widget-subscribe .follow-block {
+  background: none;
+  padding: 14px 24px 26px;
+}
+
+@media (min-width: 992px) {
+  #tm_builder_outer_content .tm_pb_widget_area .widget-subscribe .follow-block .widget-title {
+    font-size: 24px;
+  }
+}
+
 /*--------------------------------------------------------------
 ## Taxonomy Tiles
 --------------------------------------------------------------*/
@@ -7344,10 +7410,6 @@ object {
   color: #fff;
 }
 
-.tm_pb_builder #page #tm_builder_outer_content {
-  color: #fff;
-}
-
 .tm_pb_builder #page #tm_builder_outer_content .tm_pb_slider .tm_pb_container {
   max-width: 1170px;
 }
@@ -7362,7 +7424,6 @@ object {
 
 .tm_pb_builder #page #tm_builder_outer_content .tm_pb_slider h2 {
   font-size: 34px;
-  color: #fff !important;
   max-width: 700px;
 }
 
@@ -7397,12 +7458,6 @@ object {
   padding: 50px 30px 120px;
 }
 
-@media (min-width: 992px) {
-  .tm_pb_builder #page #tm_builder_outer_content .tm_pb_slider .tm_pb_slide_description {
-    padding: 246px 0px 388px;
-  }
-}
-
 .tm_pb_builder #page #tm_builder_outer_content .tm_pb_slider .tm_pb_slide_description .tm_pb_slide_title {
   margin-bottom: 0;
 }
@@ -7411,24 +7466,6 @@ object {
   .tm_pb_builder #page #tm_builder_outer_content .tm_pb_slider .tm_pb_slide_description .tm_pb_slide_title {
     margin-bottom: -13px;
   }
-}
-
-.tm_pb_builder #page #tm_builder_outer_content .tm_pb_slider a.tm_pb_button {
-  color: #fff;
-  border: none;
-  padding: 0;
-  box-shadow: none;
-  margin-top: 0;
-}
-
-@media (min-width: 992px) {
-  .tm_pb_builder #page #tm_builder_outer_content .tm_pb_slider a.tm_pb_button {
-    margin-top: 42px;
-  }
-}
-
-.tm_pb_builder #page #tm_builder_outer_content .tm_pb_slider a.tm_pb_button:hover {
-  color: #000;
 }
 
 .tm_pb_builder #page #tm_builder_outer_content .tm_pb_fullwidth_slider_0.tm_pb_slider .tm_pb_slide_description h2.tm_pb_slide_title {
@@ -7451,15 +7488,7 @@ object {
 
 @media (min-width: 992px) {
   .tm_pb_builder #page #tm_builder_outer_content .tm-pb-slider-arrows {
-    left: 50%;
-    margin-left: -533px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .tm_pb_builder #page #tm_builder_outer_content .tm-pb-slider-arrows {
-    left: 50%;
-    margin-left: -613px;
+    left: 50px;
   }
 }
 
@@ -7472,7 +7501,7 @@ object {
   color: #fff !important;
   box-shadow: 10px 10px 10px -3px rgba(0, 0, 0, 0.08);
   top: auto !important;
-  bottom: 50px;
+  bottom: 70px;
   transition: 0.3s ease all;
 }
 
@@ -7486,7 +7515,7 @@ object {
 @media (min-width: 992px) {
   .tm_pb_builder #page #tm_builder_outer_content .tm-pb-slider-arrows .tm-pb-arrow-prev,
   .tm_pb_builder #page #tm_builder_outer_content .tm-pb-slider-arrows .tm-pb-arrow-next {
-    bottom: 182px;
+    bottom: 50px;
   }
 }
 
@@ -7559,6 +7588,81 @@ object {
 
 .tm_pb_builder #page #tm_builder_outer_content .tm-pb-controllers > a.tm-pb-active-control::before {
   transform: translate(-50%, -50%) scale(1);
+}
+
+.tm_pb_builder #page #tm_builder_outer_content .tm_pb_slider_fullwidth_on {
+  color: #fff;
+}
+
+.tm_pb_builder #page #tm_builder_outer_content .tm_pb_slider_fullwidth_on h2 {
+  color: #fff !important;
+}
+
+.tm_pb_builder #page #tm_builder_outer_content .tm_pb_slider_fullwidth_on a.tm_pb_button {
+  color: #fff;
+  border: none;
+  padding: 0;
+  box-shadow: none;
+  margin-top: 0;
+}
+
+@media (min-width: 992px) {
+  .tm_pb_builder #page #tm_builder_outer_content .tm_pb_slider_fullwidth_on a.tm_pb_button {
+    margin-top: 42px;
+  }
+}
+
+.tm_pb_builder #page #tm_builder_outer_content .tm_pb_slider_fullwidth_on a.tm_pb_button:hover {
+  color: #000;
+}
+
+.tm_pb_builder #page #tm_builder_outer_content .tm_pb_slider_fullwidth_on .tm_pb_slide_description {
+  padding: 50px 30px 120px;
+}
+
+@media (min-width: 992px) {
+  .tm_pb_builder #page #tm_builder_outer_content .tm_pb_slider_fullwidth_on .tm_pb_slide_description {
+    padding: 246px 0px 388px;
+  }
+}
+
+.tm_pb_builder #page #tm_builder_outer_content .tm_pb_slider_fullwidth_on .tm-pb-slider-arrows {
+  left: 25px;
+}
+
+@media (min-width: 992px) {
+  .tm_pb_builder #page #tm_builder_outer_content .tm_pb_slider_fullwidth_on .tm-pb-slider-arrows {
+    left: 50%;
+    margin-left: -533px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .tm_pb_builder #page #tm_builder_outer_content .tm_pb_slider_fullwidth_on .tm-pb-slider-arrows {
+    left: 50%;
+    margin-left: -613px;
+  }
+}
+
+.tm_pb_builder #page #tm_builder_outer_content .tm_pb_slider_fullwidth_on .tm-pb-slider-arrows .tm-pb-arrow-prev,
+.tm_pb_builder #page #tm_builder_outer_content .tm_pb_slider_fullwidth_on .tm-pb-slider-arrows .tm-pb-arrow-next {
+  bottom: 50px;
+}
+
+@media (min-width: 992px) {
+  .tm_pb_builder #page #tm_builder_outer_content .tm_pb_slider_fullwidth_on .tm-pb-slider-arrows .tm-pb-arrow-prev,
+  .tm_pb_builder #page #tm_builder_outer_content .tm_pb_slider_fullwidth_on .tm-pb-slider-arrows .tm-pb-arrow-next {
+    bottom: 182px;
+  }
+}
+
+.tm_pb_builder #page #tm_builder_outer_content .tm_pb_slider_fullwidth_off.tm_pb_post_slider.tm_pb_slider .tm_pb_slide_description {
+  text-align: left;
+  padding: 50px 10px 120px;
+}
+
+.tm_pb_builder #page #tm_builder_outer_content .tm_pb_slider_fullwidth_off.tm_pb_post_slider.tm_pb_slider .tm_pb_slide_description .tm_pb_slide_title {
+  margin-bottom: 0;
 }
 
 #page #tm_builder_outer_content .tm_pb_column:not(.tm_pb_column_4_4) .tm_pb_testimonial {

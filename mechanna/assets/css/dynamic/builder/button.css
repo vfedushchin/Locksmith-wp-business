@@ -4,7 +4,7 @@
 }
 
 #tm_builder_outer_content .tm_pb_module h2{
-	color: $regular_h2_color !important;
+	/*color: $regular_h2_color !important;*/
 }
 
 #tm_builder_outer_content .tm_audio_module_meta {
@@ -20,6 +20,10 @@
 
 #tm_builder_outer_content .tm_pb_module h4{
 	color: $regular_h4_color;
+}
+
+.tm_pb_builder #page #tm_builder_outer_content .tm_pb_slider_fullwidth_off.tm_pb_post_slider.tm_pb_slider .tm_pb_slide_description .tm_pb_slide_title{
+	color: $regular_accent_color_1 !important;
 }
 
 #tm_builder_outer_content h5,
@@ -155,6 +159,14 @@
 #tm_builder_outer_content .tm_link_content h2 a:hover{
 	color: $regular_text_color !important;
 }
+
+#tm_builder_outer_content .tm_quote_content, #tm_builder_outer_content .tm_link_content {
+	background-color: $regular_accent_color_1;
+}
+#tm_builder_outer_content .tm_audio_content {
+    background-color: @darken($regular_accent_color_3, 30);
+}
+
 
 /*contacts*/
 

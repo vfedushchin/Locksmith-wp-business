@@ -138,6 +138,7 @@
 .widget_categories {
 	background: $regular_h3_color;
 }
+#page #tm_builder_outer_content .widget_categories .widget-title,
 .widget_categories .widget-title{
 	color: $invert_h3_color;
 }

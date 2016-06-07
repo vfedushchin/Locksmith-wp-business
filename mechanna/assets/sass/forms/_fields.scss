@@ -22,6 +22,7 @@ textarea {
 	line-height: 25px;
 
 	@include border-radius;
+	border-radius: 2opx;
 	&:focus {
 		outline: none;
 		box-shadow: 0 0 10px rgba($color__border-input,0.2);
