@@ -13,6 +13,12 @@
     }
   }
 
+  .tm_pb_module.map-big2 .tm_pb_map {
+    @include media-breakpoint-up(md){
+        height: 648px;
+    }
+  }
+
   .tm_pb_module.map-small .tm_pb_map {
     @include media-breakpoint-up(md){
         height: 240px;

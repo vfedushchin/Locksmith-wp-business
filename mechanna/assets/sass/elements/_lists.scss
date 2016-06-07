@@ -65,8 +65,26 @@ ol {
 
 			@include material-icon();
 		}
+
+		i {
+			min-width: 31px;
+			font-size: 18px;
+		}
 	}
 }
+
+.site-main .list-no-styles ul {
+	li{
+		margin-left: 0;
+
+		&:before {
+			display: none;
+		}
+	}
+
+}
+
+
 
 .site-main ol {
 	line-height: 32px;

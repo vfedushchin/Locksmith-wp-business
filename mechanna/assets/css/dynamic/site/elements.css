@@ -31,3 +31,14 @@ ol li:before,
 .site-main ul li::before {
 	color: $regular_accent_color_1;
 }
+
+
+ul li.link-view {
+	color: $regular_accent_color_1;
+}
+.list-no-styles ul {
+	font-size: 18px;
+	line-height: 25px;
+	font-weight: 400;
+	font-family: $h3_font_family;
+}

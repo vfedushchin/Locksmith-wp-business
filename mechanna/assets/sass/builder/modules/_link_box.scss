@@ -88,20 +88,23 @@
 	}
 }
 
-.more-hover-show {
-	.tm_pb_link_box .tm_pb_link_box_content{
-		.tm_pb_link_box_button_holder {
-			transition: .4s all ease;
-			visibility: hidden;
-			opacity: 0;
-		}
 
-		&:hover {
+@include media-breakpoint-up(lg) {
+	.more-hover-show {
+		.tm_pb_link_box .tm_pb_link_box_content{
 			.tm_pb_link_box_button_holder {
-				visibility: visible;
-				opacity: 1;
+				transition: .4s all ease;
+				visibility: hidden;
+				opacity: 0;
 			}
-		}
 
+			&:hover {
+				.tm_pb_link_box_button_holder {
+					visibility: visible;
+					opacity: 1;
+				}
+			}
+
+		}
 	}
 }
