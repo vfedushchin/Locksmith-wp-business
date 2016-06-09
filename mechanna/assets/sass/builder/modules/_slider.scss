@@ -1,4 +1,4 @@
-#page.site #tm_builder_outer_content .tm_pb_module h2 {
+#page.site #tm_builder_outer_content .tm_pb_slider h2 {
 	color: #fff;
 }
 
@@ -46,9 +46,12 @@
 
 			.tm_pb_slide_description {
 				text-align: left;
-				padding: 50px 30px 120px;
+				padding: 50px 0px 120px;
+				margin-left: -10px;
+				margin-right: -10px;
 
 				.tm_pb_slide_title {
+					font-weight: 400;
 					margin-bottom: 0;
 					@include media-breakpoint-up(lg) {
 						margin-bottom: -13px;
@@ -75,9 +78,9 @@
 
 		.tm-pb-slider-arrows {
 			position: relative;
-			left: 25px;
+			left: 15px;
 			@include media-breakpoint-up(lg) {
-				left: 50px;
+				left: 0px;
 			}
 
 			.tm-pb-arrow-prev,
@@ -195,7 +198,7 @@
 	.tm_pb_slide_description {
 		padding: 50px 30px 120px;
 		@include media-breakpoint-up(lg) {
-			padding: 246px 0px 388px;
+			padding: 246px 0px 288px;
 		}
 	}
 

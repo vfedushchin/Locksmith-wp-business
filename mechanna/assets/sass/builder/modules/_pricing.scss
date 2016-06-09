@@ -10,8 +10,8 @@
 				width: 100%;
 				@include media-breakpoint-up(lg) {
 					width: 30%;
-					margin-bottom: 21px;
-					margin-top: 21px;
+					margin-bottom: 37px;
+					margin-top: 37px;
 				}
 
 				&.tm_pb_featured_table {
@@ -23,7 +23,11 @@
 					.tm_pb_pricing_heading {
 						display: flex;
 						flex-wrap: wrap;
-						padding-top: 25px;
+						padding-top: 30px;
+						padding-bottom: 20px;
+						h2 {
+							line-height: 54px;
+						}
 						.tm_pb_pricing_title {
 							flex: 1 1 100%;
 							order: 2;
@@ -34,6 +38,7 @@
 						}
 					}
 					.tm_pb_pricing_content_top {
+						padding-bottom: 23px;
 						.tm_pb_frequency {
 							color: #fff !important;
 						}
@@ -54,7 +59,7 @@
 			}
 
 			.tm_pb_pricing_heading {
-				padding-top: 35px;
+				padding-top: 25px;
 				padding-bottom: 30px;
 				margin: 0;
 				.tm_pb_pricing_title {
@@ -66,7 +71,7 @@
 
 			.tm_pb_pricing_content_top {
 				position: relative;
-				padding-bottom: 23px;
+				padding-bottom: 6px;
 				.tm_pb_dollar_sign {
 					position: relative;
 					margin: 0;
@@ -87,7 +92,10 @@
 			}
 
 			.tm_pb_pricing_content {
-				padding: 20px 25px;
+				padding: 10px 15px;
+				@include media-breakpoint-up(lg) {
+					padding: 13px 35px 35px;
+				}
 				.tm_pb_pricing {
 					text-align: center;
 					li {

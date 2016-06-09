@@ -1,11 +1,16 @@
-.tm_pb_builder #tm_builder_outer_content {
+.tm_pb_builder #tm_builder_outer_content .tm_pb_blurb{
+
+
+
 	.tm_pb_blurb_content {
 		max-width: 100%;
 	}
 
 	h4 {
 		margin-bottom: 0;
+		padding-bottom: 24px;
 	}
+
 
 	.tm_pb_blurb_content {
 
@@ -17,4 +22,11 @@
 		width: auto;
 	}
 
+}
+
+
+.tm_pb_builder #tm_builder_outer_content .col-lg-12 .tm_pb_blurb{
+	h4 {
+		padding-bottom: 4px;
+	}
 }

@@ -368,3 +368,8 @@ body .widget.widget_booked_calendar table.booked-calendar td.today:hover .date:h
 #tm_builder_outer_content .tm_pb_slider {
 	background: $regular_accent_color_1;
 }
+
+
+#page #tm_builder_outer_content .tm_pb_audio_module_content h2 {
+	color: $regular_h3_color !important;
+}

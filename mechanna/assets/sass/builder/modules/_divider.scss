@@ -1,6 +1,18 @@
-#tm_builder_outer_content {
+#page #tm_builder_outer_content {
+	.tm_pb_column {
+
+		.tm_pb_blurb {
+			overflow: hidden;
+		}
+
+
+		hr.tm_pb_divider {
+			// width: 110%;
+		}
+	}
 	hr.tm_pb_divider {
 		width: 100%;
+		width: auto;
 		box-sizing: initial;
 
 		&.divider-full-width {
@@ -31,8 +43,8 @@
 				left: auto;
 				height: auto  !important;
 				right: -15px;
-				top: 0;
-				bottom: -100px;
+				top: -1000px;
+				bottom: -1000px;
 				background: $color__background-hr2;
 			}
 
@@ -49,8 +61,8 @@
 					left: auto;
 					height: auto  !important;
 					right: -15px;
-					top: 0;
-					bottom: -100px;
+					top: -1000px;
+					bottom: -1000px;
 					background: $color__background-hr2;
 				}
 
@@ -71,6 +83,11 @@
 
 			}
 		}
+	}
+
+	.vertical-line-color2 .vertical-line:after {
+		background: #000;
+		opacity: 0.1;
 	}
 
 

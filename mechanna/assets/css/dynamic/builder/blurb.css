@@ -18,9 +18,6 @@
     color:  $regular_accent_color_1;
 }
 
- #tm_builder_outer_content .tm_pb_module.tm_pb_blurb .tm-pb-icon:hover {
-    background: $regular_accent_color_1 !important;
-}
 
 #tm_builder_outer_content .tm_pb_module.tm_pb_blurb.liner .tm_pb_blurb_content .tm_pb_blurb_content{
     background: @alpha($regular_accent_color_1, 90);
