@@ -6,7 +6,7 @@
  */
 
 ?>
-<div class="footer-container container">
+<div class="footer-container">
   <div <?php echo mechanna_get_container_classes( array( 'site-info' ), 'footer' ); ?>>
 		<?php
       mechanna_footer_logo();

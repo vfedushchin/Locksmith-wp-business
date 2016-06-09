@@ -16,6 +16,8 @@
 			margin: 0 0 0 auto;
 			@include transition(.4s ease all);
 			.search-form {
+				margin: 0;
+				width: auto;
 				@include transition(.4s ease all);
 				visibility: hidden;
 				opacity: 0;
@@ -87,8 +89,8 @@
 
 
 
-	padding: .3rem $grid-gutter-width*1.4 .3rem;
-	padding: .3rem 2.325rem .3rem;
+	//padding: .3rem $grid-gutter-width*1.4 .3rem;
+
 	@include media-breakpoint-down(md) {
 		padding: .3rem 1.7rem .3rem;
 	}
@@ -106,6 +108,19 @@
 		padding-left: 0;
 	}
 	&__wrap {
+		padding: .3rem 2.325rem .3rem;
+
+		&.container {
+			position: relative;
+
+			.header__search {
+				right: 1em;
+
+				.search__toggle {
+					padding: 0 2px;
+				}
+			}
+		}
 
 		&:after {
 			display: block;
