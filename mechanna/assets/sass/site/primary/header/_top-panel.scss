@@ -108,7 +108,12 @@
 		padding-left: 0;
 	}
 	&__wrap {
-		padding: .3rem 2.325rem .3rem;
+		@include media-breakpoint-up(md) {
+			padding: .3rem 0 .3rem;
+		}
+		@include media-breakpoint-up(lg) {
+			padding: .3rem 2.325rem .3rem;
+		}
 
 		&.container {
 			position: relative;

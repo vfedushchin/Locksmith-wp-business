@@ -132,6 +132,7 @@
 			}
 		}
 		&__img {
+			width: 100%;
 			display: inline-block;
 			vertical-align: top;
 			.entry-header + .post-thumbnail > & {
@@ -322,7 +323,7 @@
 	}
 }
 
-
+*,
 .no-sidebars-before {
 	.post-gallery__slide img,
 	.post-thumbnail img {

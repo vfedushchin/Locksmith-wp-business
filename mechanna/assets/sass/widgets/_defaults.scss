@@ -47,6 +47,7 @@
 .widget_calendar {
 	line-height: 1;
 	padding-bottom: 36px;
+	border: none;
 	@include media-breakpoint-up(lg) {
 		line-height: 0.85;
 	}
@@ -58,19 +59,23 @@
 	}
 	table {
 		margin-bottom: 0;
+		border: none;
 	}
 	thead tr th{
 		padding-bottom: 7px;
 		font-weight: 400;
+		border: none;
 	}
 	caption {
 		margin-bottom: 1.1em;
 		padding: 1em 0;
 		padding-right: 7px;
+		border: none;
 	}
 	th, tbody td {
 		padding: 0 0;
 		text-align: center;
+		border: none;
 	}
 	tfoot {
 		line-height: 1.5;

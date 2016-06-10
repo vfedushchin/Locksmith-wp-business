@@ -2,7 +2,7 @@
 
 class Tm_Builder_Module_Link_Box extends Tm_Builder_Module {
 	function init() {
-		$this->name = esc_html__( 'Link Box', 'tm_builder' );
+		$this->name = esc_html__( 'Link Box', 'mechanna' );
 		$this->slug = 'tm_pb_link_box';
 		$this->icon = 'f14c';
 		$this->whitelisted_fields = array(
@@ -25,13 +25,13 @@ class Tm_Builder_Module_Link_Box extends Tm_Builder_Module {
 		$this->advanced_options = array(
 			'fonts' => array(
 				'header' => array(
-					'label'    => esc_html__( 'Header', 'tm_builder' ),
+					'label'    => esc_html__( 'Header', 'mechanna' ),
 					'css'      => array(
 						'main' => "{$this->main_css_element} h4, {$this->main_css_element} h4 a",
 					),
 				),
 				'body'   => array(
-					'label'    => esc_html__( 'Body', 'tm_builder' ),
+					'label'    => esc_html__( 'Body', 'mechanna' ),
 					'font_size' => array(
 						'default' => '20px',
 					),
@@ -62,74 +62,74 @@ class Tm_Builder_Module_Link_Box extends Tm_Builder_Module {
 
 		$fields = array(
 			'title' => array(
-				'label'           => esc_html__( 'Title', 'tm_builder' ),
+				'label'           => esc_html__( 'Title', 'mechanna' ),
 				'type'            => 'text',
 				'option_category' => 'basic_option',
-				'description'     => esc_html__( 'The title of your blurb will appear in bold below your blurb image.', 'tm_builder' ),
+				'description'     => esc_html__( 'The title of your blurb will appear in bold below your blurb image.', 'mechanna' ),
 			),
 			'image' => array(
-				'label'              => esc_html__( 'Image', 'tm_builder' ),
+				'label'              => esc_html__( 'Image', 'mechanna' ),
 				'type'               => 'upload',
 				'option_category'    => 'basic_option',
-				'upload_button_text' => esc_attr__( 'Upload an image', 'tm_builder' ),
-				'choose_text'        => esc_attr__( 'Choose an Image', 'tm_builder' ),
-				'update_text'        => esc_attr__( 'Set As Image', 'tm_builder' ),
-				'description'        => esc_html__( 'Upload an image to display at the top of your blurb.', 'tm_builder' ),
+				'upload_button_text' => esc_attr__( 'Upload an image', 'mechanna' ),
+				'choose_text'        => esc_attr__( 'Choose an Image', 'mechanna' ),
+				'update_text'        => esc_attr__( 'Set As Image', 'mechanna' ),
+				'description'        => esc_html__( 'Upload an image to display at the top of your blurb.', 'mechanna' ),
 			),
 			'button' => array(
-				'label'           => esc_html__( 'Button Text', 'tm_builder' ),
+				'label'           => esc_html__( 'Button Text', 'mechanna' ),
 				'type'            => 'text',
 				'option_category' => 'basic_option',
-				'description'     => esc_html__( 'Input your desired button text.', 'tm_builder' ),
+				'description'     => esc_html__( 'Input your desired button text.', 'mechanna' ),
 			),
 			'url' => array(
-				'label'           => esc_html__( 'Url', 'tm_builder' ),
+				'label'           => esc_html__( 'Url', 'mechanna' ),
 				'type'            => 'text',
 				'option_category' => 'basic_option',
-				'description'     => esc_html__( 'If you would like to make your blurb a link, input your destination URL here.', 'tm_builder' ),
+				'description'     => esc_html__( 'If you would like to make your blurb a link, input your destination URL here.', 'mechanna' ),
 			),
 			'url_new_window' => array(
-				'label'           => esc_html__( 'Url Opens', 'tm_builder' ),
+				'label'           => esc_html__( 'Url Opens', 'mechanna' ),
 				'type'            => 'select',
 				'option_category' => 'configuration',
 				'options'         => array(
-					'off' => esc_html__( 'In The Same Window', 'tm_builder' ),
-					'on'  => esc_html__( 'In The New Tab', 'tm_builder' ),
+					'off' => esc_html__( 'In The Same Window', 'mechanna' ),
+					'on'  => esc_html__( 'In The New Tab', 'mechanna' ),
 				),
-				'description' => esc_html__( 'Here you can choose whether or not your link opens in a new window', 'tm_builder' ),
+				'description' => esc_html__( 'Here you can choose whether or not your link opens in a new window', 'mechanna' ),
 			),
 			'content_new' => array(
-				'label'             => esc_html__( 'Content', 'tm_builder' ),
+				'label'             => esc_html__( 'Content', 'mechanna' ),
 				'type'              => 'tiny_mce',
 				'option_category'   => 'basic_option',
-				'description'       => esc_html__( 'Input the main text content for your module here.', 'tm_builder' ),
+				'description'       => esc_html__( 'Input the main text content for your module here.', 'mechanna' ),
 			),
 			'disabled_on' => array(
-				'label'           => esc_html__( 'Disable on', 'tm_builder' ),
+				'label'           => esc_html__( 'Disable on', 'mechanna' ),
 				'type'            => 'multiple_checkboxes',
 				'options'         => array(
-					'phone'   => esc_html__( 'Phone', 'tm_builder' ),
-					'tablet'  => esc_html__( 'Tablet', 'tm_builder' ),
-					'desktop' => esc_html__( 'Desktop', 'tm_builder' ),
+					'phone'   => esc_html__( 'Phone', 'mechanna' ),
+					'tablet'  => esc_html__( 'Tablet', 'mechanna' ),
+					'desktop' => esc_html__( 'Desktop', 'mechanna' ),
 				),
 				'additional_att'  => 'disable_on',
 				'option_category' => 'configuration',
-				'description'     => esc_html__( 'This will disable the module on selected devices', 'tm_builder' ),
+				'description'     => esc_html__( 'This will disable the module on selected devices', 'mechanna' ),
 			),
 			'admin_label' => array(
-				'label'       => esc_html__( 'Admin Label', 'tm_builder' ),
+				'label'       => esc_html__( 'Admin Label', 'mechanna' ),
 				'type'        => 'text',
-				'description' => esc_html__( 'This will change the label of the module in the builder for easy identification.', 'tm_builder' ),
+				'description' => esc_html__( 'This will change the label of the module in the builder for easy identification.', 'mechanna' ),
 			),
 			'module_id' => array(
-				'label'           => esc_html__( 'CSS ID', 'tm_builder' ),
+				'label'           => esc_html__( 'CSS ID', 'mechanna' ),
 				'type'            => 'text',
 				'option_category' => 'configuration',
 				'tab_slug'        => 'custom_css',
 				'option_class'    => 'tm_pb_custom_css_regular',
 			),
 			'module_class' => array(
-				'label'           => esc_html__( 'CSS Class', 'tm_builder' ),
+				'label'           => esc_html__( 'CSS Class', 'mechanna' ),
 				'type'            => 'text',
 				'option_category' => 'configuration',
 				'tab_slug'        => 'custom_css',
