@@ -77,15 +77,13 @@
 	}
 	&-button-next {
 		right: 30px;
-
-
 		border-radius: 50%;
+		text-indent: 2px;
 	}
 	&-button-prev {
 		left: 30px;
-
-
 		border-radius: 50%;
+		text-indent: -2px;
 	}
 }
 

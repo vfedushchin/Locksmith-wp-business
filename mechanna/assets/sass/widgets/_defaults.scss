@@ -278,3 +278,21 @@
 		}
 	}
 }
+
+
+
+#sidebar-primary {
+	.widget_nav_menu {
+		ul.menu {
+			font-weight: 300;
+			margin-top: 30px;
+			@include media-breakpoint-up(lg) {
+				margin-left: -5px;
+			}
+			li {
+				margin-left: 0.8em;
+				margin-top: .59em;
+			}
+		}
+	}
+}

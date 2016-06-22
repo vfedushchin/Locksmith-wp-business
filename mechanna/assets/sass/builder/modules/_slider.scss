@@ -112,14 +112,14 @@
 				}
 			}
 			.tm-pb-arrow-prev {
-				left: 30px !important;
+				left: 20px !important;
 				&:before {
 					content: '\f0d9';
 					 @include translate(-60%, -50%);
 				}
 			}
 			.tm-pb-arrow-next {
-				left: 80px !important;
+				left: 74px !important;
 				&:before {
 					content: '\f0da';
 					 @include translate(-40%, -50%);

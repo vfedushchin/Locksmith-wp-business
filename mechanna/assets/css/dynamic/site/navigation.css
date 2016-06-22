@@ -17,13 +17,14 @@ a.page-numbers:hover,
 }
 .page-numbers.next,
 .page-numbers.prev {
-	border: 1px solid $regular_h6_color;
+	border: 2px solid $regular_h6_color;
 	color: $regular_h6_color;
 }
 .page-numbers.next:hover,
 .page-numbers.prev:hover {
 	color: $regular_accent_color_1;
 	border-color: $regular_accent_color_1;
+	border-width: 2px;
 }
 
 /* #Breadcrumbs */

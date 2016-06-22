@@ -1874,7 +1874,7 @@ function mechanna_get_fonts_options() {
  */
 function mechanna_get_default_top_panel_text() {
 	return sprintf(
-		__( '<div>24/7 Professional Locksmithing Service</div><div class="mobile-show">Call Us <span class="mobile-hide">Today</span>1 800 559 6580</div><div>22 St. Black Road  Raleigh, PA 34578</div>', 'mechanna' )
+		__( '<div>24/7 Professional Locksmithing Service</div><div class="mobile-show">Call Us Today <span class="mobile-hide">Today</span>1 800 559 6580</div><div>22 St. Black Road  Raleigh, PA 34578</div>', 'mechanna' )
 	);
 }
 

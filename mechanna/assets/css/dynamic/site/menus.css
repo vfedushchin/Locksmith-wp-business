@@ -59,3 +59,9 @@
 .footer-menu__items li.current_page_item a {
 	color: $regular_text_color;
 }
+
+@media (min-width: 768px) {
+	.main-navigation .menu > li.current-menu-ancestor::after, .main-navigation .menu > li.current-page-item::after, .main-navigation .menu > li.current-menu-item::after, .main-navigation .menu > li:hover::after {
+		color: $regular_accent_color_1;
+	}
+}

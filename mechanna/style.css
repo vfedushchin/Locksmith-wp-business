@@ -1975,7 +1975,7 @@ input[type='submit'] {
   font-size: 1rem;
   font-size: 10px;
   line-height: 25px;
-  padding-left: 5px;
+  padding-left: 9px;
   opacity: 1;
 }
 
@@ -2458,7 +2458,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 
 @media (min-width: 768px) and (min-width: 992px) {
   .main-navigation li:hover > ul, .main-navigation li.menu-hover > ul {
-    top: 180%;
+    top: 190%;
   }
 }
 
@@ -2527,14 +2527,19 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
 /* Skin */
+.main-navigation .menu-item-has-children a {
+  padding: 7px 32px 7px 19px;
+}
+
 .main-navigation a {
   border-radius: 30px;
-  padding: 7px 20px;
+  padding: 7px 19px;
 }
 
 @media (min-width: 992px) {
   .main-navigation a {
     padding: 7px 23px;
+    padding: 7px 19px;
   }
 }
 
@@ -2695,12 +2700,13 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 @media (min-width: 768px) {
   .main-navigation .menu > li::after {
     /* Marker position (level 1) */
-    top: 12px;
-    right: 5px;
+    top: 13px;
+    right: 18px;
     color: #fff;
     transition: .4s all ease;
+    font-size: 13px;
   }
-  .main-navigation .menu > li.current-page-item::after, .main-navigation .menu > li.current-menu-item::after, .main-navigation .menu > li:hover::after {
+  .main-navigation .menu > li.current-menu-ancestor::after, .main-navigation .menu > li.current-page-item::after, .main-navigation .menu > li.current-menu-item::after, .main-navigation .menu > li:hover::after {
     color: rgba(0, 0, 0, 0.5);
   }
 }
@@ -2951,13 +2957,31 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 .page-numbers.next, .page-numbers.prev {
   min-width: 46px;
   height: 46px;
-  line-height: 44px;
+  line-height: 41px;
   border-radius: 50%;
   border: none;
+  position: relative;
 }
 
 .page-numbers.next i, .page-numbers.prev i {
   vertical-align: middle;
+}
+
+.page-numbers.next:after, .page-numbers.prev:after {
+  position: absolute;
+  display: inline-block;
+  content: '';
+  left: -1px;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  transition: .4s all ease;
+}
+
+.page-numbers.next:hover:after, .page-numbers.prev:hover:after {
+  opacity: 0;
 }
 
 .page-numbers.next {
@@ -5291,6 +5315,10 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   display: none;
 }
 
+.post_format-post-format-quote .post__cats {
+  margin-bottom: 10px;
+}
+
 /*--------------------------------------------------------------
 ## Footer
 --------------------------------------------------------------*/
@@ -5894,6 +5922,22 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   }
 }
 
+#sidebar-primary .widget_nav_menu ul.menu {
+  font-weight: 300;
+  margin-top: 30px;
+}
+
+@media (min-width: 992px) {
+  #sidebar-primary .widget_nav_menu ul.menu {
+    margin-left: -5px;
+  }
+}
+
+#sidebar-primary .widget_nav_menu ul.menu li {
+  margin-left: 0.8em;
+  margin-top: .59em;
+}
+
 /*--------------------------------------------------------------
 ## About Mechanna
 --------------------------------------------------------------*/
@@ -6108,11 +6152,13 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 .swiper-button-next {
   right: 30px;
   border-radius: 50%;
+  text-indent: 2px;
 }
 
 .swiper-button-prev {
   left: 30px;
   border-radius: 50%;
+  text-indent: -2px;
 }
 
 .sidebar-primary .swiper-button-next,
@@ -7421,6 +7467,14 @@ object {
   display: none;
 }
 
+#tm_builder_outer_content .tm_pb_contact_form_container .tm-pb-contact-message ul {
+  margin-top: -17px;
+}
+
+#tm_builder_outer_content .tm_pb_contact_form_container .tm-pb-contact-message li {
+  line-height: 24px;
+}
+
 #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_pb_contact_form_input {
   padding: 8px 21px 9px;
   margin: 0 0 6px 0;
@@ -7593,7 +7647,7 @@ object {
 }
 
 .tm_pb_builder #page #tm_builder_outer_content .tm-pb-slider-arrows .tm-pb-arrow-prev {
-  left: 30px !important;
+  left: 20px !important;
 }
 
 .tm_pb_builder #page #tm_builder_outer_content .tm-pb-slider-arrows .tm-pb-arrow-prev:before {
@@ -7602,7 +7656,7 @@ object {
 }
 
 .tm_pb_builder #page #tm_builder_outer_content .tm-pb-slider-arrows .tm-pb-arrow-next {
-  left: 80px !important;
+  left: 74px !important;
 }
 
 .tm_pb_builder #page #tm_builder_outer_content .tm-pb-slider-arrows .tm-pb-arrow-next:before {

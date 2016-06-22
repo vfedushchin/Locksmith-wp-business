@@ -158,3 +158,14 @@
 .invert .widget_text {
 	color: $invert_text_color;
 }
+
+
+#sidebar-primary .widget_nav_menu ul.menu li:before {
+	color: $regular_accent_color_1;
+}
+#sidebar-primary .widget_nav_menu ul.menu li a {
+	color: $regular_text_color;
+}
+#sidebar-primary .widget_nav_menu ul.menu li a:hover {
+	color: $regular_accent_color_1;
+}

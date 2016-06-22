@@ -66,11 +66,30 @@
 	&.prev {
 		min-width: 46px;
 		height: 46px;
-		line-height: 44px;
+		line-height: 41px;
 		border-radius: 50%;
 		border: none;
+		position: relative;
 		i {
 			vertical-align: middle;
+		}
+		&:after {
+			position: absolute;
+			display: inline-block;
+			content: '';
+			left: -1px;
+			top: -1px;
+			right: -1px;
+			bottom: -1px;
+			border-radius: 50%;
+			border: 2px solid #fff;
+			transition: .4s all ease;
+		}
+
+		&:hover {
+			&:after {
+				opacity: 0;
+			}
 		}
 	}
 	&.next {margin-left: 25px;}

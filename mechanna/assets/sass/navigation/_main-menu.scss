@@ -67,7 +67,7 @@
 
 					top: 120%;
 					@include media-breakpoint-up(lg) {
-						top: 180%;
+						top: 190%;
 					}
 				}
 			}
@@ -165,14 +165,21 @@
 
 
 /* Skin */
+.main-navigation .menu-item-has-children{
+	a {
+		padding: 7px 32px 7px 19px;
+	}
+}
 .main-navigation {
 	a {
 		border-radius: 30px;
-		padding: 7px 20px;
+		padding: 7px 19px;
 
 		@include media-breakpoint-up(lg) {
 			padding: 7px 23px;
+			padding: 7px 19px;
 		}
+
 		&:focus {
 			outline: none;
 		}
@@ -315,12 +322,14 @@
 			> li {
 				&::after {
 					/* Marker position (level 1) */
-					top: 12px;
-					right: 5px;
+					top: 13px;
+					right: 18px;
 					color: #fff;
 					transition: .4s all ease;
+					font-size: 13px;
 				}
 
+				&.current-menu-ancestor::after,
 				&.current-page-item::after,
 				&.current-menu-item::after,
 				&:hover::after {
