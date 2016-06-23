@@ -13,3 +13,10 @@
 #tm_builder_outer_content .tm_pb_module.tm_pb_tabs .tm_pb_tabs_controls li.tm_pb_tab_active a {
 	color: $regular_accent_color_1;
 }
+
+
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_tabs .tm_pb_all_tabs strong,
+#tm_builder_outer_content .tm_pb_module.tm_pb_toggle .tm_pb_toggle_content strong {
+  color: $regular_accent_color_1;
+}

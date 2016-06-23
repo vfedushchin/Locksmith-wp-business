@@ -69,16 +69,18 @@
 					?>
 				</span>
 
-				<!-- <span class="post__comments"> -->
-					<?php
-						mechanna_meta_comments( 'single', array(
-										'before' => '',
-										'zero'   => esc_html__( '0 comments', 'mechanna' ),
-										'one'    => esc_html__( '1 comment', 'mechanna' ),
-										'plural' => '% ' . esc_html__( 'comments', 'mechanna' ),
-								) );
+
+				<span class="post__comments">
+					<?php $comment_visible = mechanna_is_meta_visible( 'single_post_comments', 'single' ) ? 'true' : 'false';
+						$utility->meta_data->get_comment_count( array(
+							'visible' => $comment_visible,
+							'class'   => 'post__comments-link',
+							'sufix'     => _n_noop( '%s comment', '%s comments', 'mechanna' ),
+							'echo'    => true,
+						) );
 					?>
-				<!-- </span> -->
+				</span>
+
 
 				<?php $tags_visible = mechanna_is_meta_visible( 'single_post_tags', 'single' ) ? 'true' : 'false'; ?>
 

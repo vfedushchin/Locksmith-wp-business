@@ -20,7 +20,6 @@
 .hentry {
 	position: relative;
 	margin-top: 1.2em;
-	// margin-top: -1.3em;
 	@include media-breakpoint-up(lg) {
 		margin-bottom: 4.2em;
 	}
@@ -91,7 +90,6 @@
 	&-summary,
 	&-content {
 		.posts-list & {
-			// display: none;
 
 			@include media-breakpoint-up(md) {
 				display: block;
@@ -135,9 +133,6 @@
 			width: 100%;
 			display: inline-block;
 			vertical-align: top;
-			.entry-header + .post-thumbnail > & {
-				// margin-top: 25px;
-			}
 		}
 		&--fullwidth {
 			.posts-list & {
@@ -187,19 +182,7 @@
 			}
 		}
 
-
-		.post-gallery + & {
-			position: absolute;
-			z-index: 99;
-			top: 10px;
-			left: 10px;
-			right: 10px;
-
-			@include media-breakpoint-up(lg) {
-					left: 20px;
-					top: 20px;
-				}
-		}
+		.post-gallery + &,
 		.post-format-wrap & {
 			position: absolute;
 			z-index: 99;
@@ -211,6 +194,10 @@
 				left: 20px;
 			}
 		}
+		.post-gallery + & {
+			right: 10px;
+		}
+
 	}
 	&__date,
 	&__comments,
@@ -273,9 +260,6 @@
 	}
 	.posts-list__item & {
 		.posts-list--default:not(.two-sidebars) & {
-			@include media-breakpoint-up(lg) {
-				// padding: $button__indents;
-			}
 			&__text {
 				@include media-breakpoint-up(lg) {
 					display: inline-block

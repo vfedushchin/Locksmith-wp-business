@@ -96,6 +96,11 @@
 	border-color: $regular_accent_color_1;
 }
 
+#page #tm_builder_outer_content .tm_pb_slide .tm_pb_button,
+#page #tm_builder_outer_content .tm_pb_slide .tm_pb_button:hover{
+	background: none;
+}
+
 #tm_builder_outer_content .tm_pb_button:hover{
 	background:$regular_link_hover_color;
 }

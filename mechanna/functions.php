@@ -79,6 +79,9 @@ if ( ! class_exists( 'Mechanna_Theme_Setup' ) ) {
 			// Enqueue public assets.
 			add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_assets' ), 10 );
 
+			// Enqueue swiper scripts and styles
+			add_action( 'wp_enqueue_scripts', 'swiper_enqueue_assets', 9 );
+
 		}
 
 		/**
@@ -596,6 +599,16 @@ if ( ! class_exists( 'Mechanna_Theme_Setup' ) ) {
 }
 
 /**
+ * Load swiper scripts and styles
+ *
+ */
+function swiper_enqueue_assets() {
+	wp_enqueue_style( 'jquery-swiper' );
+	wp_enqueue_script( 'jquery-swiper' );
+}
+
+
+/**
  * Returns instanse of main theme configuration class.
  *
  * @since  1.0.0
@@ -606,3 +619,4 @@ function mechanna_theme() {
 }
 
 mechanna_theme();
+

@@ -1,6 +1,6 @@
 /*!
 Theme Name: Mechanna
-Theme URI: http://www.templatemonster.com/
+Theme URI: http://www.templatemonster.com/wordpress-themes
 Author: Template Monster
 Author URI: http://www.templatemonster.com
 Description:
@@ -325,27 +325,6 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   margin: 0 0 1em;
-}
-
-@media (min-width: 991px) {
-  .lh2 {
-    line-height: 36px;
-  }
-  h6 + .lh2 {
-    margin-top: -7px;
-  }
-}
-
-@media (min-width: 991px) {
-  .line-height-text_big {
-    line-height: 28px;
-  }
-  .line-height-text_big h5 {
-    margin-bottom: 15px;
-  }
-  .line-height-text_big p + h5 {
-    margin-top: 18px;
-  }
 }
 
 dfn, cite, em, i {
@@ -1915,8 +1894,7 @@ input[type='submit'] {
   line-height: 25px;
 }
 
-.btn, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_contact_submit, .tm_pb_builder #page #tm_builder_outer_content a.tm_pb_button, .tm_pb_builder #page #tm_builder_outer_content .tm_pb_slider_fullwidth_on a.tm_pb_button, .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button,
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button, body .booked-modal input.button-primary[type="submit"] {
+.btn, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_contact_submit, .tm_pb_builder #page #tm_builder_outer_content a.tm_pb_button, .tm_pb_builder #page #tm_builder_outer_content .tm_pb_slider_fullwidth_on a.tm_pb_button, .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link {
   text-decoration: none;
   line-height: 1;
   display: inline-block;
@@ -1938,13 +1916,11 @@ input[type='submit'] {
   border-style: solid;
 }
 
-.btn:hover, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_contact_submit:hover, .tm_pb_builder #page #tm_builder_outer_content a.tm_pb_button:hover, .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link:hover, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button:hover,
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button:hover, body .booked-modal input.button-primary[type="submit"]:hover {
+.btn:hover, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_contact_submit:hover, .tm_pb_builder #page #tm_builder_outer_content a.tm_pb_button:hover, .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link:hover {
   text-decoration: none;
 }
 
-.btn:focus, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_contact_submit:focus, .tm_pb_builder #page #tm_builder_outer_content a.tm_pb_button:focus, .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link:focus, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button:focus,
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button:focus, body .booked-modal input.button-primary[type="submit"]:focus {
+.btn:focus, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_contact_submit:focus, .tm_pb_builder #page #tm_builder_outer_content a.tm_pb_button:focus, .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link:focus {
   outline: none;
   box-shadow: 0 0 0;
 }
@@ -1992,15 +1968,7 @@ input[type='submit'] {
 .invert-btn .tm_pb_builder #page #tm_builder_outer_content a.tm_pb_button, .tm_pb_builder #page #tm_builder_outer_content
 .invert-btn a.tm_pb_button,
 .invert-btn .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link, .tm_pb_builder #tm_builder_outer_content .tm_pb_post
-.invert-btn .more-link,
-.invert-btn #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td
-.invert-btn .button,
-.invert-btn
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button,
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td
-.invert-btn .button,
-.invert-btn body .booked-modal input.button-primary[type="submit"], body .booked-modal
-.invert-btn input.button-primary[type="submit"] {
+.invert-btn .more-link {
   border: 2px solid #fff;
   box-sizing: border-box;
 }
@@ -2181,24 +2149,14 @@ textarea {
   position: absolute;
 }
 
-.site-footer .search-form__submit.btn.btn-primary, .site-footer #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .search-form__submit.btn-primary.tm_pb_contact_submit, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .site-footer .search-form__submit.btn-primary.tm_pb_contact_submit, .site-footer .tm_pb_builder #page #tm_builder_outer_content a.search-form__submit.btn-primary.tm_pb_button, .tm_pb_builder #page #tm_builder_outer_content .site-footer a.search-form__submit.btn-primary.tm_pb_button, .site-footer .tm_pb_builder #tm_builder_outer_content .tm_pb_post .search-form__submit.btn-primary.more-link, .tm_pb_builder #tm_builder_outer_content .tm_pb_post .site-footer .search-form__submit.btn-primary.more-link, .site-footer #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .search-form__submit.btn-primary.button, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .site-footer .search-form__submit.btn-primary.button, .site-footer
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .search-form__submit.btn-primary.button,
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .site-footer .search-form__submit.btn-primary.button, .site-footer body .booked-modal input.search-form__submit.btn-primary.button-primary[type="submit"], body .booked-modal .site-footer input.search-form__submit.btn-primary.button-primary[type="submit"],
+.site-footer .search-form__submit.btn.btn-primary, .site-footer #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .search-form__submit.btn-primary.tm_pb_contact_submit, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .site-footer .search-form__submit.btn-primary.tm_pb_contact_submit, .site-footer .tm_pb_builder #page #tm_builder_outer_content a.search-form__submit.btn-primary.tm_pb_button, .tm_pb_builder #page #tm_builder_outer_content .site-footer a.search-form__submit.btn-primary.tm_pb_button, .site-footer .tm_pb_builder #tm_builder_outer_content .tm_pb_post .search-form__submit.btn-primary.more-link, .tm_pb_builder #tm_builder_outer_content .tm_pb_post .site-footer .search-form__submit.btn-primary.more-link,
 .site-content .search-form__submit.btn.btn-primary,
 .site-content #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .search-form__submit.btn-primary.tm_pb_contact_submit, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container
 .site-content .search-form__submit.btn-primary.tm_pb_contact_submit,
 .site-content .tm_pb_builder #page #tm_builder_outer_content a.search-form__submit.btn-primary.tm_pb_button, .tm_pb_builder #page #tm_builder_outer_content
 .site-content a.search-form__submit.btn-primary.tm_pb_button,
 .site-content .tm_pb_builder #tm_builder_outer_content .tm_pb_post .search-form__submit.btn-primary.more-link, .tm_pb_builder #tm_builder_outer_content .tm_pb_post
-.site-content .search-form__submit.btn-primary.more-link,
-.site-content #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .search-form__submit.btn-primary.button, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td
-.site-content .search-form__submit.btn-primary.button,
-.site-content
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .search-form__submit.btn-primary.button,
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td
-.site-content .search-form__submit.btn-primary.button,
-.site-content body .booked-modal input.search-form__submit.btn-primary.button-primary[type="submit"], body .booked-modal
-.site-content input.search-form__submit.btn-primary.button-primary[type="submit"] {
+.site-content .search-form__submit.btn-primary.more-link {
   top: 3px;
   right: 13px;
   box-shadow: none;
@@ -2206,31 +2164,19 @@ textarea {
   color: #000;
 }
 
-.site-footer .search-form__submit.btn.btn-primary:hover, .site-footer #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .search-form__submit.btn-primary.tm_pb_contact_submit:hover, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .site-footer .search-form__submit.btn-primary.tm_pb_contact_submit:hover, .site-footer .tm_pb_builder #page #tm_builder_outer_content a.search-form__submit.btn-primary.tm_pb_button:hover, .tm_pb_builder #page #tm_builder_outer_content .site-footer a.search-form__submit.btn-primary.tm_pb_button:hover, .site-footer .tm_pb_builder #tm_builder_outer_content .tm_pb_post .search-form__submit.btn-primary.more-link:hover, .tm_pb_builder #tm_builder_outer_content .tm_pb_post .site-footer .search-form__submit.btn-primary.more-link:hover, .site-footer #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .search-form__submit.btn-primary.button:hover, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .site-footer .search-form__submit.btn-primary.button:hover, .site-footer
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .search-form__submit.btn-primary.button:hover,
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .site-footer .search-form__submit.btn-primary.button:hover, .site-footer body .booked-modal input.search-form__submit.btn-primary.button-primary[type="submit"]:hover, body .booked-modal .site-footer input.search-form__submit.btn-primary.button-primary[type="submit"]:hover,
+.site-footer .search-form__submit.btn.btn-primary:hover, .site-footer #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .search-form__submit.btn-primary.tm_pb_contact_submit:hover, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .site-footer .search-form__submit.btn-primary.tm_pb_contact_submit:hover, .site-footer .tm_pb_builder #page #tm_builder_outer_content a.search-form__submit.btn-primary.tm_pb_button:hover, .tm_pb_builder #page #tm_builder_outer_content .site-footer a.search-form__submit.btn-primary.tm_pb_button:hover, .site-footer .tm_pb_builder #tm_builder_outer_content .tm_pb_post .search-form__submit.btn-primary.more-link:hover, .tm_pb_builder #tm_builder_outer_content .tm_pb_post .site-footer .search-form__submit.btn-primary.more-link:hover,
 .site-content .search-form__submit.btn.btn-primary:hover,
 .site-content #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .search-form__submit.btn-primary.tm_pb_contact_submit:hover, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container
 .site-content .search-form__submit.btn-primary.tm_pb_contact_submit:hover,
 .site-content .tm_pb_builder #page #tm_builder_outer_content a.search-form__submit.btn-primary.tm_pb_button:hover, .tm_pb_builder #page #tm_builder_outer_content
 .site-content a.search-form__submit.btn-primary.tm_pb_button:hover,
 .site-content .tm_pb_builder #tm_builder_outer_content .tm_pb_post .search-form__submit.btn-primary.more-link:hover, .tm_pb_builder #tm_builder_outer_content .tm_pb_post
-.site-content .search-form__submit.btn-primary.more-link:hover,
-.site-content #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .search-form__submit.btn-primary.button:hover, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td
-.site-content .search-form__submit.btn-primary.button:hover,
-.site-content
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .search-form__submit.btn-primary.button:hover,
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td
-.site-content .search-form__submit.btn-primary.button:hover,
-.site-content body .booked-modal input.search-form__submit.btn-primary.button-primary[type="submit"]:hover, body .booked-modal
-.site-content input.search-form__submit.btn-primary.button-primary[type="submit"]:hover {
+.site-content .search-form__submit.btn-primary.more-link:hover {
   opacity: 0.5;
 }
 
 @media (min-width: 1200px) {
-  .site-content .sidebar-primary .search-form__submit.btn.btn-primary, .site-content .sidebar-primary #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .search-form__submit.btn-primary.tm_pb_contact_submit, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .site-content .sidebar-primary .search-form__submit.btn-primary.tm_pb_contact_submit, .site-content .sidebar-primary .tm_pb_builder #page #tm_builder_outer_content a.search-form__submit.btn-primary.tm_pb_button, .tm_pb_builder #page #tm_builder_outer_content .site-content .sidebar-primary a.search-form__submit.btn-primary.tm_pb_button, .site-content .sidebar-primary .tm_pb_builder #tm_builder_outer_content .tm_pb_post .search-form__submit.btn-primary.more-link, .tm_pb_builder #tm_builder_outer_content .tm_pb_post .site-content .sidebar-primary .search-form__submit.btn-primary.more-link, .site-content .sidebar-primary #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .search-form__submit.btn-primary.button, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .site-content .sidebar-primary .search-form__submit.btn-primary.button, .site-content .sidebar-primary
-  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .search-form__submit.btn-primary.button,
-  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .site-content .sidebar-primary .search-form__submit.btn-primary.button, .site-content .sidebar-primary body .booked-modal input.search-form__submit.btn-primary.button-primary[type="submit"], body .booked-modal .site-content .sidebar-primary input.search-form__submit.btn-primary.button-primary[type="submit"] {
+  .site-content .sidebar-primary .search-form__submit.btn.btn-primary, .site-content .sidebar-primary #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .search-form__submit.btn-primary.tm_pb_contact_submit, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .site-content .sidebar-primary .search-form__submit.btn-primary.tm_pb_contact_submit, .site-content .sidebar-primary .tm_pb_builder #page #tm_builder_outer_content a.search-form__submit.btn-primary.tm_pb_button, .tm_pb_builder #page #tm_builder_outer_content .site-content .sidebar-primary a.search-form__submit.btn-primary.tm_pb_button, .site-content .sidebar-primary .tm_pb_builder #tm_builder_outer_content .tm_pb_post .search-form__submit.btn-primary.more-link, .tm_pb_builder #tm_builder_outer_content .tm_pb_post .site-content .sidebar-primary .search-form__submit.btn-primary.more-link {
     right: 93px;
   }
 }
@@ -3394,19 +3340,19 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   margin-bottom: 15px;
 }
 
-.marTop1 {
+@media (min-width: 992px) {
+  .error-404 .page-content h3 {
+    margin-top: -10px;
+  }
+}
+
+.error-404 .page-content h3 + p {
   margin-top: 50px;
 }
 
 @media (min-width: 992px) {
-  .marTop1 {
+  .error-404 .page-content h3 + p {
     margin-top: 106px;
-  }
-}
-
-@media (min-width: 992px) {
-  .marTop2 {
-    margin-top: -10px;
   }
 }
 
@@ -3519,13 +3465,6 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 .comment-body {
   padding-top: 7px;
   padding-bottom: 10px;
-}
-
-@media (min-width: 992px) {
-  .comment-body {
-    padding-top: 7px;
-    padding-bottom: 10px;
-  }
 }
 
 .comment-body__holder {
@@ -3851,32 +3790,6 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   }
 }
 
-/*
-@include media-breakpoint-only(md) {
-	.posts-list--grid-3-cols {
-		display: block;
-		margin-right: auto;
-		margin-left: auto;
-		.card {
-			display: block;
-			max-width: 100%;
-			margin-right: auto;
-			margin-left: auto;
-			flex: none;
-		}
-	}
-	.posts-list--masonry-3-cols {
-		&.one-left-sidebar,
-		&.one-right-sidebar {
-			column-gap: normal;
-			column-count: auto;
-			.card {
-				display: block;
-			}
-		}
-	}
-}
- */
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -3977,24 +3890,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   }
 }
 
-.site-header.default .site-branding {
-  padding: 1px 0 1px;
-  order: 1;
-  flex: 0 1 100%;
-  text-align: left;
-}
-
-@media (min-width: 768px) {
-  .site-header.default .site-branding {
-    padding-top: 8px;
-    padding-bottom: 16px;
-    order: 0;
-    flex: 0 1 100%;
-    text-align: left;
-  }
-}
-
-.site-header.default .social-list {
+.site-header .social-list {
   padding: 0 0 15px;
   order: 0;
   flex: 0 1 100%;
@@ -4009,7 +3905,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   visibility: hidden;
 }
 
-.header-mobilemenu-toggled .site-header.default .social-list {
+.header-mobilemenu-toggled .site-header .social-list {
   transition: 0.6s all ease;
   display: block;
   left: 7px;
@@ -4018,7 +3914,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
 @media (min-width: 768px) {
-  .site-header.default .social-list {
+  .site-header .social-list {
     position: relative;
     flex: 0 1 100%;
     text-align: right;
@@ -4030,6 +3926,23 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     left: -5px;
     padding-bottom: 26px;
     transition: 0s all ease;
+  }
+}
+
+.site-header.default .site-branding {
+  padding: 1px 0 1px;
+  order: 1;
+  flex: 0 1 100%;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .site-header.default .site-branding {
+    padding-top: 8px;
+    padding-bottom: 16px;
+    order: 0;
+    flex: 0 1 100%;
+    text-align: left;
   }
 }
 
@@ -4080,43 +3993,9 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   }
 }
 
-.site-header.centered .social-list {
-  padding: 0 0 15px;
-  order: 0;
-  flex: 0 1 100%;
-  text-align: left;
-  position: absolute;
-  top: 7px;
-  left: 25px;
-  width: 200px;
-  padding: 15px;
-  background: #000;
-  opacity: 0;
-  visibility: hidden;
-}
-
-.header-mobilemenu-toggled .site-header.centered .social-list {
-  transition: 0.6s all ease;
-  display: block;
-  left: 7px;
-  opacity: 1;
-  visibility: visible;
-}
-
 @media (min-width: 768px) {
   .site-header.centered .social-list {
-    position: relative;
-    flex: 0 1 100%;
-    text-align: right;
-    background: none !important;
-    display: block;
-    opacity: 1;
-    visibility: visible;
-    padding: 0;
-    left: -5px;
-    padding-top: 19px;
     padding-bottom: 36px;
-    transition: 0s all ease;
   }
 }
 
@@ -4153,45 +4032,6 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     order: 0;
     flex: 0 1 auto;
     text-align: left;
-  }
-}
-
-.site-header.minimal .social-list {
-  padding: 0 0 15px;
-  order: 0;
-  flex: 0 1 100%;
-  text-align: left;
-  position: absolute;
-  top: 7px;
-  left: 25px;
-  width: 200px;
-  padding: 15px;
-  background: #000;
-  opacity: 0;
-  visibility: hidden;
-}
-
-.header-mobilemenu-toggled .site-header.minimal .social-list {
-  transition: 0.6s all ease;
-  display: block;
-  left: 7px;
-  opacity: 1;
-  visibility: visible;
-}
-
-@media (min-width: 768px) {
-  .site-header.minimal .social-list {
-    position: relative;
-    flex: 0 1 100%;
-    text-align: right;
-    background: none !important;
-    display: block;
-    opacity: 1;
-    visibility: visible;
-    padding: 0;
-    left: -5px;
-    padding-bottom: 26px;
-    transition: 0s all ease;
   }
 }
 
@@ -4602,9 +4442,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   margin-top: 0;
 }
 
-.entry-footer .btn, .entry-footer #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_contact_submit, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .entry-footer .tm_pb_contact_submit, .entry-footer .tm_pb_builder #page #tm_builder_outer_content a.tm_pb_button, .tm_pb_builder #page #tm_builder_outer_content .entry-footer a.tm_pb_button, .entry-footer .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link, .tm_pb_builder #tm_builder_outer_content .tm_pb_post .entry-footer .more-link, .entry-footer #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .entry-footer .button, .entry-footer
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button,
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .entry-footer .button, .entry-footer body .booked-modal input.button-primary[type="submit"], body .booked-modal .entry-footer input.button-primary[type="submit"] {
+.entry-footer .btn, .entry-footer #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_contact_submit, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .entry-footer .tm_pb_contact_submit, .entry-footer .tm_pb_builder #page #tm_builder_outer_content a.tm_pb_button, .tm_pb_builder #page #tm_builder_outer_content .entry-footer a.tm_pb_button, .entry-footer .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link, .tm_pb_builder #tm_builder_outer_content .tm_pb_post .entry-footer .more-link {
   float: left;
 }
 
@@ -4681,21 +4519,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   }
 }
 
-.post-gallery + .post__cats {
-  position: absolute;
-  z-index: 99;
-  top: 10px;
-  left: 10px;
-  right: 10px;
-}
-
-@media (min-width: 992px) {
-  .post-gallery + .post__cats {
-    left: 20px;
-    top: 20px;
-  }
-}
-
+.post-gallery + .post__cats,
 .post-format-wrap .post__cats {
   position: absolute;
   z-index: 99;
@@ -4704,10 +4528,15 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
 @media (min-width: 992px) {
+  .post-gallery + .post__cats,
   .post-format-wrap .post__cats {
     top: 20px;
     left: 20px;
   }
+}
+
+.post-gallery + .post__cats {
+  right: 10px;
 }
 
 .post__date .material-icons,
@@ -4753,9 +4582,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 /*--------------------------------------------------------------
 ### Read More button
 --------------------------------------------------------------*/
-.posts-list__item .btn, .posts-list__item #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_contact_submit, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .posts-list__item .tm_pb_contact_submit, .posts-list__item .tm_pb_builder #page #tm_builder_outer_content a.tm_pb_button, .tm_pb_builder #page #tm_builder_outer_content .posts-list__item a.tm_pb_button, .posts-list__item .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link, .tm_pb_builder #tm_builder_outer_content .tm_pb_post .posts-list__item .more-link, .posts-list__item #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .posts-list__item .button, .posts-list__item
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button,
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .posts-list__item .button, .posts-list__item body .booked-modal input.button-primary[type="submit"], body .booked-modal .posts-list__item input.button-primary[type="submit"] {
+.posts-list__item .btn, .posts-list__item #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_contact_submit, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .posts-list__item .tm_pb_contact_submit, .posts-list__item .tm_pb_builder #page #tm_builder_outer_content a.tm_pb_button, .tm_pb_builder #page #tm_builder_outer_content .posts-list__item a.tm_pb_button, .posts-list__item .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link, .tm_pb_builder #tm_builder_outer_content .tm_pb_post .posts-list__item .more-link {
   padding: 0;
 }
 
@@ -4771,29 +4598,13 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 .posts-list__item a.tm_pb_button .material-icons,
 .posts-list__item .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link .material-icons, .tm_pb_builder #tm_builder_outer_content .tm_pb_post
 .posts-list__item .more-link .material-icons,
-.posts-list__item #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button .material-icons, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td
-.posts-list__item .button .material-icons,
-.posts-list__item
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button .material-icons,
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td
-.posts-list__item .button .material-icons,
-.posts-list__item body .booked-modal input.button-primary[type="submit"] .material-icons, body .booked-modal
-.posts-list__item input.button-primary[type="submit"] .material-icons,
 .posts-list__item .btn .fa,
 .posts-list__item #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_contact_submit .fa, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container
 .posts-list__item .tm_pb_contact_submit .fa,
 .posts-list__item .tm_pb_builder #page #tm_builder_outer_content a.tm_pb_button .fa, .tm_pb_builder #page #tm_builder_outer_content
 .posts-list__item a.tm_pb_button .fa,
 .posts-list__item .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link .fa, .tm_pb_builder #tm_builder_outer_content .tm_pb_post
-.posts-list__item .more-link .fa,
-.posts-list__item #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button .fa, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td
-.posts-list__item .button .fa,
-.posts-list__item
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button .fa,
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td
-.posts-list__item .button .fa,
-.posts-list__item body .booked-modal input.button-primary[type="submit"] .fa, body .booked-modal
-.posts-list__item input.button-primary[type="submit"] .fa {
+.posts-list__item .more-link .fa {
   line-height: 46px;
   width: 46px;
   height: 46px;
@@ -4816,29 +4627,13 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   .posts-list--default:not(.two-sidebars) .posts-list__item a.tm_pb_button .material-icons,
   .posts-list--default:not(.two-sidebars) .posts-list__item .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link .material-icons, .tm_pb_builder #tm_builder_outer_content .tm_pb_post
   .posts-list--default:not(.two-sidebars) .posts-list__item .more-link .material-icons,
-  .posts-list--default:not(.two-sidebars) .posts-list__item #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button .material-icons, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td
-  .posts-list--default:not(.two-sidebars) .posts-list__item .button .material-icons,
-  .posts-list--default:not(.two-sidebars) .posts-list__item
-  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button .material-icons,
-  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td
-  .posts-list--default:not(.two-sidebars) .posts-list__item .button .material-icons,
-  .posts-list--default:not(.two-sidebars) .posts-list__item body .booked-modal input.button-primary[type="submit"] .material-icons, body .booked-modal
-  .posts-list--default:not(.two-sidebars) .posts-list__item input.button-primary[type="submit"] .material-icons,
   .posts-list--default:not(.two-sidebars) .posts-list__item .btn .fa,
   .posts-list--default:not(.two-sidebars) .posts-list__item #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_contact_submit .fa, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container
   .posts-list--default:not(.two-sidebars) .posts-list__item .tm_pb_contact_submit .fa,
   .posts-list--default:not(.two-sidebars) .posts-list__item .tm_pb_builder #page #tm_builder_outer_content a.tm_pb_button .fa, .tm_pb_builder #page #tm_builder_outer_content
   .posts-list--default:not(.two-sidebars) .posts-list__item a.tm_pb_button .fa,
   .posts-list--default:not(.two-sidebars) .posts-list__item .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link .fa, .tm_pb_builder #tm_builder_outer_content .tm_pb_post
-  .posts-list--default:not(.two-sidebars) .posts-list__item .more-link .fa,
-  .posts-list--default:not(.two-sidebars) .posts-list__item #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button .fa, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td
-  .posts-list--default:not(.two-sidebars) .posts-list__item .button .fa,
-  .posts-list--default:not(.two-sidebars) .posts-list__item
-  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button .fa,
-  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td
-  .posts-list--default:not(.two-sidebars) .posts-list__item .button .fa,
-  .posts-list--default:not(.two-sidebars) .posts-list__item body .booked-modal input.button-primary[type="submit"] .fa, body .booked-modal
-  .posts-list--default:not(.two-sidebars) .posts-list__item input.button-primary[type="submit"] .fa {
+  .posts-list--default:not(.two-sidebars) .posts-list__item .more-link .fa {
     display: none;
   }
 }
@@ -4891,29 +4686,17 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
 @media (min-width: 992px) {
-  .posts-list--grid-2-cols .sticky.posts-list__item .btn, .posts-list--grid-2-cols .sticky.posts-list__item #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_contact_submit, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .posts-list--grid-2-cols .sticky.posts-list__item .tm_pb_contact_submit, .posts-list--grid-2-cols .sticky.posts-list__item .tm_pb_builder #page #tm_builder_outer_content a.tm_pb_button, .tm_pb_builder #page #tm_builder_outer_content .posts-list--grid-2-cols .sticky.posts-list__item a.tm_pb_button, .posts-list--grid-2-cols .sticky.posts-list__item .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link, .tm_pb_builder #tm_builder_outer_content .tm_pb_post .posts-list--grid-2-cols .sticky.posts-list__item .more-link, .posts-list--grid-2-cols .sticky.posts-list__item #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .posts-list--grid-2-cols .sticky.posts-list__item .button, .posts-list--grid-2-cols .sticky.posts-list__item
-  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button,
-  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .posts-list--grid-2-cols .sticky.posts-list__item .button, .posts-list--grid-2-cols .sticky.posts-list__item body .booked-modal input.button-primary[type="submit"], body .booked-modal .posts-list--grid-2-cols .sticky.posts-list__item input.button-primary[type="submit"],
+  .posts-list--grid-2-cols .sticky.posts-list__item .btn, .posts-list--grid-2-cols .sticky.posts-list__item #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_contact_submit, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .posts-list--grid-2-cols .sticky.posts-list__item .tm_pb_contact_submit, .posts-list--grid-2-cols .sticky.posts-list__item .tm_pb_builder #page #tm_builder_outer_content a.tm_pb_button, .tm_pb_builder #page #tm_builder_outer_content .posts-list--grid-2-cols .sticky.posts-list__item a.tm_pb_button, .posts-list--grid-2-cols .sticky.posts-list__item .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link, .tm_pb_builder #tm_builder_outer_content .tm_pb_post .posts-list--grid-2-cols .sticky.posts-list__item .more-link,
   .posts-list--grid-3-cols .sticky.posts-list__item .btn,
   .posts-list--grid-3-cols .sticky.posts-list__item #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_contact_submit, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container
   .posts-list--grid-3-cols .sticky.posts-list__item .tm_pb_contact_submit,
   .posts-list--grid-3-cols .sticky.posts-list__item .tm_pb_builder #page #tm_builder_outer_content a.tm_pb_button, .tm_pb_builder #page #tm_builder_outer_content
   .posts-list--grid-3-cols .sticky.posts-list__item a.tm_pb_button,
   .posts-list--grid-3-cols .sticky.posts-list__item .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link, .tm_pb_builder #tm_builder_outer_content .tm_pb_post
-  .posts-list--grid-3-cols .sticky.posts-list__item .more-link,
-  .posts-list--grid-3-cols .sticky.posts-list__item #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td
-  .posts-list--grid-3-cols .sticky.posts-list__item .button,
-  .posts-list--grid-3-cols .sticky.posts-list__item
-  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button,
-  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td
-  .posts-list--grid-3-cols .sticky.posts-list__item .button,
-  .posts-list--grid-3-cols .sticky.posts-list__item body .booked-modal input.button-primary[type="submit"], body .booked-modal
-  .posts-list--grid-3-cols .sticky.posts-list__item input.button-primary[type="submit"] {
+  .posts-list--grid-3-cols .sticky.posts-list__item .more-link {
     padding: 8px 50px;
   }
-  .two-sidebars .sticky.posts-list__item .btn, .two-sidebars .sticky.posts-list__item #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_contact_submit, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .two-sidebars .sticky.posts-list__item .tm_pb_contact_submit, .two-sidebars .sticky.posts-list__item .tm_pb_builder #page #tm_builder_outer_content a.tm_pb_button, .tm_pb_builder #page #tm_builder_outer_content .two-sidebars .sticky.posts-list__item a.tm_pb_button, .two-sidebars .sticky.posts-list__item .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link, .tm_pb_builder #tm_builder_outer_content .tm_pb_post .two-sidebars .sticky.posts-list__item .more-link, .two-sidebars .sticky.posts-list__item #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .two-sidebars .sticky.posts-list__item .button, .two-sidebars .sticky.posts-list__item
-  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button,
-  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .two-sidebars .sticky.posts-list__item .button, .two-sidebars .sticky.posts-list__item body .booked-modal input.button-primary[type="submit"], body .booked-modal .two-sidebars .sticky.posts-list__item input.button-primary[type="submit"] {
+  .two-sidebars .sticky.posts-list__item .btn, .two-sidebars .sticky.posts-list__item #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_contact_submit, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .two-sidebars .sticky.posts-list__item .tm_pb_contact_submit, .two-sidebars .sticky.posts-list__item .tm_pb_builder #page #tm_builder_outer_content a.tm_pb_button, .tm_pb_builder #page #tm_builder_outer_content .two-sidebars .sticky.posts-list__item a.tm_pb_button, .two-sidebars .sticky.posts-list__item .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link, .tm_pb_builder #tm_builder_outer_content .tm_pb_post .two-sidebars .sticky.posts-list__item .more-link {
     padding: 0;
   }
 }
@@ -4941,29 +4724,13 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   .sticky.posts-list__item a.tm_pb_button .material-icons,
   .sticky.posts-list__item .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link .material-icons, .tm_pb_builder #tm_builder_outer_content .tm_pb_post
   .sticky.posts-list__item .more-link .material-icons,
-  .sticky.posts-list__item #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button .material-icons, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td
-  .sticky.posts-list__item .button .material-icons,
-  .sticky.posts-list__item
-  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button .material-icons,
-  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td
-  .sticky.posts-list__item .button .material-icons,
-  .sticky.posts-list__item body .booked-modal input.button-primary[type="submit"] .material-icons, body .booked-modal
-  .sticky.posts-list__item input.button-primary[type="submit"] .material-icons,
   .sticky.posts-list__item .btn .fa,
   .sticky.posts-list__item #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_contact_submit .fa, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container
   .sticky.posts-list__item .tm_pb_contact_submit .fa,
   .sticky.posts-list__item .tm_pb_builder #page #tm_builder_outer_content a.tm_pb_button .fa, .tm_pb_builder #page #tm_builder_outer_content
   .sticky.posts-list__item a.tm_pb_button .fa,
   .sticky.posts-list__item .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link .fa, .tm_pb_builder #tm_builder_outer_content .tm_pb_post
-  .sticky.posts-list__item .more-link .fa,
-  .sticky.posts-list__item #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button .fa, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td
-  .sticky.posts-list__item .button .fa,
-  .sticky.posts-list__item
-  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button .fa,
-  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td
-  .sticky.posts-list__item .button .fa,
-  .sticky.posts-list__item body .booked-modal input.button-primary[type="submit"] .fa, body .booked-modal
-  .sticky.posts-list__item input.button-primary[type="submit"] .fa {
+  .sticky.posts-list__item .more-link .fa {
     display: none;
   }
   .posts-list--masonry-2-cols .sticky.posts-list__item .btn__icon,
@@ -4974,15 +4741,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   .sticky.posts-list__item .tm_pb_builder #page #tm_builder_outer_content a.tm_pb_button .material-icons, .tm_pb_builder #page #tm_builder_outer_content .posts-list--masonry-2-cols
   .sticky.posts-list__item a.tm_pb_button .material-icons, .posts-list--masonry-2-cols
   .sticky.posts-list__item .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link .material-icons, .tm_pb_builder #tm_builder_outer_content .tm_pb_post .posts-list--masonry-2-cols
-  .sticky.posts-list__item .more-link .material-icons, .posts-list--masonry-2-cols
-  .sticky.posts-list__item #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button .material-icons, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .posts-list--masonry-2-cols
-  .sticky.posts-list__item .button .material-icons, .posts-list--masonry-2-cols
-  .sticky.posts-list__item
-  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button .material-icons,
-  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .posts-list--masonry-2-cols
-  .sticky.posts-list__item .button .material-icons, .posts-list--masonry-2-cols
-  .sticky.posts-list__item body .booked-modal input.button-primary[type="submit"] .material-icons, body .booked-modal .posts-list--masonry-2-cols
-  .sticky.posts-list__item input.button-primary[type="submit"] .material-icons,
+  .sticky.posts-list__item .more-link .material-icons,
   .posts-list--masonry-3-cols
   .sticky.posts-list__item .btn .material-icons,
   .posts-list--masonry-3-cols
@@ -4996,36 +4755,14 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   .posts-list--masonry-3-cols
   .sticky.posts-list__item .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link .material-icons, .tm_pb_builder #tm_builder_outer_content .tm_pb_post
   .posts-list--masonry-3-cols
-  .sticky.posts-list__item .more-link .material-icons,
-  .posts-list--masonry-3-cols
-  .sticky.posts-list__item #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button .material-icons, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td
-  .posts-list--masonry-3-cols
-  .sticky.posts-list__item .button .material-icons,
-  .posts-list--masonry-3-cols
-  .sticky.posts-list__item
-  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button .material-icons,
-  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td
-  .posts-list--masonry-3-cols
-  .sticky.posts-list__item .button .material-icons,
-  .posts-list--masonry-3-cols
-  .sticky.posts-list__item body .booked-modal input.button-primary[type="submit"] .material-icons, body .booked-modal
-  .posts-list--masonry-3-cols
-  .sticky.posts-list__item input.button-primary[type="submit"] .material-icons, .posts-list--masonry-2-cols
+  .sticky.posts-list__item .more-link .material-icons, .posts-list--masonry-2-cols
   .sticky.posts-list__item .btn .fa, .posts-list--masonry-2-cols
   .sticky.posts-list__item #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_contact_submit .fa, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .posts-list--masonry-2-cols
   .sticky.posts-list__item .tm_pb_contact_submit .fa, .posts-list--masonry-2-cols
   .sticky.posts-list__item .tm_pb_builder #page #tm_builder_outer_content a.tm_pb_button .fa, .tm_pb_builder #page #tm_builder_outer_content .posts-list--masonry-2-cols
   .sticky.posts-list__item a.tm_pb_button .fa, .posts-list--masonry-2-cols
   .sticky.posts-list__item .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link .fa, .tm_pb_builder #tm_builder_outer_content .tm_pb_post .posts-list--masonry-2-cols
-  .sticky.posts-list__item .more-link .fa, .posts-list--masonry-2-cols
-  .sticky.posts-list__item #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button .fa, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .posts-list--masonry-2-cols
-  .sticky.posts-list__item .button .fa, .posts-list--masonry-2-cols
-  .sticky.posts-list__item
-  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button .fa,
-  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .posts-list--masonry-2-cols
-  .sticky.posts-list__item .button .fa, .posts-list--masonry-2-cols
-  .sticky.posts-list__item body .booked-modal input.button-primary[type="submit"] .fa, body .booked-modal .posts-list--masonry-2-cols
-  .sticky.posts-list__item input.button-primary[type="submit"] .fa,
+  .sticky.posts-list__item .more-link .fa,
   .posts-list--masonry-3-cols
   .sticky.posts-list__item .btn .fa,
   .posts-list--masonry-3-cols
@@ -5039,21 +4776,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   .posts-list--masonry-3-cols
   .sticky.posts-list__item .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link .fa, .tm_pb_builder #tm_builder_outer_content .tm_pb_post
   .posts-list--masonry-3-cols
-  .sticky.posts-list__item .more-link .fa,
-  .posts-list--masonry-3-cols
-  .sticky.posts-list__item #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button .fa, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td
-  .posts-list--masonry-3-cols
-  .sticky.posts-list__item .button .fa,
-  .posts-list--masonry-3-cols
-  .sticky.posts-list__item
-  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button .fa,
-  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td
-  .posts-list--masonry-3-cols
-  .sticky.posts-list__item .button .fa,
-  .posts-list--masonry-3-cols
-  .sticky.posts-list__item body .booked-modal input.button-primary[type="submit"] .fa, body .booked-modal
-  .posts-list--masonry-3-cols
-  .sticky.posts-list__item input.button-primary[type="submit"] .fa {
+  .sticky.posts-list__item .more-link .fa {
     display: inline-block;
   }
 }
@@ -5066,29 +4789,13 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 .sticky.posts-list__item a.tm_pb_button .material-icons, .two-sidebars
 .sticky.posts-list__item .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link .material-icons, .tm_pb_builder #tm_builder_outer_content .tm_pb_post .two-sidebars
 .sticky.posts-list__item .more-link .material-icons, .two-sidebars
-.sticky.posts-list__item #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button .material-icons, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .two-sidebars
-.sticky.posts-list__item .button .material-icons, .two-sidebars
-.sticky.posts-list__item
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button .material-icons,
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .two-sidebars
-.sticky.posts-list__item .button .material-icons, .two-sidebars
-.sticky.posts-list__item body .booked-modal input.button-primary[type="submit"] .material-icons, body .booked-modal .two-sidebars
-.sticky.posts-list__item input.button-primary[type="submit"] .material-icons, .two-sidebars
 .sticky.posts-list__item .btn .fa, .two-sidebars
 .sticky.posts-list__item #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_contact_submit .fa, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .two-sidebars
 .sticky.posts-list__item .tm_pb_contact_submit .fa, .two-sidebars
 .sticky.posts-list__item .tm_pb_builder #page #tm_builder_outer_content a.tm_pb_button .fa, .tm_pb_builder #page #tm_builder_outer_content .two-sidebars
 .sticky.posts-list__item a.tm_pb_button .fa, .two-sidebars
 .sticky.posts-list__item .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link .fa, .tm_pb_builder #tm_builder_outer_content .tm_pb_post .two-sidebars
-.sticky.posts-list__item .more-link .fa, .two-sidebars
-.sticky.posts-list__item #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button .fa, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .two-sidebars
-.sticky.posts-list__item .button .fa, .two-sidebars
-.sticky.posts-list__item
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button .fa,
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .two-sidebars
-.sticky.posts-list__item .button .fa, .two-sidebars
-.sticky.posts-list__item body .booked-modal input.button-primary[type="submit"] .fa, body .booked-modal .two-sidebars
-.sticky.posts-list__item input.button-primary[type="submit"] .fa {
+.sticky.posts-list__item .more-link .fa {
   display: inline-block;
 }
 
@@ -5894,9 +5601,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   line-height: 28px;
 }
 
-.widget_text .btn, .widget_text #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_contact_submit, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .widget_text .tm_pb_contact_submit, .widget_text .tm_pb_builder #page #tm_builder_outer_content a.tm_pb_button, .tm_pb_builder #page #tm_builder_outer_content .widget_text a.tm_pb_button, .widget_text .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link, .tm_pb_builder #tm_builder_outer_content .tm_pb_post .widget_text .more-link, .widget_text #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .widget_text .button, .widget_text
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button,
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .widget_text .button, .widget_text body .booked-modal input.button-primary[type="submit"], body .booked-modal .widget_text input.button-primary[type="submit"] {
+.widget_text .btn, .widget_text #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_contact_submit, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .widget_text .tm_pb_contact_submit, .widget_text .tm_pb_builder #page #tm_builder_outer_content a.tm_pb_button, .tm_pb_builder #page #tm_builder_outer_content .widget_text a.tm_pb_button, .widget_text .tm_pb_builder #tm_builder_outer_content .tm_pb_post .more-link, .tm_pb_builder #tm_builder_outer_content .tm_pb_post .widget_text .more-link {
   margin-top: 34px;
 }
 
@@ -7358,40 +7063,14 @@ object {
 /*--------------------------------------------------------------
 # Builder
 --------------------------------------------------------------*/
-#tm_builder_outer_content .img_add.tm_pb_module img {
-  margin-top: 10px;
-}
-
-#tm_builder_outer_content .img_add2.tm_pb_module img {
-  margin-top: 20px;
-}
-
-#tm_builder_outer_content hr.dash {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-#tm_builder_outer_content hr {
-  margin: 30px 0 8px;
-}
-
-#tm_builder_outer_content .tm_pb_with_background .container {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-#tm_builder_outer_content .tm_pb_with_background .container .tm_pb_row.row {
-  width: auto;
-}
-
-.tm_pb_builder #tm_builder_outer_content .entry-featured-image-url {
+.tm_pb_builder #tm_builder_outer_content .entry-featured-image-url, #page #tm_builder_outer_content .tm_pb_link_box {
   overflow: hidden;
   position: relative;
   line-height: 0;
   display: block;
 }
 
-.tm_pb_builder #tm_builder_outer_content .entry-featured-image-url::before {
+.tm_pb_builder #tm_builder_outer_content .entry-featured-image-url::after, #page #tm_builder_outer_content .tm_pb_link_box::after, .tm_pb_builder #tm_builder_outer_content .entry-featured-image-url::before, #page #tm_builder_outer_content .tm_pb_link_box::before {
   position: absolute;
   top: 0;
   left: -75%;
@@ -7400,26 +7079,43 @@ object {
   content: '';
   width: 50%;
   height: 100%;
-  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
-  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
-  -webkit-transform: skewX(-25deg);
-  transform: skewX(-25deg);
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 10%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 10%, rgba(255, 255, 255, 0) 100%);
+  -webkit-transform: skewX(25deg);
+  transform: skewX(25deg);
+  pointer-events: none;
 }
 
-.tm_pb_builder #tm_builder_outer_content .entry-featured-image-url:hover::before {
+.tm_pb_builder #tm_builder_outer_content .entry-featured-image-url::after, #page #tm_builder_outer_content .tm_pb_link_box::after {
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 80%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 80%, rgba(255, 255, 255, 0) 100%);
+}
+
+.tm_pb_builder #tm_builder_outer_content .entry-featured-image-url:hover::before, #page #tm_builder_outer_content .tm_pb_link_box:hover::before {
   -webkit-animation: shine 1s;
   animation: shine 1s;
 }
 
+.tm_pb_builder #tm_builder_outer_content .entry-featured-image-url:hover::after, #page #tm_builder_outer_content .tm_pb_link_box:hover::after {
+  -webkit-animation: shine 0.6s;
+  animation: shine 0.6s;
+  -webkit-animation-delay: 0.25s;
+  -moz-animation-delay: 0.25s;
+  -o-animation-delay: 0.25s;
+  animation-delay: 0.25s;
+}
+
 @-webkit-keyframes shine {
   100% {
-    left: 125%;
+    left: 160%;
   }
 }
 
 @keyframes shine {
   100% {
-    left: 125%;
+    left: 160%;
+    -webkit-transform: skewX(45deg);
+    transform: skewX(45deg);
   }
 }
 
@@ -8019,7 +7715,7 @@ object {
 }
 
 @media (min-width: 992px) {
-  #page #tm_builder_outer_content .breadcrumbs-overlay h3 {
+  #page #tm_builder_outer_content .breadcrumbs-overlay .thin-header h3 {
     font-weight: 100;
     font-size: 54px;
     line-height: 60px;
@@ -8898,268 +8594,7 @@ object {
   }
 }
 
-#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar,
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar {
-  max-width: 100%;
-  margin: 0 auto;
-  border: none;
-  border-collapse: separate;
-  border-spacing: 5px;
-  background: transparent !important;
-  table-layout: fixed;
-}
-
-@media (min-width: 544px) {
-  #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar,
-  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar {
-    border-spacing: 10px;
-    max-width: 780px;
-    table-layout: auto;
-  }
-}
-
-#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead,
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead {
-  background: transparent !important;
-}
-
-#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th,
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th {
-  border: none;
-  padding: 21px 0 13px;
-}
-
-#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th .monthName,
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th .monthName {
-  font-size: 40px;
-  font-weight: 700;
-  text-transform: none;
-}
-
-#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th .monthName .backToMonth,
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th .monthName .backToMonth {
-  display: none;
-}
-
-#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th > a,
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th > a {
-  top: 24px;
-}
-
-#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th > a::before,
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th > a::before {
-  font-size: 30px;
-  font-family: FontAwesome;
-}
-
-#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th > a.page-right,
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th > a.page-right {
-  right: 0;
-}
-
-#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th > a.page-right::before,
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th > a.page-right::before {
-  content: '\f105';
-}
-
-#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th > a.page-right:hover,
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th > a.page-right:hover {
-  right: 0;
-}
-
-#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th > a.page-left,
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th > a.page-left {
-  left: 0;
-}
-
-#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th > a.page-left::before,
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th > a.page-left::before {
-  content: '\f104';
-}
-
-#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th > a.page-left:hover,
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th > a.page-left:hover {
-  left: 0;
-}
-
-#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th > a i,
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th > a i {
-  display: none;
-}
-
-#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead .days,
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead .days {
-  background: transparent !important;
-}
-
-#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead .days th,
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead .days th {
-  font-size: 16px;
-  font-weight: 700;
-  text-align: left !important;
-  border-radius: 3px 3px 3px 3px;
-  -moz-border-radius: 3px 3px 3px 3px;
-  -webkit-border-radius: 3px 3px 3px 3px;
-  text-transform: none;
-  border: none;
-  padding: 5px;
-}
-
-@media (min-width: 544px) {
-  #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead .days th,
-  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead .days th {
-    padding: 15px 10px 15px;
-    font-size: 20px;
-  }
-}
-
-#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock,
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock {
-  background: transparent;
-}
-
-#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td,
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td {
-  background: transparent;
-  border: 10px solid;
-}
-
-#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button,
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button {
-  font-size: 16px;
-  padding: 10px;
-  transition: 0.3s ease all;
-}
-
-#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr td,
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr td {
-  border: none;
-  border-radius: 3px 3px 3px 3px;
-  -moz-border-radius: 3px 3px 3px 3px;
-  -webkit-border-radius: 3px 3px 3px 3px;
-}
-
-#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr td.active .date .number,
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr td.active .date .number {
-  background: transparent;
-  color: #fff;
-  transform: scale(1);
-}
-
-#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr td > span,
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr td > span {
-  position: relative;
-  transition: 0.3s ease all;
-}
-
-#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr td > span .number,
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr td > span .number {
-  transform: scale(1);
-  position: absolute;
-  left: 12px;
-  top: 4px;
-  font-size: 24px;
-  font-weight: 700;
-  width: auto;
-}
-
-#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr td > span .number .sidebar-primary,
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr td > span .number .sidebar-primary {
-  font-size: 16px;
-}
-
-@media (min-width: 544px) {
-  #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr td > span .number,
-  .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr td > span .number {
-    font-size: 40px;
-  }
-}
-
-#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr td.blur,
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr td.blur {
-  pointer-events: none;
-}
-
-#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr td.blur .number,
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr td.blur .number {
-  opacity: .2;
-}
-
-#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr td .date,
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr td .date {
-  transition: 0.3s ease all;
-  height: inherit;
-}
-
-#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr td .date:hover .number,
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr td .date:hover .number {
-  color: #fff;
-}
-
-body .booked-modal input.button-primary[type="submit"] {
-  font-size: 16px;
-  padding: 6px 10px;
-  transition: 0.3s ease all;
-}
-
-body .booked-modal input.button-primary[type="submit"]:hover {
-  border: none;
-}
-
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button {
-  box-shadow: none;
-  max-width: 315px;
-  margin: 0 auto 12px;
-  padding: 13px;
-}
-
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button:hover {
-  box-shadow: none;
-}
-
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button .button-timeslot {
-  font-size: 16px;
-}
-
-body .booked-calendar-wrap.small table.booked-calendar .booked-appt-list {
-  text-align: center;
-}
-
-body .bookedClearFix::after {
-  display: none;
-}
-
-body .booked-calendarSwitcher {
-  display: block;
-  max-width: 780px;
-  margin: 0 auto;
-  border-radius: 3px;
-}
-
-body .booked-calendarSwitcher i {
-  display: none;
-}
-
-body .booked-calendarSwitcher select {
-  width: 98%;
-  padding: 10px;
-}
-
-body table.booked-calendar td.prev-date .number {
-  opacity: .2;
-}
-
-body table.booked-calendar td.today .number {
-  opacity: 1;
-}
-
-#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th, .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar thead th {
-  background: transparent !important;
-}
-
-#tm_builder_outer_content .tm_pb_widget_area .btn, #tm_builder_outer_content .tm_pb_widget_area .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_contact_submit, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_widget_area .tm_pb_contact_submit, .tm_pb_builder #page #tm_builder_outer_content .tm_pb_widget_area a.tm_pb_button, .tm_pb_builder #tm_builder_outer_content .tm_pb_widget_area .tm_pb_post .more-link, .tm_pb_builder #tm_builder_outer_content .tm_pb_post .tm_pb_widget_area .more-link, #tm_builder_outer_content .tm_pb_widget_area .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button, #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .tm_pb_widget_area .button, #tm_builder_outer_content .tm_pb_widget_area
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button,
-.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td #tm_builder_outer_content .tm_pb_widget_area .button, #tm_builder_outer_content .tm_pb_widget_area body .booked-modal input.button-primary[type="submit"], body .booked-modal #tm_builder_outer_content .tm_pb_widget_area input.button-primary[type="submit"] {
+#tm_builder_outer_content .tm_pb_widget_area .btn, #tm_builder_outer_content .tm_pb_widget_area .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_contact_submit, #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_widget_area .tm_pb_contact_submit, .tm_pb_builder #page #tm_builder_outer_content .tm_pb_widget_area a.tm_pb_button, .tm_pb_builder #tm_builder_outer_content .tm_pb_widget_area .tm_pb_post .more-link, .tm_pb_builder #tm_builder_outer_content .tm_pb_post .tm_pb_widget_area .more-link {
   color: #fff;
 }
 

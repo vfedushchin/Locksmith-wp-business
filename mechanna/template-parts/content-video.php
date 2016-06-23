@@ -18,15 +18,6 @@
 
 			<?php $size = mechanna_post_thumbnail_size( array( 'class_prefix' => 'post-thumbnail--' ) ); ?>
 
-			<?php /*$utility->media->get_image( array(
-					'size'        => $size['size'],
-					'class'       => 'post-thumbnail__link ' . $size[ 'class' ],
-					'html'        => '<a href="%1$s" %2$s><img class="post-thumbnail__img wp-post-image" src="%3$s" alt="%4$s" %5$s></a>',
-					'placeholder' => false,
-					'echo'        => true,
-				) );*/
-			?>
-
 			<?php $cats_visible = mechanna_is_meta_visible( 'blog_post_categories', 'loop' ) ? 'true' : 'false'; ?>
 
 			<?php $utility->meta_data->get_terms( array(
@@ -81,18 +72,18 @@
 							) );
 						?>
 					</span>
-					<!-- <span class="post__comments"> -->
-						<?php
-							mechanna_meta_comments( 'loop', array(
-											'before' => '',
-											'zero'   => esc_html__( '0 comments', 'mechanna' ),
-											'one'    => esc_html__( '1 comment', 'mechanna' ),
-											'plural' => '% ' . esc_html__( 'comments', 'mechanna' ),
-									) );
+
+					<span class="post__comments">
+						<?php $comment_visible = mechanna_is_meta_visible( 'blog_post_comments', 'loop' ) ? 'true' : 'false';
+
+							$utility->meta_data->get_comment_count( array(
+								'visible' => $comment_visible,
+								'class'   => 'post__comments-link',
+								'sufix'     => _n_noop( '%s comment', '%s comments', 'mechanna' ),
+								'echo'    => true,
+							) );
 						?>
-					<!-- </span> -->
-
-
+					</span>
 
 					<?php $tags_visible = mechanna_is_meta_visible( 'blog_post_tags', 'loop' ) ? 'true' : 'false';
 

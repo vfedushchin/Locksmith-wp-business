@@ -13,41 +13,7 @@
 			text-align: left;
 		}
 	}
-	.social-list {
-		padding: 0 0 15px;
 
-		order: 0;
-		flex: 0 1 100%;
-		text-align: left;
-		position: absolute;
-		top: 7px;
-		left: 25px;
-		width: 200px;
-		padding: 15px;
-		background: #000;
-		opacity: 0;
-		visibility: hidden;
-		.header-mobilemenu-toggled & {
-			transition: 0.6s all ease;
-			display: block;
-			left: 7px;
-			opacity: 1;
-			visibility: visible;
-		}
-		@include media-breakpoint-up(md) {
-			position: relative;
-			flex: 0 1 100%;
-			text-align: right;
-			background: none !important;
-			display: block;
-			opacity: 1;
-			visibility: visible;
-			padding: 0;
-			left: -5px;
-			padding-bottom: 26px;
-			transition: 0s all ease;
-		}
-	}
 	.main-navigation {
 		order: 2;
 		flex: 0 1 100%;

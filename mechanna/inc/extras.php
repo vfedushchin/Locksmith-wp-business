@@ -6,39 +6,8 @@
  * @return string
  */
 function mechanna_get_template_part_name(){
-	$layout = get_theme_mod( 'blog_layout_type', mechanna_theme()->customizer->get_default( 'blog_layout_type' ) );
-
-	switch ( $layout ) {
-		case 'default':
-			$layout = 'default';
-			$layout = '';
-			break;
-
-		case 'grid-2-cols':
-		case 'grid-3-cols':
-		case 'masonry-2-cols':
-		case 'masonry-3-cols':
-			$layout = 'grid-masonry';
-			break;
-	}
-
-	$layout = '';
-
 	$format = get_post_format();
-
-
-	if ( in_array( $layout, array( '', 'default', 'grid-masonry' ) ) ) {
-		if ( $format ) {
-			if ($layout == '') {
-				$layout .= '' . $format;
-			}
-			else {
-				$layout .= '-' . $format;
-			}
-		}
-	}
-
-	return $layout;
+	return $format;
 }
 
 
@@ -136,9 +105,12 @@ function mechanna_render_macros( $string ) {
  * @return string
  */
 function mechanna_get_privacy_link() {
- $page = get_page_by_path( 'privacy-policy' );
- if( ! is_object( $page ) ) return;
- return '<a href="' . get_permalink( $page->ID ) . '">' . $page->post_title . '</a>';
+	$page = get_page_by_path( 'privacy-policy' );
+	if( ! is_object( $page ) ) {
+		return;
+	}
+	$format = '<a href="%1$s">%2$s</a>';
+	return sprintf($format, get_permalink( $page->ID ), $page->post_title);
 }
 
 

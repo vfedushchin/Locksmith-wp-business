@@ -38,9 +38,6 @@ blockquote {
 	cite {
 		display: block;
 		margin-top: 1.3em;
-		&:before {
-			// content: "- ";
-		}
 	}
 	&:before {
 		content: "\f10d";

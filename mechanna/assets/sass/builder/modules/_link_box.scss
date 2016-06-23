@@ -1,5 +1,6 @@
 #page #tm_builder_outer_content {
 	.tm_pb_link_box {
+		@extend %make-hover;
 		.tm_pb_link_box_content {
 			min-height: 226px;
 			@include media-breakpoint-up(md) {

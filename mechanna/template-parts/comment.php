@@ -3,7 +3,7 @@
 		<?php echo mechanna_comment_author_avatar(); ?>
 	</div>
 	<div class="comment-metadata">
-		<?php printf( __( '<span class="posted-by"><i class="material-icons">person</i> by</span> %s', 'mechanna' ), mechanna_get_comment_author_link() ); ?>
+		<?php printf( __( '<span class="posted-by">%1$s by</span> %2$s', 'mechanna' ), '<i class="material-icons">person</i>', mechanna_get_comment_author_link() ); ?>
 		<?php echo '<i class="material-icons">access_time</i> ' . __( 'Published on ' , 'mechanna') . mechanna_get_comment_date( array( 'format' => 'M d, Y' ) ); ?>
 	</div>
 </footer>

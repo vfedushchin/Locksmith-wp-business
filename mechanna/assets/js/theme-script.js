@@ -235,30 +235,30 @@
 		},
 
 
-		search_trigger: function (self) {
+		search_trigger: function ( self ) {
 
-				var toggle = $(".search__toggle"),
-						container = $(".top-panel");
+			var $toggle = $( ".search__toggle" ),
+					$container = $( ".top-panel" );
 
-				toggle.on("click", toggle, function () {
-						if (container.hasClass("srch-on")) {
-								container.removeClass("srch-on");
+			$toggle.on("click", $toggle, function () {
+				$container.toggleClass( "srch-on" );
+				if ($container.hasClass( "srch-on" ) ) {
+					setTimeout(function() { $( ".header__search .search-form__field" ).focus(); }, 300);
+				}
+			});
 
-						} else {
-								container.addClass("srch-on");
-								setTimeout(function(){ $(".header__search .search-form__field").focus();}, 300);
-						}
-				});
+			$( document ).click( function ( event ) {
+				var $target = $( event.target );
+				if ( $target.closest( $toggle ).length || $target.closest( $container ).length) {
+					return;
+				}
 
-				$(document).click(function (event) {
-						if ($(event.target).closest(toggle).length || $(event.target).closest(container).length)
-								return;
+				if ($container.hasClass( "srch-on" )) {
+					$container.removeClass( "srch-on" );
+				}
 
-						if (container.hasClass("srch-on"))
-								container.removeClass("srch-on");
-
-						event.stopPropagation();
-				});
+				event.stopPropagation();
+			});
 
 		},
 
@@ -488,24 +488,18 @@
 		mobile_panel: function ( self ) {
 
 			var $btnToggle = $( '.mobile-panel .btn-toggle' ),
-			$itemHasChildren = $( '.main-navigation .menu li.menu-item-has-children, .main-navigation .menu li.page_item_has_children' ),
-			$itemHasChildrenUl = $( '.main-navigation .menu li.menu-item-has-children ul, .main-navigation .menu li.page_item_has_children ul' );
-
-			//$itemHasChildren.prepend( '<span class="sub-menu-toggle"></span>' );
-			$( '<span class="sub-menu-toggle"></span>' ).insertBefore( $itemHasChildrenUl );
-
-			var $subMenuToggle = $( '.sub-menu-toggle' ),
-			$mobileNavigation = $( '.mobile-panel .btn-toggle, .mobile-panel .nav-panel');
-
-			$subMenuToggle.on( 'click', function(){
-				$(this).toggleClass( 'active' );
-			});
+					$mobileNavigation = $( '.mobile-panel .btn-toggle, .mobile-panel .nav-panel' ),
+					$itemHasChildrenUl = $( '.main-navigation .menu li.menu-item-has-children ul, .main-navigation .menu li.page_item_has_children ul' );
 
 			$btnToggle.on( 'click', function(){
 				$mobileNavigation.toggleClass( 'active' );
-				if( $subMenuToggle.hasClass( 'active' ) ){
-					$subMenuToggle.removeClass( 'active' );
-				}
+			});
+
+			$( '<span class="sub-menu-toggle"></span>' ).insertBefore( $itemHasChildrenUl );
+			var $subMenuToggle = $( '.sub-menu-toggle' );
+
+			$subMenuToggle.on( 'click', function() {
+				$( this ).toggleClass( 'active' );
 			});
 
 		}

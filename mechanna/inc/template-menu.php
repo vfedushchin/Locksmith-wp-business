@@ -14,7 +14,6 @@
 function mechanna_main_menu() { ?>
 	<nav id="site-navigation" class="main-navigation" role="navigation">
 		<button class="menu-toggle" aria-controls="main-menu" aria-expanded="false">
-			<!-- <i class="menu-toggle__icon material-icons">subject</i> -->
 			<span class="menu-open-sign"></span>
 			<span class="menu-close-sign"></span>
 		</button>

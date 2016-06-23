@@ -340,14 +340,6 @@ function mechanna_get_page_preloader() {
 							<div class="loader"><div class="loader-inner ball-beat"><div></div><div></div><div></div></div></div>
 						</div>
 					</div>';
-		/*echo '<div class="page-preloader-cover">
-			<div class="page-preloader">
-				<div class="page-preloader__cube page-preloader--cube1"></div>
-				<div class="page-preloader__cube page-preloader--cube2"></div>
-				<div class="page-preloader__cube page-preloader--cube4"></div>
-				<div class="page-preloader__cube page-preloader--cube3"></div>
-			</div>
-		</div>';*/
 	}
 }
 

@@ -9,7 +9,6 @@
 //
 // Grid layout
 //
-//@include media-breakpoint-up(sm) {
 @media (min-width: 420px) {
 	.card-deck {
 		display: flex;
@@ -63,7 +62,6 @@
 // Masonry layout
 //
 
-//@include media-breakpoint-up(sm) {
 @media (min-width: 420px) {
 	.card-columns {
 		column-gap: $card-deck-margin;
@@ -136,35 +134,3 @@
 		}
 	}
 }
-
-
-//
-// Reset (for tablet)
-//
-
-/*
-@include media-breakpoint-only(md) {
-	.posts-list--grid-3-cols {
-		display: block;
-		margin-right: auto;
-		margin-left: auto;
-		.card {
-			display: block;
-			max-width: 100%;
-			margin-right: auto;
-			margin-left: auto;
-			flex: none;
-		}
-	}
-	.posts-list--masonry-3-cols {
-		&.one-left-sidebar,
-		&.one-right-sidebar {
-			column-gap: normal;
-			column-count: auto;
-			.card {
-				display: block;
-			}
-		}
-	}
-}
- */
