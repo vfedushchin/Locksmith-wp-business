@@ -32,3 +32,19 @@
 		}
 	}
 }
+
+body.content-layout-fullwidth .site-content_wrap {
+	margin: 0 15px;
+	@include media-breakpoint-up(md) {
+		margin: 0 30px;
+	}
+	.tm_builder_outer_content {
+		.tm_pb_with_background,
+		.tm_pb_slider {
+			margin: 0 -15px;
+			@include media-breakpoint-up(md) {
+				margin: 0 -30px;
+			}
+		}
+	}
+}

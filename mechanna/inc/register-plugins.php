@@ -75,10 +75,10 @@ function mechanna_register_required_plugins() {
 
 		/*
 		'strings'      => array(
-			'page_title'                      => __( 'Install Required Plugins', 'mechanna' ),
-			'menu_title'                      => __( 'Install Plugins', 'mechanna' ),
-			'installing'                      => __( 'Installing Plugin: %s', 'mechanna' ), // %s = plugin name.
-			'oops'                            => __( 'Something went wrong with the plugin API.', 'mechanna' ),
+			'page_title'                      => esc_html__(  'Install Required Plugins', 'mechanna' ),
+			'menu_title'                      => esc_html__(  'Install Plugins', 'mechanna' ),
+			'installing'                      => esc_html__(  'Installing Plugin: %s', 'mechanna' ), // %s = plugin name.
+			'oops'                            => esc_html__(  'Something went wrong with the plugin API.', 'mechanna' ),
 			'notice_can_install_required'     => _n_noop(
 				'This theme requires the following plugin: %1$s.',
 				'This theme requires the following plugins: %1$s.',
@@ -139,13 +139,13 @@ function mechanna_register_required_plugins() {
 				'Begin activating plugins',
 				'mechanna'
 			),
-			'return'                          => __( 'Return to Required Plugins Installer', 'mechanna' ),
-			'plugin_activated'                => __( 'Plugin activated successfully.', 'mechanna' ),
-			'activated_successfully'          => __( 'The following plugin was activated successfully:', 'mechanna' ),
-			'plugin_already_active'           => __( 'No action taken. Plugin %1$s was already active.', 'mechanna' ),  // %1$s = plugin name(s).
-			'plugin_needs_higher_version'     => __( 'Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin.', 'mechanna' ),  // %1$s = plugin name(s).
-			'complete'                        => __( 'All plugins installed and activated successfully. %1$s', 'mechanna' ), // %s = dashboard link.
-			'contact_admin'                   => __( 'Please contact the administrator of this site for help.', 'mechanna' ),
+			'return'                          => esc_html__(  'Return to Required Plugins Installer', 'mechanna' ),
+			'plugin_activated'                => esc_html__(  'Plugin activated successfully.', 'mechanna' ),
+			'activated_successfully'          => esc_html__(  'The following plugin was activated successfully:', 'mechanna' ),
+			'plugin_already_active'           => esc_html__(  'No action taken. Plugin %1$s was already active.', 'mechanna' ),  // %1$s = plugin name(s).
+			'plugin_needs_higher_version'     => esc_html__(  'Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin.', 'mechanna' ),  // %1$s = plugin name(s).
+			'complete'                        => esc_html__(  'All plugins installed and activated successfully. %1$s', 'mechanna' ), // %s = dashboard link.
+			'contact_admin'                   => esc_html__(  'Please contact the administrator of this site for help.', 'mechanna' ),
 
 			'nag_type'                        => 'updated', // Determines admin notice type - can only be 'updated', 'update-nag' or 'error'.
 		),

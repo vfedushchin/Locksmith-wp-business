@@ -240,7 +240,7 @@
 			var $toggle = $( ".search__toggle" ),
 					$container = $( ".top-panel" );
 
-			$toggle.on("click", $toggle, function () {
+			$toggle.on( "click", $toggle, function () {
 				$container.toggleClass( "srch-on" );
 				if ($container.hasClass( "srch-on" ) ) {
 					setTimeout(function() { $( ".header__search .search-form__field" ).focus(); }, 300);
@@ -253,10 +253,9 @@
 					return;
 				}
 
-				if ($container.hasClass( "srch-on" )) {
+				if ( $container.hasClass( "srch-on" ) ) {
 					$container.removeClass( "srch-on" );
 				}
-
 				event.stopPropagation();
 			});
 
@@ -484,16 +483,8 @@
 			}
 		},
 
-
 		mobile_panel: function ( self ) {
-
-			var $btnToggle = $( '.mobile-panel .btn-toggle' ),
-					$mobileNavigation = $( '.mobile-panel .btn-toggle, .mobile-panel .nav-panel' ),
-					$itemHasChildrenUl = $( '.main-navigation .menu li.menu-item-has-children ul, .main-navigation .menu li.page_item_has_children ul' );
-
-			$btnToggle.on( 'click', function(){
-				$mobileNavigation.toggleClass( 'active' );
-			});
+			var $itemHasChildrenUl = $( '.main-navigation .menu li.menu-item-has-children ul, .main-navigation .menu li.page_item_has_children ul' );
 
 			$( '<span class="sub-menu-toggle"></span>' ).insertBefore( $itemHasChildrenUl );
 			var $subMenuToggle = $( '.sub-menu-toggle' );
@@ -501,10 +492,7 @@
 			$subMenuToggle.on( 'click', function() {
 				$( this ).toggleClass( 'active' );
 			});
-
 		}
-
-
 
 
 	}

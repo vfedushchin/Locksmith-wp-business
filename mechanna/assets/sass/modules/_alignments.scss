@@ -19,6 +19,9 @@
 
 .error-404 {
 	.page-content {
+		@include media-breakpoint-up(lg) {
+			padding-bottom: 50px;
+		}
 		h3 {
 			@include media-breakpoint-up(lg) {
 				margin-top: -10px;

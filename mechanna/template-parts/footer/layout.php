@@ -12,7 +12,7 @@
 	</div>
 </div>
 
-<div class="footer-container container777">
+<div class="footer-container">
 <div <?php echo mechanna_get_container_classes( array( 'site-info' ), 'footer' ); ?>>
 		<div class="site-info__flex">
 			<?php mechanna_footer_logo(); ?>

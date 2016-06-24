@@ -41,6 +41,11 @@
 			}
 		}
 	}
+	&__messages {
+		font-size: 14px;
+		margin-top: 3px;
+		text-indent: 10px;
+	}
 	&__form {
 		margin-top: 35px;
 	}
@@ -132,6 +137,10 @@
 
 			@include media-breakpoint-up(lg) {
 				padding: 35px 24px 51px;
+			}
+
+			&__messages {
+				text-align: left;
 			}
 
 			&__form {

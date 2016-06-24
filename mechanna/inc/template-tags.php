@@ -286,16 +286,16 @@ function mechanna_site_breadcrumbs() {
 		'show_on_front'     => $breadcrumbs_front_visibillity,
 		'labels'            => array(
 			'browse'         => '',
-			'error_404'      => __( '404 Not Found', 'mechanna' ),
-			'archives'       =>  __( 'Archives', 'mechanna' ),
+			'error_404'      => esc_html__(  '404 Not Found', 'mechanna' ),
+			'archives'       =>  esc_html__(  'Archives', 'mechanna' ),
 			/* Translators: %s is the search query. The HTML entities are opening and closing curly quotes. */
-			'search'         =>  __( 'Search results for &#8220;%s&#8221;', 'mechanna' ),
+			'search'         =>  esc_html__(  'Search results for &#8220;%s&#8221;', 'mechanna' ),
 			/* Translators: %s is the page number. */
-			'paged'          => __( 'Page %s', 'mechanna' ),
+			'paged'          => esc_html__(  'Page %s', 'mechanna' ),
 			/* Translators: Minute archive title. %s is the minute time format. */
-			'archive_minute' => __( 'Minute %s', 'mechanna' ),
+			'archive_minute' => esc_html__(  'Minute %s', 'mechanna' ),
 			/* Translators: Weekly archive title. %s is the week date format. */
-			'archive_week'   => __( 'Week %s', 'mechanna' ),
+			'archive_week'   => esc_html__(  'Week %s', 'mechanna' ),
 		),
 		'date_labels' => array(
 			'archive_minute_hour' => _x( 'g:i a', 'minute and hour archives time format', 'mechanna' ),

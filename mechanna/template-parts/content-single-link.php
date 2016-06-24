@@ -74,16 +74,16 @@
 					?>
 				</span>
 
-				<!-- <span class="post__comments"> -->
-					<?php
-						mechanna_meta_comments( 'single', array(
-										'before' => '',
-										'zero'   => esc_html__( '0 comments', 'mechanna' ),
-										'one'    => esc_html__( '1 comment', 'mechanna' ),
-										'plural' => '% ' . esc_html__( 'comments', 'mechanna' ),
-								) );
+				<span class="post__comments">
+					<?php $comment_visible = mechanna_is_meta_visible( 'single_post_comments', 'single' ) ? 'true' : 'false';
+						$utility->meta_data->get_comment_count( array(
+							'visible' => $comment_visible,
+							'class'   => 'post__comments-link',
+							'sufix'     => _n_noop( '%s comment', '%s comments', 'mechanna' ),
+							'echo'    => true,
+						) );
 					?>
-				<!-- </span> -->
+				</span>
 
 				<?php $tags_visible = mechanna_is_meta_visible( 'single_post_tags', 'single' ) ? 'true' : 'false'; ?>
 
@@ -110,11 +110,11 @@
 	<div class="entry-content">
 		<?php the_content(); ?>
 		<?php wp_link_pages( array(
-				'before'      => '<div class="page-links"><span class="page-links__title">' . __( 'Pages:', 'mechanna' ) . '</span>',
+				'before'      => '<div class="page-links"><span class="page-links__title">' . esc_html__(  'Pages:', 'mechanna' ) . '</span>',
 				'after'       => '</div>',
 				'link_before' => '<span class="page-links__item">',
 				'link_after'  => '</span>',
-				'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'mechanna' ) . ' </span>%',
+				'pagelink'    => '<span class="screen-reader-text">' . esc_html__(  'Page', 'mechanna' ) . ' </span>%',
 				'separator'   => '<span class="screen-reader-text">, </span>',
 			) );
 		?>
@@ -124,7 +124,7 @@
 		<div class="entry-footer__share-block">
 			<?php
 				if ( mechanna_is_meta_visible( 'single_post_share_buttons', 'single' ) ) {
-					echo '<h6>' . __( 'Like this post? Share it!', 'mechanna' ) . '</h6>';
+					echo '<h6>' . esc_html__(  'Like this post? Share it!', 'mechanna' ) . '</h6>';
 				}
 				mechanna_share_buttons( 'single' );
 			?>

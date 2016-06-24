@@ -107,11 +107,11 @@
 	<div class="entry-content">
 		<?php the_content(); ?>
 		<?php wp_link_pages( array(
-				'before'      => '<div class="page-links"><span class="page-links__title">' . __( 'Pages:', 'mechanna' ) . '</span>',
+				'before'      => '<div class="page-links"><span class="page-links__title">' . esc_html__(  'Pages:', 'mechanna' ) . '</span>',
 				'after'       => '</div>',
 				'link_before' => '<span class="page-links__item">',
 				'link_after'  => '</span>',
-				'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'mechanna' ) . ' </span>%',
+				'pagelink'    => '<span class="screen-reader-text">' . esc_html__(  'Page', 'mechanna' ) . ' </span>%',
 				'separator'   => '<span class="screen-reader-text">, </span>',
 			) );
 		?>
@@ -121,7 +121,7 @@
 		<div class="entry-footer__share-block">
 			<?php
 				if ( mechanna_is_meta_visible( 'single_post_share_buttons', 'single' ) ) {
-					echo '<h6>' . __( 'Like this post? Share it!', 'mechanna' ) . '</h6>';
+					echo '<h6>' . esc_html__(  'Like this post? Share it!', 'mechanna' ) . '</h6>';
 				}
 				mechanna_share_buttons( 'single' );
 			?>

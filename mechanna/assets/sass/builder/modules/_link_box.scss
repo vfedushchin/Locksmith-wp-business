@@ -36,7 +36,9 @@
 			.tm_pb_button {
 				padding: 8px 38px;
 				margin-top: 38px;
-				margin-bottom: -60px;
+				@include media-breakpoint-up(md) {
+					margin-bottom: -60px;
+				}
 			}
 		}
 		.tm_pb_link_box_title {
@@ -89,20 +91,21 @@
 	}
 }
 
-
-@include media-breakpoint-up(lg) {
+@media (min-width: 1100px) {
 	.more-hover-show {
 		.tm_pb_link_box .tm_pb_link_box_content{
 			.tm_pb_link_box_button_holder {
 				transition: .4s all ease;
 				visibility: hidden;
 				opacity: 0;
+				margin-top: -15px;
 			}
 
 			&:hover {
 				.tm_pb_link_box_button_holder {
 					visibility: visible;
 					opacity: 1;
+					margin-top: 0px;
 				}
 			}
 

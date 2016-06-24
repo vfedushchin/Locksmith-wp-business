@@ -6,3 +6,11 @@
 .invert .widget-subscribe .widget-title {
 	color: $regular_h3_color;
 }
+
+.subscribe-block__error {
+  color: $regular_accent_color_1;
+}
+
+.widget-subscribe .subscribe-block__input[type='email'].error {
+  border: 1px solid $regular_accent_color_1;
+}

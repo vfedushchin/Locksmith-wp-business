@@ -1,9 +1,15 @@
 /* #Footer */
 .site-footer {
 	background-color: $footer_bg;
+
+  background: $footer_bg;
+  background: -webkit-linear-gradient(to right, $footer_bg 40%, @lighten( $footer_bg, 7% ) 100%);
+  background: linear-gradient(to right, $footer_bg 40%, @lighten( $footer_bg, 7% ) 100%);
 }
 .footer-area-wrap {
 	background-color: $footer_widgets_bg;
+  background: -webkit-linear-gradient(to right, $footer_widgets_bg 40%, @lighten( $footer_widgets_bg, 7% ) 100%);
+  background: linear-gradient(to right, $footer_widgets_bg 40%, @lighten( $footer_widgets_bg, 7% ) 100%);
 }
 .site-info a:hover {
 	color: $regular_text_color;

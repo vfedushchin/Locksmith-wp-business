@@ -330,10 +330,10 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 
 			// Load class strings.
 			$this->strings = array(
-				'page_title'                      => __( 'Install Required Plugins', 'mechanna' ),
-				'menu_title'                      => __( 'Install Plugins', 'mechanna' ),
-				'installing'                      => __( 'Installing Plugin: %s', 'mechanna' ),
-				'oops'                            => __( 'Something went wrong with the plugin API.', 'mechanna' ),
+				'page_title'                      => esc_html__(  'Install Required Plugins', 'mechanna' ),
+				'menu_title'                      => esc_html__(  'Install Plugins', 'mechanna' ),
+				'installing'                      => esc_html__(  'Installing Plugin: %s', 'mechanna' ),
+				'oops'                            => esc_html__(  'Something went wrong with the plugin API.', 'mechanna' ),
 				'notice_can_install_required'     => _n_noop(
 					'This theme requires the following plugin: %1$s.',
 					'This theme requires the following plugins: %1$s.',
@@ -394,15 +394,15 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 					'Begin activating plugins',
 					'mechanna'
 				),
-				'return'                          => __( 'Return to Required Plugins Installer', 'mechanna' ),
-				'dashboard'                       => __( 'Return to the dashboard', 'mechanna' ),
-				'plugin_activated'                => __( 'Plugin activated successfully.', 'mechanna' ),
-				'activated_successfully'          => __( 'The following plugin was activated successfully:', 'mechanna' ),
-				'plugin_already_active'           => __( 'No action taken. Plugin %1$s was already active.', 'mechanna' ),
-				'plugin_needs_higher_version'     => __( 'Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin.', 'mechanna' ),
-				'complete'                        => __( 'All plugins installed and activated successfully. %1$s', 'mechanna' ),
-				'dismiss'                         => __( 'Dismiss this notice', 'mechanna' ),
-				'contact_admin'                   => __( 'Please contact the administrator of this site for help.', 'mechanna' ),
+				'return'                          => esc_html__(  'Return to Required Plugins Installer', 'mechanna' ),
+				'dashboard'                       => esc_html__(  'Return to the dashboard', 'mechanna' ),
+				'plugin_activated'                => esc_html__(  'Plugin activated successfully.', 'mechanna' ),
+				'activated_successfully'          => esc_html__(  'The following plugin was activated successfully:', 'mechanna' ),
+				'plugin_already_active'           => esc_html__(  'No action taken. Plugin %1$s was already active.', 'mechanna' ),
+				'plugin_needs_higher_version'     => esc_html__(  'Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin.', 'mechanna' ),
+				'complete'                        => esc_html__(  'All plugins installed and activated successfully. %1$s', 'mechanna' ),
+				'dismiss'                         => esc_html__(  'Dismiss this notice', 'mechanna' ),
+				'contact_admin'                   => esc_html__(  'Please contact the administrator of this site for help.', 'mechanna' ),
 			);
 
 			do_action( 'tgmpa_register' );
@@ -2156,10 +2156,10 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 		 */
 		protected function get_plugin_advise_type_text( $required ) {
 			if ( true === $required ) {
-				return __( 'Required', 'mechanna' );
+				return esc_html__(  'Required', 'mechanna' );
 			}
 
-			return __( 'Recommended', 'mechanna' );
+			return esc_html__(  'Recommended', 'mechanna' );
 		}
 
 		/**
@@ -2175,13 +2175,13 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 
 			switch ( $type ) {
 				case 'repo':
-					$string = __( 'WordPress Repository', 'mechanna' );
+					$string = esc_html__(  'WordPress Repository', 'mechanna' );
 					break;
 				case 'external':
-					$string = __( 'External Source', 'mechanna' );
+					$string = esc_html__(  'External Source', 'mechanna' );
 					break;
 				case 'bundled':
-					$string = __( 'Pre-Packaged', 'mechanna' );
+					$string = esc_html__(  'Pre-Packaged', 'mechanna' );
 					break;
 			}
 
@@ -2198,25 +2198,25 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 		 */
 		protected function get_plugin_status_text( $slug ) {
 			if ( ! $this->tgmpa->is_plugin_installed( $slug ) ) {
-				return __( 'Not Installed', 'mechanna' );
+				return esc_html__(  'Not Installed', 'mechanna' );
 			}
 
 			if ( ! $this->tgmpa->is_plugin_active( $slug ) ) {
-				$install_status = __( 'Installed But Not Activated', 'mechanna' );
+				$install_status = esc_html__(  'Installed But Not Activated', 'mechanna' );
 			} else {
-				$install_status = __( 'Active', 'mechanna' );
+				$install_status = esc_html__(  'Active', 'mechanna' );
 			}
 
 			$update_status = '';
 
 			if ( $this->tgmpa->does_plugin_require_update( $slug ) && false === $this->tgmpa->does_plugin_have_update( $slug ) ) {
-				$update_status = __( 'Required Update not Available', 'mechanna' );
+				$update_status = esc_html__(  'Required Update not Available', 'mechanna' );
 
 			} elseif ( $this->tgmpa->does_plugin_require_update( $slug ) ) {
-				$update_status = __( 'Requires Update', 'mechanna' );
+				$update_status = esc_html__(  'Requires Update', 'mechanna' );
 
 			} elseif ( false !== $this->tgmpa->does_plugin_have_update( $slug ) ) {
-				$update_status = __( 'Update recommended', 'mechanna' );
+				$update_status = esc_html__(  'Update recommended', 'mechanna' );
 			}
 
 			if ( '' === $update_status ) {
@@ -2368,7 +2368,7 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 				}
 
 				$output[] = sprintf(
-					'<p><span style="min-width: 32px; text-align: right; float: right;%1$s">%2$s</span>' . __( 'Installed version:', 'mechanna' ) . '</p>',
+					'<p><span style="min-width: 32px; text-align: right; float: right;%1$s">%2$s</span>' . esc_html__(  'Installed version:', 'mechanna' ) . '</p>',
 					$color,
 					$installed
 				);
@@ -2376,7 +2376,7 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 
 			if ( ! empty( $item['minimum_version'] ) ) {
 				$output[] = sprintf(
-					'<p><span style="min-width: 32px; text-align: right; float: right;">%1$s</span>' . __( 'Minimum required version:', 'mechanna' ) . '</p>',
+					'<p><span style="min-width: 32px; text-align: right; float: right;">%1$s</span>' . esc_html__(  'Minimum required version:', 'mechanna' ) . '</p>',
 					$item['minimum_version']
 				);
 			}
@@ -2388,7 +2388,7 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 				}
 
 				$output[] = sprintf(
-					'<p><span style="min-width: 32px; text-align: right; float: right;%1$s">%2$s</span>' . __( 'Available version:', 'mechanna' ) . '</p>',
+					'<p><span style="min-width: 32px; text-align: right; float: right;%1$s">%2$s</span>' . esc_html__(  'Available version:', 'mechanna' ) . '</p>',
 					$color,
 					$item['available_version']
 				);
@@ -2411,7 +2411,7 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 		 * @since 2.2.0
 		 */
 		public function no_items() {
-			printf( wp_kses_post( __( 'No plugins to install, update or activate. <a href="%1$s">Return to the Dashboard</a>', 'mechanna' ) ), esc_url( self_admin_url() ) );
+			printf( wp_kses_post( esc_html__(  'No plugins to install, update or activate. <a href="%1$s">Return to the Dashboard</a>', 'mechanna' ) ), esc_url( self_admin_url() ) );
 			echo '<style type="text/css">#adminmenu .wp-submenu li.current { display: none !important; }</style>';
 		}
 
@@ -2425,14 +2425,14 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 		public function get_columns() {
 			$columns = array(
 				'cb'     => '<input type="checkbox" />',
-				'plugin' => __( 'Plugin', 'mechanna' ),
-				'source' => __( 'Source', 'mechanna' ),
-				'type'   => __( 'Type', 'mechanna' ),
+				'plugin' => esc_html__(  'Plugin', 'mechanna' ),
+				'source' => esc_html__(  'Source', 'mechanna' ),
+				'type'   => esc_html__(  'Type', 'mechanna' ),
 			);
 
 			if ( 'all' === $this->view_context || 'update' === $this->view_context ) {
-				$columns['version'] = __( 'Version', 'mechanna' );
-				$columns['status']  = __( 'Status', 'mechanna' );
+				$columns['version'] = esc_html__(  'Version', 'mechanna' );
+				$columns['status']  = esc_html__(  'Status', 'mechanna' );
 			}
 
 			return apply_filters( 'tgmpa_table_columns', $columns );
@@ -2592,16 +2592,16 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 
 			if ( 'update' !== $this->view_context && 'activate' !== $this->view_context ) {
 				if ( current_user_can( 'install_plugins' ) ) {
-					$actions['tgmpa-bulk-install'] = __( 'Install', 'mechanna' );
+					$actions['tgmpa-bulk-install'] = esc_html__(  'Install', 'mechanna' );
 				}
 			}
 
 			if ( 'install' !== $this->view_context ) {
 				if ( current_user_can( 'update_plugins' ) ) {
-					$actions['tgmpa-bulk-update'] = __( 'Update', 'mechanna' );
+					$actions['tgmpa-bulk-update'] = esc_html__(  'Update', 'mechanna' );
 				}
 				if ( current_user_can( 'activate_plugins' ) ) {
-					$actions['tgmpa-bulk-activate'] = __( 'Activate', 'mechanna' );
+					$actions['tgmpa-bulk-activate'] = esc_html__(  'Activate', 'mechanna' );
 				}
 			}
 
@@ -2632,9 +2632,9 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 				// Did user actually select any plugins to install/update ?
 				if ( empty( $_POST['plugin'] ) ) {
 					if ( 'install' === $install_type ) {
-						$message = __( 'No plugins were selected to be installed. No action taken.', 'mechanna' );
+						$message = esc_html__(  'No plugins were selected to be installed. No action taken.', 'mechanna' );
 					} else {
-						$message = __( 'No plugins were selected to be updated. No action taken.', 'mechanna' );
+						$message = esc_html__(  'No plugins were selected to be updated. No action taken.', 'mechanna' );
 					}
 
 					echo '<div id="message" class="error"><p>', esc_html( $message ), '</p></div>';
@@ -2670,9 +2670,9 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 				// No need to proceed further if we have no plugins to handle.
 				if ( empty( $plugins_to_install ) ) {
 					if ( 'install' === $install_type ) {
-						$message = __( 'No plugins are available to be installed at this time.', 'mechanna' );
+						$message = esc_html__(  'No plugins are available to be installed at this time.', 'mechanna' );
 					} else {
-						$message = __( 'No plugins are available to be updated at this time.', 'mechanna' );
+						$message = esc_html__(  'No plugins are available to be updated at this time.', 'mechanna' );
 					}
 
 					echo '<div id="message" class="error"><p>', esc_html( $message ), '</p></div>';
@@ -3017,8 +3017,8 @@ if ( ! function_exists( 'tgmpa_load_bulk_installer' ) ) {
 					 * @since 2.2.0
 					 */
 					public function activate_strings() {
-						$this->strings['activation_failed']  = __( 'Plugin activation failed.', 'mechanna' );
-						$this->strings['activation_success'] = __( 'Plugin activated successfully.', 'mechanna' );
+						$this->strings['activation_failed']  = esc_html__(  'Plugin activation failed.', 'mechanna' );
+						$this->strings['activation_success'] = esc_html__(  'Plugin activated successfully.', 'mechanna' );
 					}
 
 					/**
@@ -3351,23 +3351,23 @@ if ( ! function_exists( 'tgmpa_load_bulk_installer' ) ) {
 					public function add_strings() {
 						if ( 'update' === $this->options['install_type'] ) {
 							parent::add_strings();
-							$this->upgrader->strings['skin_before_update_header'] = __( 'Updating Plugin %1$s (%2$d/%3$d)', 'mechanna' );
+							$this->upgrader->strings['skin_before_update_header'] = esc_html__(  'Updating Plugin %1$s (%2$d/%3$d)', 'mechanna' );
 						} else {
-							$this->upgrader->strings['skin_update_failed_error'] = __( 'An error occurred while installing %1$s: <strong>%2$s</strong>.', 'mechanna' );
-							$this->upgrader->strings['skin_update_failed']       = __( 'The installation of %1$s failed.', 'mechanna' );
+							$this->upgrader->strings['skin_update_failed_error'] = esc_html__(  'An error occurred while installing %1$s: <strong>%2$s</strong>.', 'mechanna' );
+							$this->upgrader->strings['skin_update_failed']       = esc_html__(  'The installation of %1$s failed.', 'mechanna' );
 
 							if ( $this->tgmpa->is_automatic ) {
 								// Automatic activation strings.
-								$this->upgrader->strings['skin_upgrade_start']        = __( 'The installation and activation process is starting. This process may take a while on some hosts, so please be patient.', 'mechanna' );
-								$this->upgrader->strings['skin_update_successful']    = __( '%1$s installed and activated successfully.', 'mechanna' ) . ' <a href="#" class="hide-if-no-js" onclick="%2$s"><span>' . esc_html__( 'Show Details', 'mechanna' ) . '</span><span class="hidden">' . esc_html__( 'Hide Details', 'mechanna' ) . '</span>.</a>';
-								$this->upgrader->strings['skin_upgrade_end']          = __( 'All installations and activations have been completed.', 'mechanna' );
-								$this->upgrader->strings['skin_before_update_header'] = __( 'Installing and Activating Plugin %1$s (%2$d/%3$d)', 'mechanna' );
+								$this->upgrader->strings['skin_upgrade_start']        = esc_html__(  'The installation and activation process is starting. This process may take a while on some hosts, so please be patient.', 'mechanna' );
+								$this->upgrader->strings['skin_update_successful']    = esc_html__(  '%1$s installed and activated successfully.', 'mechanna' ) . ' <a href="#" class="hide-if-no-js" onclick="%2$s"><span>' . esc_html__( 'Show Details', 'mechanna' ) . '</span><span class="hidden">' . esc_html__( 'Hide Details', 'mechanna' ) . '</span>.</a>';
+								$this->upgrader->strings['skin_upgrade_end']          = esc_html__(  'All installations and activations have been completed.', 'mechanna' );
+								$this->upgrader->strings['skin_before_update_header'] = esc_html__(  'Installing and Activating Plugin %1$s (%2$d/%3$d)', 'mechanna' );
 							} else {
 								// Default installation strings.
-								$this->upgrader->strings['skin_upgrade_start']        = __( 'The installation process is starting. This process may take a while on some hosts, so please be patient.', 'mechanna' );
+								$this->upgrader->strings['skin_upgrade_start']        = esc_html__(  'The installation process is starting. This process may take a while on some hosts, so please be patient.', 'mechanna' );
 								$this->upgrader->strings['skin_update_successful']    = esc_html__( '%1$s installed successfully.', 'mechanna' ) . ' <a href="#" class="hide-if-no-js" onclick="%2$s"><span>' . esc_html__( 'Show Details', 'mechanna' ) . '</span><span class="hidden">' . esc_html__( 'Hide Details', 'mechanna' ) . '</span>.</a>';
-								$this->upgrader->strings['skin_upgrade_end']          = __( 'All installations have been completed.', 'mechanna' );
-								$this->upgrader->strings['skin_before_update_header'] = __( 'Installing Plugin %1$s (%2$d/%3$d)', 'mechanna' );
+								$this->upgrader->strings['skin_upgrade_end']          = esc_html__(  'All installations have been completed.', 'mechanna' );
+								$this->upgrader->strings['skin_before_update_header'] = esc_html__(  'Installing Plugin %1$s (%2$d/%3$d)', 'mechanna' );
 							}
 						}
 					}

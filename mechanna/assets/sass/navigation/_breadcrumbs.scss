@@ -1,13 +1,19 @@
 .breadcrumbs {
 	position: relative;
 	margin: 1.2em 0 0;
+	.home & {
+		margin-top: 0;
+	}
 	&__title {
 		float: left;
-		margin-right: 2em;
-		padding-right: 2em;
+		margin-right: 1.5em;
+		padding-right: 1.5em;
 		border-right: 1px solid #e0e0e8;
 		.page-title {
 			margin: 0;
+			font-size: 22px;
+			line-height: 1.3;
+			padding-bottom: 2px;
 		}
 	}
 	&__items {

@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mechanna\n"
-"POT-Creation-Date: 2016-06-13 10:30+0300\n"
+"POT-Creation-Date: 2016-06-23 15:23+0300\n"
 "PO-Revision-Date: 2016-02-15 11:18+0200\n"
 "Last-Translator: \n"
 "Language-Team: TemplateMonster\n"
@@ -1341,13 +1341,13 @@ msgid "Justify"
 msgstr ""
 
 #: inc/customizer.php:1877
+#, php-format
 msgid ""
-"<div>24/7 Professional Locksmithing Service</div><div class=\"mobile-show"
-"\">Call Us <span class=\"mobile-hide\">Today</span>1 800 559 6580</"
-"div><div>22 St. Black Road  Raleigh, PA 34578</div>"
+"<div>%1$s</div><div class=\"mobile-show\">%2$s <span class=\"mobile-hide\">"
+"%3$s</span>%4$s</div><div>%5$s</div>"
 msgstr ""
 
-#: inc/customizer.php:1888
+#: inc/customizer.php:1893
 #, php-format
 msgid "%%year%% (с) %%site-name%% %%privacy-policy%%"
 msgstr ""
@@ -1384,15 +1384,15 @@ msgstr ""
 msgid "Edit"
 msgstr ""
 
-#: inc/template-menu.php:27
+#: inc/template-menu.php:26
 msgid "Set main menu"
 msgstr ""
 
-#: inc/template-menu.php:52
+#: inc/template-menu.php:51
 msgid "Set footer menu"
 msgstr ""
 
-#: inc/template-menu.php:122
+#: inc/template-menu.php:121
 msgid "Set social menu"
 msgstr ""
 
@@ -1725,6 +1725,12 @@ msgid "Post read more button label"
 msgstr ""
 
 #: inc/widgets/custom-posts/class-custom-posts-widget.php:240
+#: template-parts/content-audio.php:82 template-parts/content-gallery.php:80
+#: template-parts/content-image.php:82 template-parts/content-link.php:94
+#: template-parts/content-quote.php:81
+#: template-parts/content-single-link.php:82
+#: template-parts/content-single.php:78 template-parts/content-status.php:121
+#: template-parts/content-video.php:82 template-parts/content.php:89
 #, php-format
 msgid "%s comment"
 msgid_plural "%s comments"
@@ -1946,8 +1952,7 @@ msgstr ""
 
 #: template-parts/comment.php:6
 #, php-format
-msgid ""
-"<span class=\"posted-by\"><i class=\"material-icons\">person</i> by</span> %s"
+msgid "<span class=\"posted-by\">%1$s by</span> %2$s"
 msgstr ""
 
 #: template-parts/comment.php:7
@@ -1959,35 +1964,8 @@ msgstr ""
 #: template-parts/content-quote.php:57
 #: template-parts/content-single-link.php:60
 #: template-parts/content-single.php:55 template-parts/content-status.php:97
-#: template-parts/content-video.php:67 template-parts/content.php:65
+#: template-parts/content-video.php:58 template-parts/content.php:65
 msgid "by "
-msgstr ""
-
-#: template-parts/content-audio.php:79 template-parts/content-gallery.php:77
-#: template-parts/content-image.php:79 template-parts/content-link.php:91
-#: template-parts/content-quote.php:78
-#: template-parts/content-single-link.php:81
-#: template-parts/content-single.php:76 template-parts/content-status.php:118
-#: template-parts/content-video.php:88 template-parts/content.php:86
-msgid "0 comments"
-msgstr ""
-
-#: template-parts/content-audio.php:80 template-parts/content-gallery.php:78
-#: template-parts/content-image.php:80 template-parts/content-link.php:92
-#: template-parts/content-quote.php:79
-#: template-parts/content-single-link.php:82
-#: template-parts/content-single.php:77 template-parts/content-status.php:119
-#: template-parts/content-video.php:89 template-parts/content.php:87
-msgid "1 comment"
-msgstr ""
-
-#: template-parts/content-audio.php:81 template-parts/content-gallery.php:79
-#: template-parts/content-image.php:81 template-parts/content-link.php:93
-#: template-parts/content-quote.php:80
-#: template-parts/content-single-link.php:83
-#: template-parts/content-single.php:78 template-parts/content-status.php:120
-#: template-parts/content-video.php:90 template-parts/content.php:88
-msgid "comments"
 msgstr ""
 
 #: template-parts/content-author-bio.php:17
@@ -2019,13 +1997,13 @@ msgstr ""
 
 #: template-parts/content-page.php:26
 #: template-parts/content-single-link.php:113
-#: template-parts/content-single.php:108
+#: template-parts/content-single.php:110
 msgid "Pages:"
 msgstr ""
 
 #: template-parts/content-page.php:30
 #: template-parts/content-single-link.php:117
-#: template-parts/content-single.php:112
+#: template-parts/content-single.php:114
 msgid "Page"
 msgstr ""
 
@@ -2035,6 +2013,6 @@ msgid "Edit %s"
 msgstr ""
 
 #: template-parts/content-single-link.php:127
-#: template-parts/content-single.php:122
+#: template-parts/content-single.php:124
 msgid "Like this post? Share it!"
 msgstr ""

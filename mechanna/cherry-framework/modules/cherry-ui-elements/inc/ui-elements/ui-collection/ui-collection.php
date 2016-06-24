@@ -26,7 +26,7 @@ if ( ! class_exists( 'UI_Collection' ) ) {
 	 *  		'type'	  => 'collection',
 	 *  		'id'      => 'gallery',
 	 *  		'name'    => 'gallery',
-	 *  		'left_label' => __( 'Gallery', 'cherry' ),
+	 *  		'left_label' => esc_html__(  'Gallery', 'cherry' ),
 	 *  		'controls' => array(
 	 *  			'UI_Text' => array(
 	 *  				'type'    => 'text',
@@ -34,13 +34,13 @@ if ( ! class_exists( 'UI_Collection' ) ) {
 	 *  				'class'   => 'large_text',
 	 *  				'name'    => 'title',
 	 *  				'value'   => '',
-	 *  				'left_label' => __( 'Title', 'cherry' )
+	 *  				'left_label' => esc_html__(  'Title', 'cherry' )
 	 *  			),
 	 *  			'UI_Media' => array(
 	 *  				'id'      => 'image',
 	 *  				'name'    => 'image',
 	 *  				'value'   => '',
-	 *  				'left_label' => __( 'Image', 'cherry' )
+	 *  				'left_label' => esc_html__(  'Image', 'cherry' )
 	 *  			),
 	 *  		),
 	 *  	)

@@ -112,14 +112,14 @@
 				}
 			}
 			.tm-pb-arrow-prev {
-				left: 20px !important;
+				left: 17px !important;
 				&:before {
 					content: '\f0d9';
 					 @include translate(-60%, -50%);
 				}
 			}
 			.tm-pb-arrow-next {
-				left: 74px !important;
+				left: 71px !important;
 				&:before {
 					content: '\f0da';
 					 @include translate(-40%, -50%);
@@ -193,9 +193,15 @@
 	}
 
 	.tm_pb_slide_description {
-		padding: 50px 30px 120px;
+		padding: 50px 30px 100px;
 		@include media-breakpoint-up(lg) {
-			padding: 246px 0px 288px;
+			padding: 146px 0px 188px;
+		}
+		@include media-breakpoint-up(xl) {
+			padding: 206px 0px 248px;
+		}
+		@media (min-width: 1440px) {
+			padding: 226px 0px 268px;
 		}
 	}
 
@@ -204,6 +210,9 @@
 
 		@include media-breakpoint-up(lg) {
 			left: 50%;
+			margin-left: -500px;
+		}
+		@include media-breakpoint-up(xl) {
 			margin-left: -533px;
 		}
 

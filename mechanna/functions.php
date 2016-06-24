@@ -79,9 +79,6 @@ if ( ! class_exists( 'Mechanna_Theme_Setup' ) ) {
 			// Enqueue public assets.
 			add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_assets' ), 10 );
 
-			// Enqueue swiper scripts and styles
-			add_action( 'wp_enqueue_scripts', 'swiper_enqueue_assets', 9 );
-
 		}
 
 		/**
@@ -546,7 +543,7 @@ if ( ! class_exists( 'Mechanna_Theme_Setup' ) ) {
 		 * @since 1.0.0
 		 */
 		public function enqueue_assets() {
-			wp_enqueue_style( 'mechanna-theme-style', get_stylesheet_uri(), array( 'font-awesome', 'material-icons', 'magnific-popup' ), MECHANNA_THEME_VERSION );
+			wp_enqueue_style( 'mechanna-theme-style', get_stylesheet_uri(), array( 'font-awesome', 'material-icons', 'magnific-popup', 'jquery-swiper' ), MECHANNA_THEME_VERSION );
 
 			/**
 			 * Filter the depends on main theme script.
@@ -554,7 +551,7 @@ if ( ! class_exists( 'Mechanna_Theme_Setup' ) ) {
 			 * @since 1.0.0
 			 * @var   array
 			 */
-			$depends = apply_filters( 'mechanna_theme_script_depends', array( 'cherry-js-core', 'hoverIntent', 'super-guacamole' ) );
+			$depends = apply_filters( 'mechanna_theme_script_depends', array( 'cherry-js-core', 'hoverIntent', 'super-guacamole', 'jquery-swiper' ) );
 
 			wp_enqueue_script( 'mechanna-theme-script', MECHANNA_THEME_JS . '/theme-script.js', $depends, MECHANNA_THEME_VERSION, true );
 
@@ -596,15 +593,6 @@ if ( ! class_exists( 'Mechanna_Theme_Setup' ) ) {
 			return self::$instance;
 		}
 	}
-}
-
-/**
- * Load swiper scripts and styles
- *
- */
-function swiper_enqueue_assets() {
-	wp_enqueue_style( 'jquery-swiper' );
-	wp_enqueue_script( 'jquery-swiper' );
 }
 
 

@@ -5,6 +5,9 @@
 		padding-left: 0;
 	}
 }
+.site-footer {
+	margin-top: 65px;
+}
 .site-info {
 	.footer-logo {
 		margin: 0;
@@ -68,7 +71,10 @@
 
 .footer-area.widget-area {
 	line-height: 24px;
-	padding: 78px 0 30px;
+	padding: 12px 0 30px;
+	@include media-breakpoint-up(md) {
+		padding: 78px 0 30px;
+	}
 
 	.widget_text {
 		line-height: 24px;
