@@ -243,11 +243,13 @@
 			$toggle.on( "click", $toggle, function () {
 				$container.toggleClass( "srch-on" );
 				if ($container.hasClass( "srch-on" ) ) {
-					setTimeout(function() { $( ".header__search .search-form__field" ).focus(); }, 300);
+					setTimeout(function() {
+						$( ".header__search .search-form__field" ).focus();
+					}, 300);
 				}
 			});
 
-			$( document ).click( function ( event ) {
+			$( document ).on( 'click', function ( event ) {
 				var $target = $( event.target );
 				if ( $target.closest( $toggle ).length || $target.closest( $container ).length) {
 					return;
@@ -484,10 +486,11 @@
 		},
 
 		mobile_panel: function ( self ) {
-			var $itemHasChildrenUl = $( '.main-navigation .menu li.menu-item-has-children ul, .main-navigation .menu li.page_item_has_children ul' );
+			var $itemHasChildrenUl = $( '.main-navigation li.menu-item-has-children ul, .main-navigation li.page_item_has_children ul' ),
+					$subMenuToggle;
 
-			$( '<span class="sub-menu-toggle"></span>' ).insertBefore( $itemHasChildrenUl );
-			var $subMenuToggle = $( '.sub-menu-toggle' );
+			$itemHasChildrenUl.before( '<span class="sub-menu-toggle"></span>' );
+			$subMenuToggle = $( '.sub-menu-toggle' );
 
 			$subMenuToggle.on( 'click', function() {
 				$( this ).toggleClass( 'active' );

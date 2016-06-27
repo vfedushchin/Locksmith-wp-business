@@ -80,17 +80,15 @@
 						?>
 					</span>
 
-					<span class="post__comments">
-						<?php $comment_visible = mechanna_is_meta_visible( 'blog_post_comments', 'loop' ) ? 'true' : 'false';
-
-							$utility->meta_data->get_comment_count( array(
-								'visible' => $comment_visible,
-								'class'   => 'post__comments-link',
-								'sufix'     => _n_noop( '%s comment', '%s comments', 'mechanna' ),
-								'echo'    => true,
-							) );
-						?>
-					</span>
+					<?php $comment_visible = mechanna_is_meta_visible( 'blog_post_comments', 'loop' ) ? 'true' : 'false';
+						$utility->meta_data->get_comment_count( array(
+							'visible' => $comment_visible,
+							'class'   => 'post__comments-link',
+							'sufix'     => _n_noop( '%s comment', '%s comments', 'mechanna' ),
+							'echo'    => true,
+							'html'      => '<span class="post__comments"> %1$s<a href="%2$s" %3$s %4$s>%5$s%6$s</a></span>',
+						) );
+					?>
 
 
 					<?php $tags_visible = mechanna_is_meta_visible( 'blog_post_tags', 'loop' ) ? 'true' : 'false';

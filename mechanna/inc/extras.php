@@ -1,18 +1,6 @@
 <?php
 
 /**
- * Get spesific template part name for current post.
- *
- * @return string
- */
-function mechanna_get_template_part_name(){
-	$format = get_post_format();
-	return $format;
-}
-
-
-
-/**
  * Custom functions that act independently of the theme templates.
  *
  * Eventually, some of the functionality here could be replaced by core features.
