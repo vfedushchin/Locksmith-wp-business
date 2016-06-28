@@ -88,6 +88,8 @@
 					display: flex;
 					justify-content: space-between;
 					span {
+						min-width: 40px;
+						text-align: right;
 						margin-right: 17px;
 						margin-left: 10px;
 					}

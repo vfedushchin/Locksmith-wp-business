@@ -5,6 +5,12 @@
     @include media-breakpoint-up(md){
       height: 362px;
     }
+
+    .gm-style-iw {
+      h3 {
+        font-size: 16px;
+      }
+    }
   }
 
   .tm_pb_module.map-big .tm_pb_map {

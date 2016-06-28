@@ -42,7 +42,7 @@
 		}
 	}
 	&__messages {
-		font-size: 14px;
+		font-size: 13px;
 		margin-top: 3px;
 		text-indent: 10px;
 	}
@@ -139,8 +139,10 @@
 				padding: 35px 24px 51px;
 			}
 
-			&__messages {
-				text-align: left;
+			@include media-breakpoint-up(md) {
+				&__messages {
+					text-align: left;
+				}
 			}
 
 			&__form {

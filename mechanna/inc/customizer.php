@@ -1439,7 +1439,9 @@ function mechanna_get_customizer_options() {
 				'choices' => array(
 					'default'          => esc_html__( 'Listing', 'mechanna' ),
 					'grid-2-cols'      => esc_html__( 'Grid (2 Columns)', 'mechanna' ),
+					'grid-3-cols'      => esc_html__( 'Grid (3 Columns)', 'mechanna' ),
 					'masonry-2-cols'   => esc_html__( 'Masonry (2 Columns)', 'mechanna' ),
+					'masonry-3-cols'   => esc_html__( 'Masonry (3 Columns)', 'mechanna' ),
 				),
 				'type' => 'control',
 			),
@@ -1874,11 +1876,11 @@ function mechanna_get_fonts_options() {
  */
 function mechanna_get_default_top_panel_text() {
 	return sprintf(
-		esc_html__( '<div>%1$s</div><div class="mobile-show">%2$s <span class="mobile-hide">%3$s</span>%4$s</div><div>%5$s</div>', 'mechanna' ),
+		'<div>%1$s</div><div class="mobile-show">%2$s <span class="mobile-hide">%3$s</span>%4$s</div><div>%5$s</div>',
 		esc_html__( '24/7 Professional Locksmithing Service ', 'mechanna' ),
 		esc_html__( 'Call Us ', 'mechanna' ),
 		esc_html__( 'Today ', 'mechanna' ),
-		esc_html__( '1 800 559 6580 ', 'mechanna' ),
+		esc_html__( '+1 800 559 6580 ', 'mechanna' ),
 		esc_html__( '22 St. Black Road  Raleigh, PA 34578', 'mechanna' )
 	);
 }

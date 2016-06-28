@@ -67,11 +67,16 @@
 			.header__search {
 				width: 100%;
 				width: 250px;
+				@include media-breakpoint-up(sm) {
+					width: 350px;
+				}
 				.search-form {
 					visibility: visible;
 					opacity: 1;
 					color: #fff;
 					background: #000;
+					border-bottom: 2px solid #fff;
+					width: 100%;
 				}
 			}
 			.search__toggle {
